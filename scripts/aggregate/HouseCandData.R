@@ -8,6 +8,21 @@ get_ticker <- function(x) {
   sapply(strsplit(x, "\\."), `[`, 1)
 }
 
+# Raises a clear error if `df` is missing expected columns or has too few
+# rows. Called right after reading HouseData.py's output and right before
+# writing the final model-input RDS, so a silent upstream schema change or an
+# empty-result join surfaces as one clear error at the pipeline stage
+# boundary, not a confusing downstream failure in an analysis script.
+validate_frame <- function(df, required_columns, name, min_rows = 1) {
+    missing <- setdiff(required_columns, names(df))
+    if (length(missing) > 0) {
+        stop(sprintf("%s: missing expected columns: %s", name, paste(missing, collapse = ", ")))
+    }
+    if (nrow(df) < min_rows) {
+        stop(sprintf("%s: expected at least %d row(s), got %d", name, min_rows, nrow(df)))
+    }
+}
+
 # CAMPAIGNFINANCE_DATA_ROOT points at the campaign-finance-data folder (contains
 # data/ and outputs/), which now lives separately from the scripts (e.g. in
 # Dropbox). Required, no fallback -- the script's own location has no
@@ -56,6 +71,12 @@ election = ifelse(toupper(answer) == "Y", "_election_year", "")
 
 source_file <- paste0("house_firm_cand", election, ".parquet")
 cand_data <- read_parquet(file.path(HOUSE_PROCESSED_PATH, source_file))
+validate_frame(
+    cand_data,
+    c("cmte_id", "cycle", "candidate_id", "party", "TRBC_Econ_Sector", "TRBC_ID",
+      "hq_state", "hq", "ric", "incumbent_party", "total_amount", "contribute"),
+    name = source_file
+)
 
 consumer <- read.csv(file.path(EXTERNAL_PATH, "other", "industry_consumer.csv"))
 partisan_giving <- read.csv(file.path(EXTERNAL_PATH, "other", "industry_partisan_giving.csv"))
@@ -154,4 +175,11 @@ cand_data <- cand_data %>%
         spline1 = spline_1, spline2 = spline_2, spline3 = spline_3, spline4 = spline_4
     )
 
-saveRDS(cand_data, file.path(MODELING_PROCESSED_PATH, paste0("cand_model_data", election, ".RDS")))
+output_name <- paste0("cand_model_data", election, ".RDS")
+validate_frame(
+    cand_data,
+    c("cmte_id", "year", "candidate_id", "party", "democrat", "favorability",
+      "contribute", "contribute_amount", "contribute_count", "contribute_limit"),
+    name = output_name
+)
+saveRDS(cand_data, file.path(MODELING_PROCESSED_PATH, output_name))

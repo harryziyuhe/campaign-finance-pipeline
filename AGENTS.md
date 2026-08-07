@@ -9,6 +9,9 @@ in a separate folder (e.g. a Dropbox folder), not under this repo. Every script 
 it's unset rather than silently resolving a wrong path. `.venv/` and `config/` still live here,
 with the scripts, not the data.
 
+FEC API scripts also require a `FEC_API_KEY` environment variable (get one at
+https://api.data.gov/signup/) -- no hardcoded key is checked in.
+
 ## Project Structure & Module Organization
 
 This repository supports a corporate campaign contribution research pipeline. Active code lives under `scripts/`: `scripts/data_collection/fec/` handles FEC API and bulk processing, `scripts/data_collection/lseg/` handles LSEG firm and market data, `scripts/data_collection/electionratings/inside_elections/` parses Inside Elections ratings, `scripts/aggregate/` builds analysis panels, and `scripts/analysis/` contains R modeling scripts. Legacy notebooks live under `scripts/FEC/` and `scripts/LSEG/`; `scripts/_archive/` holds what was reviewed and found fully superseded or scratch during the 2026-08 split (see `scripts/_archive/README.md`).
@@ -19,6 +22,7 @@ Canonical data paths are `data/raw/`, `data/external/`, and `data/processed/`. G
 
 There is no central build system. Run scripts directly from the repository root so relative data paths resolve correctly, and make sure `CAMPAIGNFINANCE_DATA_ROOT` is set first (see above).
 
+- One-time environment setup: `pip install -r requirements.txt` (Python deps) and `Rscript scripts/setup_r_packages.R` (R deps).
 - `python -m py_compile scripts/data_collection/fec/FECindividualToFirmPACs.py`: syntax-check a Python script before running it.
 - `python scripts/data_collection/fec/FECscraper.py`: refresh FEC API inputs when credentials and API assumptions are configured.
 - `python scripts/aggregate/HouseData.py`: rebuild House-level processed panels.

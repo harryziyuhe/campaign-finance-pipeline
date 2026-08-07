@@ -28,13 +28,23 @@ def _require_data_root() -> Path:
     return root
 
 
+def _require_api_key() -> str:
+    value = os.environ.get("FEC_API_KEY")
+    if not value:
+        raise RuntimeError(
+            "FEC_API_KEY is not set. Get a key at https://api.data.gov/signup/ and set it, e.g.:\n"
+            '  $env:FEC_API_KEY = "<your-key>"'
+        )
+    return value
+
+
 DATA_ROOT = _require_data_root()
 FEC_API_PATH = DATA_ROOT / "data" / "raw" / "fec_api"
 CANDIDATES_FILE_PATH = str(FEC_API_PATH / "candidates") + "/"
 COMMITTEES_FILE_PATH = str(FEC_API_PATH / "committees") + "/"
 EXPENDITURES_FILE_PATH = str(FEC_API_PATH / "expenditures") + "/"
 CONTRIBUTIONS_FILE_PATH = str(FEC_API_PATH / "contributions") + "/"
-API_KEY = "TRBP8kYWE0qWvUBU9XTtVdq43zvHHowWhNNIqwTc"
+API_KEY = _require_api_key()
 IE_PACS = ["hybrid", "independent expenditure"]
 large_pacs = ["C00484642"]
 

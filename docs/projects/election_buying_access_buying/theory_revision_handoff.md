@@ -2,8 +2,9 @@
 
 **Purpose of this document:** a complete, self-contained summary of an extended collaborative session
 working on the paper *"Buying Access or Buying Elections? Sectoral Partisan Alignment and Corporate PAC
-Contributions under Electoral Uncertainty"* (Harry He, draft dated 2026-05-26, PDF at
-`Buying Access or Buying Elections_20260622.pdf` in this directory). Written so a fresh Claude Code
+Contributions under Electoral Uncertainty"* (Harry He, draft dated 2026-05-26, PDF
+`Buying Access or Buying Elections_20260622.pdf`, gitignored -- kept alongside this file if present
+locally, not tracked in the repo). Written so a fresh Claude Code
 session (with no memory of the conversation that produced it) can pick up the work without re-deriving
 anything below. Read this whole file before doing new analysis — several dead ends and statistical traps
 are documented here specifically so they aren't repeated.

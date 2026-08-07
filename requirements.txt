@@ -1,0 +1,23 @@
+# Python dependencies for the active data-collection/aggregation pipeline
+# (scripts/data_collection/, scripts/aggregate/), derived from actual imports
+# in those scripts. Install into the .venv referenced by CLAUDE.md:
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt   (Windows)
+#   .venv/bin/python -m pip install -r requirements.txt           (WSL/Linux)
+#
+# Versions below are pinned where a known-working version was verified in an
+# existing environment; others are given a minimum floor only. Regenerate
+# exact pins from a known-good venv with `pip freeze` when convenient:
+#   pip freeze | grep -iE "numpy|pandas|polars|requests|tqdm|lseg"
+
+numpy==2.2.6
+pandas==2.3.3
+polars==1.43.2
+requests>=2.31
+tqdm>=4.66
+
+# LSEG Data Library for Python (imported as `lseg.data` in
+# scripts/data_collection/lseg/Stockscraper.py, LSEGfirms.py). Requires a
+# Refinitiv/LSEG Workspace or Data Platform entitlement and the credentials
+# file described by config/lseg-data.config.json.example -- not usable
+# without that access regardless of this pin.
+lseg-data>=2.0

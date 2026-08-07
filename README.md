@@ -15,6 +15,9 @@ contains `data/` and `outputs/` as immediate children) before it will run:
 $env:CAMPAIGNFINANCE_DATA_ROOT = "C:\Users\<you>\Dropbox\campaign-finance-data"
 ```
 
+FEC API scripts also require a `FEC_API_KEY` environment variable (get one at
+https://api.data.gov/signup/) -- no hardcoded key is checked in.
+
 `.venv/` (the Python environment) and `config/` (LSEG credentials) stay with the scripts, not the
 data. `git` is not yet initialized in this folder — that's a deliberate later step.
 

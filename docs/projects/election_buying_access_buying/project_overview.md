@@ -4,6 +4,8 @@
 
 This is the completed House-election analysis project. It studies firm heterogeneity in corporate PAC contribution behavior, especially how contribution probability and contribution amount vary with race competitiveness, candidate party, incumbency, firm reputation exposure, public/private status, consumer-facing status, and several measures of partisan alignment.
 
+For the paper's theory revision history, dead ends, and statistical traps already worked through, see [`theory_revision_handoff.md`](theory_revision_handoff.md) in this folder.
+
 The analysis code currently lives under `scripts/analysis/logit/` and `scripts/analysis/tobit/`. A good future master folder for these scripts would be:
 
 ```text

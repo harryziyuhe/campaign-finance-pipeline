@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repository supports a corporate campaign finance research project studying why corporations make campaign contributions as a non-market strategy (investment vs. consumption framing), and testing the effects of these strategies empirically. It is a research data pipeline, not an application: Python/R scripts pull and process FEC, LSEG (market), and election-ratings data into analysis panels, and R scripts fit and interpret models on top of those panels.
 
-There is no Git history in this checkout (`git` is not initialized yet -- this folder is organized to make `git init` trivial whenever that happens, but no remote/push has occurred). Treat file timestamps and `docs/migration-log.md` as the provenance record instead of `git log`/`git blame`.
+`git` is initialized in this folder, but history is shallow (started 2026-08) and no remote/push has occurred yet. For provenance predating the first commit, `docs/migration-log.md` is still more informative than `git log`/`git blame`.
 
 ## Repository split (2026-08)
 
@@ -22,15 +22,22 @@ $env:CAMPAIGNFINANCE_DATA_ROOT = "C:\Users\<you>\Dropbox\campaign-finance-data"
 The `.venv/` Python environment and `config/` (LSEG credentials) still live with the scripts, not
 the data -- see the `SCRIPT_ROOT`/`DATA_ROOT` split described below.
 
+FEC API scripts (`scripts/data_collection/fec/FECscraper.py`) also require a `FEC_API_KEY`
+environment variable (get one at https://api.data.gov/signup/) -- no hardcoded key is checked in.
+```powershell
+$env:FEC_API_KEY = "<your-key>"
+```
+
 ## Commands
 
-There is no central build system, package manifest, or test suite. Run scripts directly from the repository root so relative/root-derived paths resolve correctly, and make sure `CAMPAIGNFINANCE_DATA_ROOT` is set first (see above).
+There is no central build system or test suite. Run scripts directly from the repository root so relative/root-derived paths resolve correctly, and make sure `CAMPAIGNFINANCE_DATA_ROOT` is set first (see above).
 
+- One-time environment setup: `.venv\Scripts\python.exe -m pip install -r requirements.txt` (Python deps) and `Rscript scripts/setup_r_packages.R` (R deps).
 - Python interpreter: `.venv\Scripts\python.exe` (Python 3.12, uses `polars`, `pandas`, `tqdm`, etc.). Example: `.\.venv\Scripts\python.exe scripts\data_collection\fec\FECscraper.py`.
 - Syntax-check a Python script before running it: `python -m py_compile scripts/data_collection/fec/FECindividualToFirmPACs.py`.
 - Rebuild House-level processed panels: `python scripts/aggregate/HouseData.py`.
 - Rebuild R model-input datasets: `Rscript scripts/aggregate/HouseCandData.R`.
-- Run candidate-level model code (after inputs are current): `Rscript scripts/analysis/cand_model.R`.
+- Run candidate-level model code (after inputs are current): `Rscript scripts/analysis/logit/partisan_model2.R` (`scripts/analysis/archive/cand_model.R` is the superseded predecessor, kept for history only).
 - For R changes, use `Rscript` to parse/execute the touched script directly — there is no separate linter.
 - Many scripts use a staged `--stage <name>` CLI pattern rather than one-shot execution (e.g. `FECfirmPacDonorProfiles.py --stage extract-employer-pac-review --cycles 2004`); check each script's `argparse` setup (or lack of one — some, like `HouseData.py`, take no CLI args and are edited/run directly) before assuming a calling convention.
 - No automated test suite exists. Validate changes by running the smallest relevant pipeline stage and confirming outputs land in the expected `data/processed/` or `outputs/` subdirectory.

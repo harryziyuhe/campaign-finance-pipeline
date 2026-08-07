@@ -4,9 +4,9 @@ This folder is the master documentation area for research projects that share th
 
 | Project | Status | Document |
 | --- | --- | --- |
-| Firm heterogeneity in House contribution behavior | Complete analysis, documentation and path cleanup still useful | [`firm-heterogeneity-house.md`](firm-heterogeneity-house.md) |
-| Individual-level firm PAC donor behavior | Ongoing | [`individual-contribution-behavior.md`](individual-contribution-behavior.md) |
-| Firm contributions around congressional scandals | Early design/data organization | [`firm-contributions-scandal-did.md`](firm-contributions-scandal-did.md) |
+| Firm heterogeneity in House contribution behavior | Complete analysis, documentation and path cleanup still useful | [`election_buying_access_buying/project_overview.md`](election_buying_access_buying/project_overview.md) |
+| Individual-level firm PAC donor behavior | Ongoing | [`strategic_employees/individual-contribution-behavior.md`](strategic_employees/individual-contribution-behavior.md) |
+| Firm contributions around congressional scandals | Early design/data organization | [`tainted_access/project_overview.md`](tainted_access/project_overview.md), [`tainted_access/empirical_design.md`](tainted_access/empirical_design.md) |
 
 ## Folder Convention
 

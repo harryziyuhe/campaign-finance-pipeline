@@ -1,7 +1,8 @@
+import argparse
 import os
 from pathlib import Path
 import polars as pl
-from utils import remove_punc, parse_last_name
+from utils import remove_punc, parse_last_name, validate_frame
 
 SCRIPT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -30,12 +31,32 @@ HOUSE_PROCESSED_PATH = DATA_ROOT / "data" / "processed" / "house"
 def load_data():
     # Load in FEC processed data for contributions from firms to candidates
     contributions = pl.read_parquet(FEC_PROCESSED_PATH / "firm_pac_to_principal_committee_contributions.parquet")
+    validate_frame(
+        contributions,
+        ["cmte_id", "cand_id", "amount", "cycle", "year", "month"],
+        name="firm_pac_to_principal_committee_contributions.parquet",
+    )
     candidates = pl.read_csv(FEC_API_PATH / "candidates" / "candidate_history_H.csv",
                          schema_overrides={"address_zip": pl.Utf8})
+    validate_frame(
+        candidates,
+        ["candidate_id", "state", "district", "candidate_election_year", "incumbent_challenge", "party", "name"],
+        name="candidate_history_H.csv",
+    )
     elections = pl.read_csv(ELECTION_RATINGS_PATH / "IE" / "house_ratings.csv")
     elections = elections[:, 1:]
+    validate_frame(
+        elections,
+        ["date", "state", "district", "incumbent_party", "incumbent", "open", "special", "rating"],
+        name="house_ratings.csv",
+    )
     general_cands = pl.read_csv(EXTERNAL_PATH / "other" / "house_general_cands.csv")
     general_cands = general_cands.rename({"year":"cycle"})
+    validate_frame(
+        general_cands,
+        ["cycle", "state_po", "district", "candidate", "party", "candidatevotes", "totalvotes", "writein"],
+        name="house_general_cands.csv",
+    )
     return contributions, candidates, elections, general_cands
 
 def process_elections(elections: pl.DataFrame) -> pl.DataFrame:
@@ -307,7 +328,25 @@ def get_cand_data(merged_data: pl.DataFrame,
     
     return cand_data
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Build House candidate-level contribution panels."
+    )
+    parser.add_argument(
+        "--scope",
+        choices=["election-year", "all"],
+        default=None,
+        help=(
+            "Aggregate election-year contributions only, or all cycles. "
+            "If omitted, prompts interactively (previous default behavior)."
+        ),
+    )
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
+
     contributions, candidates, elections, general_cands = load_data()
     elections = process_elections(elections)
     candidates = process_candidates(candidates)
@@ -319,21 +358,33 @@ def main():
         corporate_pacs = corporate_pacs.rename({"year":"cycle"})
     else:
         corporate_pacs = get_corporate_pacs(contributions)
-    
-    election_year = input("Aggregate for election year only? (y/n): ") == "y"
-    
+
+    if args.scope is not None:
+        election_year = args.scope == "election-year"
+    else:
+        election_year = input("Aggregate for election year only? (y/n): ") == "y"
+
     merged_data, previous_contributions = aggregate_candidate_contribution(contributions, candidates, elections, election_year=election_year)
     previous_contributions.write_csv(HOUSE_PROCESSED_PATH / "house_previous_contributions.csv")
 
     #race_data = get_race_data(merged_data, corporate_pacs, elections)
     cand_data = get_cand_data(merged_data, corporate_pacs, general_cands, elections, candidates, previous_contributions)
-    
+
+    output_name = "house_firm_cand_election_year.parquet" if election_year else "house_firm_cand.parquet"
+    # HouseCandData.R reads this file next and joins on cmte_id/candidate_id/party;
+    # catch an empty or malformed result here rather than as a downstream R join failure.
+    validate_frame(
+        cand_data,
+        ["cmte_id", "cycle", "candidate_id", "party", "total_amount", "contribute"],
+        name=output_name,
+    )
+
     if election_year:
         #race_data.write_parquet(HOUSE_PROCESSED_PATH / "house_firm_race_election_year.parquet")
-        cand_data.write_parquet(HOUSE_PROCESSED_PATH / "house_firm_cand_election_year.parquet")
+        cand_data.write_parquet(HOUSE_PROCESSED_PATH / output_name)
     else:
         #race_data.write_parquet(HOUSE_PROCESSED_PATH / "house_firm_race.parquet")
-        cand_data.write_parquet(HOUSE_PROCESSED_PATH / "house_firm_cand.parquet")
+        cand_data.write_parquet(HOUSE_PROCESSED_PATH / output_name)
 
 if __name__ == "__main__":
     main()

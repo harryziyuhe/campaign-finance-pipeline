@@ -1,0 +1,15 @@
+# Normalize line endings to LF for all text files, regardless of the checkout
+# platform (this repo is edited from Windows, WSL, and Linux). Prevents whole-file
+# diffs from pure CRLF/LF churn.
+* text=auto eol=lf
+
+# Binary/data-like files that should never be touched by line-ending normalization.
+*.parquet binary
+*.RDS binary
+*.rds binary
+*.xls binary
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

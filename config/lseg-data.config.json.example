@@ -1,0 +1,17 @@
+{
+    "sessions": {
+        "default": "desktop.workspace",
+        "platform": {
+            "ldp": {
+                "app-key": "YOUR_LSEG_APP_KEY",
+                "username": "YOUR_LSEG_USERNAME",
+                "password": "YOUR_LSEG_PASSWORD"
+            }
+        },
+        "desktop": {
+            "workspace": {
+                "app-key": "YOUR_LSEG_APP_KEY"
+            }
+        }
+    }
+}

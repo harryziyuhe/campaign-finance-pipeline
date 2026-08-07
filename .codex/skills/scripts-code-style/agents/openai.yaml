@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scripts Code Style"
+  short_description: "Readable Python and R script conventions"
+  default_prompt: "Use $scripts-code-style when editing code under scripts/."

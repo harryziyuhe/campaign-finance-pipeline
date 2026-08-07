@@ -1,0 +1,30 @@
+# Credentials -- never commit the real LSEG config; see lseg-data.config.json.example
+config/lseg-data.config.json
+
+# Python environment / caches
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/editor junk
+.DS_Store
+._*
+.vscode/
+
+# Local-only agent settings
+.claude/settings.local.json
+
+# Migration scratch (not part of the repo itself)
+_migration_logs/
+
+# Loose reference documents (not code/data pipeline outputs)
+*.pdf

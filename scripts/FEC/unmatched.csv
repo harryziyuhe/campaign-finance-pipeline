@@ -1,0 +1,1025 @@
+,connected_org,company_name,matched_company,PI,cleaned_company,public_company,levenshein,jaccard,cosine,combined
+1168,KNAUF POLYSTYRENE USA INC,knauf polystyrene usa inc,"Knauf Usa Polystyrene Inc, Private Company",5036439620,knauf usa polystyrene inc,False,0.8095238095238095,1.0,1.0000000000000002,2.8095238095238098
+247,JONES WALDO HOLBROOK & MCDONOUGH,jones waldo holbrook & mcdonough,"Jones Waldo Holbrook & Mcdonough PC, Private Company",4297380246,jones waldo holbrook & mcdonough pc,False,0.9523809523809523,0.8,0.9465093644197355,2.698890316800688
+2486,GLAXOSMITHKLINE CONSUMER HEALTHCARE HOLDINGS (US) LLC,glaxosmithkline consumer healthcare holdings  llc,"Glaxosmithkline Consumer Healthcare Holdings Us LLC, Private Company",5071176579,glaxosmithkline consumer healthcare holdings us llc,False,0.967032967032967,0.8,0.9298690028460868,2.696901969879054
+41,BESSEMER & LAKE ERIE RAILROAD COMPANY,bessemer & lake erie railroad company,"Bessemer and Lake Erie Railroad Co, Private Company",4298147289,bessemer and lake erie railroad co,False,0.9310344827586207,0.8,0.9551749984079007,2.6862094811665216
+2333,"KRATOS DEFENSE & SECURITY SOLUTIONS, INC.","kratos defense & security solutions, inc","Kratos Defense and Security Solutions Inc, Public Company",118461,kratos defense and security solutions inc,True,0.9428571428571428,0.8,0.9430175691808007,2.6858747120379434
+1638,SCHOTTENSTEIN ZOX & DUNN CO LPA,schottenstein zox & dunn co lpa,"Schottenstein Zox and Dunn Lpa Co, Private Company",4297263658,schottenstein zox and dunn lpa co,False,0.9285714285714286,0.8,0.9568975674082787,2.6854689959797073
+2034,GULF COAST BANK & TRUST,gulf coast bank & trust,"Gulf Coast Bank and Trust Co, Private Company",4987591,gulf coast bank and trust co,False,0.9130434782608696,0.8,0.9375972016523062,2.6506406799131756
+1460,San Bernardino County Safety Employees,san bernardino county safety employees,"San Bernardino County Safety Employees Association, Private Company",5000345035,san bernardino county safety employees association,False,0.8636363636363636,0.8333333333333334,0.9531060892830786,2.6500757862527755
+1447,NEIGHBOR TO NEIGHBOR MASSACHUSETTS ACTION FUND,neighbor to neighbor massachusetts  fund,"Neighbor To Neighbor Massachusetts Education Fund Inc, Private Company",5039280764,neighbor to neighbor massachusetts education fund inc,False,0.8863636363636364,0.8,0.9552221546136407,2.641585790977277
+2214,MURRAY PLUMBING & HEATING CORPORATION,murray plumbing & heating corporation,"Murray Plumbing and Heating Corp, Private Company",5036900148,murray plumbing and heating corp,False,0.92,0.75,0.9456781313555703,2.6156781313555704
+2040,THE DEPOSITORY TRUST AND CLEARING CORPORATION,the depository trust and clearing corporation,"Depository Trust & Clearing Corp, Private Company",17219093,depository trust & clearing corp,False,0.9259259259259259,0.75,0.936069235268072,2.611995161193998
+663,LIONEL SAWYER & COLLINS,lionel sawyer & collins,"Lionel Sawyer and Collins Ltd, Private Company",4297971829,lionel sawyer and collins ltd,False,0.9130434782608696,0.75,0.9434037451817161,2.6064472234425855
+825,"GALLAGHER & KENNEDY, P.A.","gallagher & kennedy, pa","Gallagher and Kennedy PA, Private Company",4297356503,gallagher and kennedy pa,False,0.9090909090909091,0.75,0.9393120089920679,2.598402918082977
+945,PIKE ELECTRIC INC,pike electric inc,"Pike'S Electric Inc, Private Company",5010474332,pike's electric inc,False,0.9285714285714286,0.6666666666666666,1.0000000000000002,2.595238095238096
+672,MAYNARD COOPER & GALE,maynard cooper & gale,"Cooper Gale Maynard, Private Company",5044552839,cooper gale maynard,False,0.5789473684210527,1.0,1.0,2.5789473684210527
+2490,"SES SPACE AND DEFENSE, INC.","ses space and defense, inc","SES Space & Defense Inc, Private Company",4296247634,ses space & defense inc,False,0.8947368421052632,0.75,0.9314965237464506,2.576233365851714
+1233,INTERNATIONAL SECURITIES EXCHANGE,international securities exchange,"International Securities Exchange Holdings Inc, Private Company, Delisted (acquired by Nasdaq Inc)",189307,international securities exchange holdings inc (acquired by nasdaq inc),False,0.88,0.75,0.9354189841836515,2.565418984183651
+173,CHICAGO BRIDGE & IRON COMPANY,chicago bridge & iron company,"Chicago Bridge & Iron Company NV, Private Company",111961,chicago bridge & iron company nv,False,0.926829268292683,0.75,0.8836100221456983,2.560439290438381
+2377,METROPOLITAN ANESTHESIA CONSULTANTS,metropolitan anesthesia consultants,"Metropolitan Anesthesia Consultants LLP, Private Company",5058808709,metropolitan anesthesia consultants llp,False,0.9459459459459459,0.75,0.8640645759659484,2.5600105219118943
+1452,Houston Harbaugh Legislative Services,houston harbaugh legislative services,"Houston Harbaugh Legislative, Private Company",4296095156,houston harbaugh legislative,False,0.8615384615384616,0.75,0.9456962168726506,2.5572346784111124
+1559,DEMOCRATIC SOCIALISTS OF AMERICA INC,democratic socialists of america inc,"Chicago Democratic Socialists of America Inc, Private Company",5092274037,chicago democratic socialists of america inc,False,0.8888888888888888,0.8,0.8606448240964595,2.5495337129853484
+259,Charter One Bank,charter one bank,"Charter One Bank NA, Private Company",4296846557,charter one bank na,False,0.9142857142857143,0.75,0.8784118823997844,2.5426975966854988
+1440,BLUE CROSS BLUE SHIELD OF SOUTH CAROLINA,blue cross blue shield of south carolina,"Blue Cross and Blue Shield of South Carolina Veba, Private Company",5053502086,blue cross and blue shield of south carolina veba,False,0.898876404494382,0.75,0.8881804490353451,2.537056853529727
+855,WASHINGTON STATE FARM BUREAU,washington state farm bureau,"Washington State Farm Bureau Federation, Private Company",5001414550,washington state farm bureau federation,False,0.835820895522388,0.8,0.8933240439759559,2.529144939498344
+254,HORIZON BANK NA,horizon bank na,"New Horizon Bank NA, Private Company",5000774530,new horizon bank na,False,0.8823529411764706,0.75,0.8812544939429268,2.5136074351193973
+639,DIGITALNET GOVERNMENT SOLUTIONS LLC,digitalnet government solutions llc,"Digitalnet Government Solutions L L C, Private Company",4296875214,digitalnet government solutions l l c,False,0.9117647058823529,0.6,1.0,2.511764705882353
+205,INTERNATIONAL UNION OF OPERATING ENGINEERS LOCAL 4,international union of operating engineers local 4,"International Union of Operating Engineers, Private Company",5059014830,international union of operating engineers,False,0.9130434782608696,0.7142857142857143,0.8723615787271335,2.4996907712737175
+1633,DEUTSCHE BANK AMERICAS CORP.,deutsche bank americas corp,"Deutsche Bank Americas Holding Corp, Private Company",4298464023,deutsche bank americas holding corp,False,0.8461538461538461,0.75,0.9019272383241201,2.4980810844779664
+98,ACTION COMMITTEE FOR RURAL ELECTRIFICATION,for rural electrification,"Alliance for Rural Electrification, Private Company",5085878899,alliance for rural electrification,False,0.847457627118644,0.75,0.892384107581047,2.489841734699691
+1986,RENRE NORTH AMERICA INC,renre north america inc,"RenRe North America Holdings Inc, Private Company",5000657183,renre north america holdings inc,False,0.8085106382978724,0.75,0.9266943748713674,2.4852050131692396
+992,PMI MORTGAGE INSURANCE COMPANY,pmi mortgage insurance company,"PMI Mortgage Insurance Company Canada, Private Company",5000142240,pmi mortgage insurance company canada,False,0.8627450980392157,0.75,0.8702765775987891,2.483021675638005
+1762,GARDEN STATE EQUALITY ACTION FUND INC,garden state equality  fund inc,"Garden State Equality Educational Fund Inc, Private Company",5077699634,garden state equality educational fund inc,False,0.8125,0.8,0.8552531447732368,2.467753144773237
+182,SCHERING - PLOUGH CORPORATION,schering - plough corporation,"Schering-Plough Corporation USA, Private Company",25272519,schering-plough corporation usa,False,0.8823529411764706,0.6666666666666666,0.9178047492321051,2.466824357075242
+952,"DAY & ZIMMERMANN, INC.","day & zimmermann, inc","Day and Zimmermann Inc, Private Company",18874837,day and zimmermann inc,False,0.875,0.6666666666666666,0.9243640627809295,2.466030729447596
+1305,SWALES AND ASSOCIATES INC,swales and associates inc,"Swales & Associates Inc, Private Company",4296591053,swales & associates inc,False,0.8947368421052632,0.6666666666666666,0.8993632750941674,2.460766783866097
+1649,LODERS CROKLAAN USA LLC,loders croklaan usa llc,"Bunge Loders Croklaan USA LLC, Private Company",4297086477,bunge loders croklaan usa llc,False,0.8636363636363636,0.75,0.846008577441774,2.459644941078138
+1750,ENGINEERING AND SOFTWARE SYSTEMS SOLUTIONS INC.,engineering and software systems solutions inc,"Engineering and Software System Solutions Inc, Private Company",5020549188,engineering and software system solutions inc,False,0.9879518072289156,0.6666666666666666,0.8030599329477355,2.4576784068433177
+1508,ONE COMMUNICATIONS CORP,one communications corp,"Us One Communications Corp, Private Company",4296339913,us one communications corp,False,0.9230769230769231,0.6666666666666666,0.8672469167946402,2.4569905065382303
+2204,"ELEKTA HOLDINGS, INC.","elekta holdings, inc","Elekta Holdings US Inc, Private Company",5036196911,elekta holdings us inc,False,0.9090909090909091,0.6666666666666666,0.8770428110704905,2.4528003868280663
+1358,"MAGELLAN MIDSTREAM HOLDINGS GP, LLC","magellan midstream holdings gp, llc","Magellan Midstream Holding GP LLC, Private Company",5000227166,magellan midstream holding gp llc,False,0.9830508474576272,0.6,0.8695764478301411,2.452627295287768
+764,ANESTHESIA MEDICAL GROUP,anesthesia medical group,"Anesthesia Medical Group PC, Private Company",5001243601,anesthesia medical group pc,False,0.9230769230769231,0.6666666666666666,0.8468776616014706,2.4366212513450605
+900,"ERDMAN, ANTHONY, ASSOCIATES, INC.","erdman, anthony, associates, inc","Anthony Erdman and Associates Inc, Private Company",5035155785,anthony erdman and associates inc,False,0.7407407407407407,0.75,0.9367782506570169,2.4275189913977577
+1606,APPLIED SIGNAL TECHNOLOGY INC,applied signal technology inc,"Raytheon Applied Signal Technology Inc, Private Company",76913,raytheon applied signal technology inc,False,0.847457627118644,0.75,0.8209088675972895,2.418366494715934
+2539,HOWARD ENERGY PARTNERS,howard energy partners,"Howard Midstream Energy Partners LLC, Private Company",23865809,howard midstream energy partners llc,False,0.8148148148148149,0.75,0.8470956885105143,2.411910503325329
+356,NASSAU FINANCIAL GROUP,nassau financial group,"Nassau Financial Group LP, Private Company",5071156123,nassau financial group lp,False,0.9142857142857143,0.6666666666666666,0.8308812982970333,2.411833679249414
+1678,"CRICKET COMMUNICATIONS, INC.","cricket communications, inc","CRICKET COMMUNICATIONS HOLDINGS INC, Private Company",5052135094,cricket communications holdings inc,False,0.8301886792452831,0.6666666666666666,0.9126114756041115,2.4094668215160615
+2344,WATER INTEGRATED TREATMENT SYSTEM,water integrated treatment system,"Water Integrated Treatment Systems LLC, Private Company",5068549730,water integrated treatment systems llc,False,0.9850746268656716,0.6,0.8188091587564434,2.403883785622115
+2253,"MID-ATLANTIC SOLUTIONS, INC.","mid-atlantic solutions, inc","Mid-Atlantic Cooperative Solutions Inc, Private Company",4298214496,mid-atlantic cooperative solutions inc,False,0.7857142857142857,0.75,0.8662793065615072,2.401993592275793
+1576,DIVERSICARE HEALTHCARE INC.,diversicare healthcare inc,"Diversicare Healthcare Services Inc, Private Company",5001250827,diversicare healthcare services inc,False,0.8301886792452831,0.6666666666666666,0.905001553757612,2.401856899669562
+1163,"BERKOWITZ, LEFKOVITS, ISOM & KUSHNER","berkowitz, lefkovits, isom & kushner","Berkowitz Lefkovits Isom & Kushner A Professional Corp, Private Company",5083687850,berkowitz lefkovits isom & kushner a professional corp,False,0.810126582278481,0.6666666666666666,0.9249924303207464,2.401785679265894
+688,RELYANCE BANK,relyance bank,"Relyance Bank NA, Private Company",26194959,relyance bank na,False,0.896551724137931,0.6666666666666666,0.8385591784824347,2.4017775692870322
+445,INTEGRA BANK POLITICAL ACTION COMMITTEE (IBNK-PAC),integra bank,"Integra Bank NA, Private Company",5414532,integra bank na,False,0.8888888888888888,0.6666666666666666,0.8385591784824347,2.39411473403799
+834,WEBSTER BANK,webster bank,"Webster Bank NA, Private Company",782684,webster bank na,False,0.8888888888888888,0.6666666666666666,0.8385591784824347,2.39411473403799
+1601,CARESOURCE MANAGEMENT SERVICES CO.,caresource management services co,"Caresource Management Group Co, Private Company",5050604101,caresource management group co,False,0.8235294117647058,0.6666666666666666,0.9033344549473048,2.3935305333786774
+440,AMERICAN BANKSHARES INC,american bankshares inc,"First American Bankshares Inc, Private Company",5000822890,first american bankshares inc,False,0.8636363636363636,0.6666666666666666,0.861203198848267,2.391506229151297
+417,BLUE CROSS BLUE SHIELD ASSOCIATION,blue cross blue shield association,"Bluepac - Blue Cross Blue Shield Association PAC, Private Company",5080174323,bluepac - blue cross blue shield association pac,False,0.85,0.6666666666666666,0.8698096275935214,2.386476294260188
+1320,UNIVERSAL MUSIC GROUP,universal music group,"Universal Music Group NV, Public Company",38084966,universal music group nv,True,0.9090909090909091,0.6666666666666666,0.8094360448579623,2.3851936206155377
+2126,PROLIANCE SURGEONS INC,proliance surgeons inc,"Proliance Surgeons Inc PS, Private Company",4295964887,proliance surgeons inc ps,False,0.9230769230769231,0.6666666666666666,0.794710901258886,2.384454491002476
+792,ANGLOGOLD NORTH AMERICA INC,anglogold north america inc,"Anglogold Ashanti North America Inc, Private Company",4298219038,anglogold ashanti north america inc,False,0.8518518518518519,0.75,0.7814153527448604,2.383267204596712
+1530,CAMPBELL SOUP COMPANY,campbell soup company,"Campbell Soup UK Co, Private Company",5086567271,campbell soup uk co,False,0.896551724137931,0.6666666666666666,0.8177004385038709,2.3809188293084684
+1624,C.V. Starr & Co. Inc.,cv starr & co inc,"CV Starr and Co Inc, Private Company",4297311064,cv starr and co inc,False,0.8,0.6666666666666666,0.9123632488839477,2.3790299155506145
+1856,C.V. STARR & CO. INC.,cv starr & co inc,"CV Starr and Co Inc, Private Company",4297311064,cv starr and co inc,False,0.8,0.6666666666666666,0.9123632488839477,2.3790299155506145
+1810,"IOWA RENEWABLE ENERGY, LLC","iowa renewable energy, llc","Southwest Iowa Renewable Energy LLC, Public Company",16546560,southwest iowa renewable energy llc,True,0.8076923076923077,0.75,0.8211654749953032,2.3788577826876107
+1008,PEGASUS COMMUNICATIONS CORPORATION,pegasus communications corporation,"Pegasus Media & Communications Inc, Private Company",94840,pegasus media & communications inc,False,0.88,0.6666666666666666,0.8312070322765398,2.3778736989432065
+1567,RUSSELL INVESTMENT GROUP,russell investment group,"Russell Investment Group Pty Ltd, Private Company",4298528905,russell investment group pty ltd,False,0.9,0.6666666666666666,0.8008250251221797,2.3674916917888464
+929,GUARD INSURANCE GROUP INC,guard insurance group inc,"Blue Guard Insurance Group Inc, Private Company",5071154578,blue guard insurance group inc,False,0.8571428571428572,0.6666666666666666,0.8373117799209291,2.361121303730453
+1842,CUBIST PHARMACEUTICALS INC.,cubist pharmaceuticals inc,"Cubist Pharmaceuticals Canada Inc, Private Company",5041978749,cubist pharmaceuticals canada inc,False,0.8627450980392157,0.6666666666666666,0.8314225913591127,2.360834356064995
+798,AMERICAN TRANS AIR INC,american trans air inc,"American Trans Air Execujet Inc, Private Company",5000347162,american trans air execujet inc,False,0.8,0.75,0.7929662749787425,2.3429662749787425
+2536,"NEEL-SCHAFFER, INC.","neel-schaffer, inc","WCG Neel-Schaffer Inc, Private Company",5045051121,wcg neel-schaffer inc,False,0.8666666666666667,0.6666666666666666,0.80343850497441,2.3367718383077434
+1437,Monster Worldwide Inc.,monster worldwide inc,"Monster Worldwide Canada Inc, Private Company",5000112333,monster worldwide canada inc,False,0.8292682926829268,0.6666666666666666,0.838001351020639,2.333936310370232
+827,"COLLECTIVE BRANDS, INC.","collective brands, inc","Collective Brands Inc SPV, Private Company",5037987716,collective brands inc spv,False,0.8947368421052632,0.6666666666666666,0.7701639251947267,2.3315674339666566
+1089,VERIZON WIRELESS,verizon wireless,"Verizon Wireless Capital LLC, Private Company",162967,verizon wireless capital llc,False,0.8,0.6666666666666666,0.8638102741974688,2.3304769408641355
+104,UNITED AIRLINES,united airlines,"United Airlines Holdings Inc, Public Company",37107,united airlines holdings inc,True,0.7692307692307692,0.6666666666666666,0.8930937439295907,2.3289911798270264
+2545,TOWER LOAN LLC,tower loan llc,"First Tower Loan LLC, Private Company",5051398175,first tower loan llc,False,0.7692307692307692,0.6666666666666666,0.8928254863527668,2.3287229222502024
+397,RIO GRANDE VALLEY SUGAR GROWER'S INC,rio grande valley sugar grower's inc,"Rio Grande Valley Sugar Growers Inc, Private Company",4296232421,rio grande valley sugar growers inc,False,0.9841269841269842,0.5714285714285714,0.7722048151789029,2.3277603707344587
+1189,TRANSCORE HOLDINGS INC,transcore holdings inc,"STE Transcore Holdings Inc, Private Company",39851943,ste transcore holdings inc,False,0.9,0.6666666666666666,0.7609261161348391,2.3275927828015055
+2005,BILL BARRETT CORPORATION,bill barrett corporation,"Bill Barrett Cbm Corp, Private Company",5000165719,bill barrett cbm corp,False,0.8571428571428572,0.6666666666666666,0.80343850497441,2.327248028783934
+2520,VOYAGER SPACE,voyager space,"Voyager Space Holdings Inc, Private Company",5071525173,voyager space holdings inc,False,0.7428571428571429,0.6666666666666666,0.9176833936267226,2.327207203150532
+2149,EVICORE HEALTHCARE,evicore healthcare,"eviCore healthcare MSI LLC, Private Company",4295903033,evicore healthcare msi llc,False,0.9,0.6666666666666666,0.7544650937954406,2.3211317604621073
+1298,DOMNICK HUNTER INC,domnick hunter inc,"Domnick Hunter Canada Inc, Private Company",5000280501,domnick hunter canada inc,False,0.8,0.6666666666666666,0.8541589149027877,2.3208255815694545
+1580,CSL BEHRING,csl behring,"CSL Behring GmbH, Private Company",4296729674,csl behring gmbh,False,0.8148148148148149,0.6666666666666666,0.8257636106765919,2.307245092158073
+427,"JONES INTERNATIONAL, LTD. POLITICAL ACTION COMMITTEE","jones international, ltd","Dow Jones International Ltd, Private Company",4298157086,dow jones international ltd,False,0.9047619047619048,0.6666666666666666,0.7263745383567742,2.2978031097853457
+128,YRC WORLDWIDE INC.,yrc worldwide inc,"YRC Worldwide ESOP Inc, Private Company",5050309542,yrc worldwide esop inc,False,0.8387096774193549,0.6666666666666666,0.7854690267838814,2.290845370869903
+1835,DOLAN MEDIA COMPANY,dolan media company,"Dolan Media Holding Co, Private Company",5035081579,dolan media holding co,False,0.7333333333333334,0.6666666666666666,0.8877586281560919,2.2877586281560918
+997,COBHAM HOLDINGS INC,cobham holdings inc,"Cobham River Holdings Inc, Private Company",5081398248,cobham river holdings inc,False,0.8333333333333334,0.6666666666666666,0.787108193868852,2.287108193868852
+1821,COBHAM HOLDINGS INC.,cobham holdings inc,"Cobham River Holdings Inc, Private Company",5081398248,cobham river holdings inc,False,0.8333333333333334,0.6666666666666666,0.787108193868852,2.287108193868852
+1037,FRONTIER COMMUNICATIONS,frontier communications,"Frontier Communications Parent Inc, Public Company",37988268,frontier communications parent inc,True,0.8679245283018868,0.6666666666666666,0.7499253204529545,2.284516515421508
+1315,SATELLITE SERVICES INC,satellite services inc,"Shaw Satellite Services Inc (Pre-Merger), Private Company, Delisted (acquired by Shaw Communications Inc)",45223,shaw satellite services inc (pre-merger) (acquired by shaw communications inc),False,0.8780487804878049,0.6666666666666666,0.7388922304819375,2.283607677636409
+38,LIBERTY MUTUAL INSURANCE CORPORATION,liberty mutual insurance corporation,"Liberty Mutual Group Inc, Private Company",2556695,liberty mutual group inc,False,0.736842105263158,0.6666666666666666,0.873051695082558,2.2765604670123825
+2172,O.C. TANNER COMPANY,oc tanner company,"OC Tanner Co GmbH, Private Company",5085116692,oc tanner co gmbh,False,0.782608695652174,0.6666666666666666,0.8257636106765919,2.2750389729954326
+2083,"HERFF JONES, INC.","herff jones, inc","Herff Jones Canada Inc, Private Company",4296027615,herff jones canada inc,False,0.7586206896551724,0.6666666666666666,0.8445393756647155,2.2698267319865546
+1408,STRATEGIC ENERGY LLC,strategic energy llc,"Solar Strategic Energy LLC, Private Company",5079200764,solar strategic energy llc,False,0.8421052631578947,0.6666666666666666,0.7563169605656479,2.265088890390209
+509,TCF FINANCIAL CORPORATION,tcf financial corporation,"Tcf Financial Corp Esop, Private Company",5035507234,tcf financial corp esop,False,0.8387096774193549,0.6666666666666666,0.7593171315050053,2.264693475591027
+1742,IMS HEALTH,ims health,"IMS Health Holdings Inc, Private Company, Delisted (merged with Quintiles Transnational Holdings Inc)",26280959,ims health holdings inc (merged with quintiles transnational holdings inc),False,0.6896551724137931,0.6666666666666666,0.9054058359722925,2.261727675052752
+2488,MOORE HOLDING COMPANY,moore holding company,"Stor Moore Holding Company Inc, Private Company",5069463500,stor moore holding company inc,False,0.8387096774193549,0.6666666666666666,0.7530411580215779,2.2584175021075996
+1038,BIOTECHNOLOGY INDUSTRY ORGANIZATION (BIO),biotechnology industry organization,"Biotechnology Industry, Private Company",4296754723,biotechnology industry,False,0.7719298245614035,0.6666666666666666,0.811823398062152,2.2504198892902223
+293,SOUTHERN COMPANY GAS,southern company gas,"Southern Company Gas Capital Corp, Private Company",143194,southern company gas capital corp,False,0.75,0.6666666666666666,0.8310848676645195,2.247751534331186
+1139,KERR DRUG INC,kerr drug inc,"Kerr Drug Stores Inc, Private Company",4296002492,kerr drug stores inc,False,0.72,0.6666666666666666,0.8572225614344613,2.243889228101128
+25,COORS BREWING COMPANY,coors brewing company,"Molson Coors Brewing Company (Uk) Ltd, Private Company",5000022301,molson coors brewing company (uk) ltd,False,0.7878787878787878,0.6666666666666666,0.7888487212058567,2.243394175751311
+18,AMERICAN GENERAL CORPORATION,american general corporation,"Aig American General Corp, Private Company",5074000607,aig american general corp,False,0.8888888888888888,0.6666666666666666,0.6823664089568576,2.237921964512413
+1797,COLLIER COUNTY MEDICAL SOCIETY,collier county medical society,"Collier County Medical Society Alliance Foundation Inc, Private Company",5069165603,collier county medical society alliance foundation inc,False,0.75,0.6666666666666666,0.8182421552897532,2.2349088219564197
+333,EMC INSURANCE COMPANIES,emc insurance companies,"Emc Insurance Co, Private Company",5064666299,emc insurance co,False,0.7222222222222222,0.6666666666666666,0.8416480932651419,2.230536982154031
+520,DILLINGHAM CONSTRUCTION HOLDINGS INC,dillingham construction holdings inc,"Dillingham Holdings Inc, Private Company",4297961376,dillingham holdings inc,False,0.7450980392156863,0.6666666666666666,0.8186621578003305,2.230426863682683
+28,"FREEPORT-MCMORAN COPPER & GOLD, INC.","freeport-mcmoran copper & gold, inc","Freeport-Hasa IncFreeport-Mcmoran Copper & Gold Inc, Private Company",5044246968,freeport-hasa incfreeport-mcmoran copper & gold inc,False,0.7671232876712328,0.6666666666666666,0.7938155861565248,2.227605540494424
+1018,HILL SOLUTIONS INC,hill solutions inc,"Steep Hill Solutions Inc, Private Company",5079100083,steep hill solutions inc,False,0.8235294117647058,0.6666666666666666,0.7330002232803892,2.223196301711762
+1917,ATLAS ENERGY INC,atlas energy inc,"Atlas Energy Solutions Inc, Public Company",43348683,atlas energy solutions inc,True,0.7058823529411764,0.6666666666666666,0.8496655847929064,2.2222146044007496
+1080,"MCNAMEE, LOCHNER, TITUS & WILLIAMS, PC","mcnamee, lochner, titus & williams, pc","MC Namee Lochner Titus & Williams PC, Private Company",5057971625,mc namee lochner titus & williams pc,False,0.9850746268656716,0.5714285714285714,0.6651789509972669,2.2216821492915098
+2563,"FBG ENTERPRISE OPCO, LLC.","fbg enterprise opco, llc","FBG Enterprises Opco LLC, Private Company",5083996024,fbg enterprises opco llc,False,0.9743589743589743,0.5,0.7402069295395265,2.214565903898501
+243,PIPEFITTERS LOCAL 636,pipefitters local 636,"Pipefitters Local 636 Insurance Fund, Private Company",5053507076,pipefitters local 636 insurance fund,False,0.736842105263158,0.6,0.8775234178383053,2.2143655231014634
+164,MUTUAL OF OMAHA COMPANIES,mutual of omaha companies,"Mutual of Omaha Companies Global Funding, Private Company",43026795,mutual of omaha companies global funding,False,0.7692307692307692,0.6666666666666666,0.7747059082002751,2.2106033440977106
+683,MORISSET SCHLOSSER JOZWIAK & SOMERVILLE,morisset schlosser jozwiak & somerville,"Morisset Schlosser Jozwiak & Somerville A Professional Service Corp, Private Company",5084009058,morisset schlosser jozwiak & somerville a professional service corp,False,0.7628865979381443,0.5714285714285714,0.8762770361157015,2.210592205482417
+2283,LIFECARE HOLDINGS LLC,lifecare holdings llc,"Belhoul Lifecare Holdings LLC, Private Company",5085597395,belhoul lifecare holdings llc,False,0.8095238095238095,0.6666666666666666,0.7340497894389422,2.2102402656294187
+1388,"PUBLIX SUPER MARKETS, INC.","publix super markets, inc","Publix Super Markets Inc 401(K) Plan, Private Company",5035488328,publix super markets inc 401(k) plan,False,0.8163265306122449,0.6,0.7779465291280356,2.1942730597402806
+889,THE SERVICEMASTER COMPANY,the servicemaster company,"Servicemaster LP, Private Company",5052123100,servicemaster lp,False,0.896551724137931,0.5,0.787938093943411,2.184489818081342
+743,EDUCATORS MUTUAL LIFE INSURANCE CO,educators mutual life insurance co,"Educators Mutual Insurance Association, Private Company",9211974,educators mutual insurance association,False,0.7536231884057971,0.6,0.8164545269903983,2.170077715396195
+2009,EVERPOWER WIND HOLDINGS INC,everpower wind holdings inc,"Everpower Wind Hldg Inc, Private Company",5000100030,everpower wind hldg inc,False,0.9047619047619048,0.5,0.7623597628278419,2.1671216675897464
+596,ENGLISH FIRST,english first,"English First Foundation, Private Company",5090855899,english first foundation,False,0.7027027027027026,0.6666666666666666,0.79622250169913,2.165591871068499
+645,WASHINGTON FEDERAL BANK,washington  bank,"Bank of Washington, Private Company",5000648971,bank of washington,False,0.6060606060606061,0.6666666666666666,0.8905220839010186,2.1632493566282913
+392,OPRYLAND USA INC,opryland usa inc,"Gaylord Opryland Usa Inc, Private Company",4298211802,gaylord opryland usa inc,False,0.75,0.6666666666666666,0.7424658855845024,2.159132552251169
+151,COOPER INDUSTRIES PLC,cooper industries plc,"Cooper Industries Unlimited Co, Private Company, Delisted (merged with Eaton Corporation PLC)",48354,cooper industries unlimited co (merged with eaton corporation plc),False,0.7727272727272727,0.6666666666666666,0.7170475364368133,2.1564414758307526
+2142,SENTRY INSURANCE A MUTUAL COMPANY,sentry insurance a mutual company,"Sentry Insurance Co, Private Company",4298366261,sentry insurance co,False,0.7804878048780488,0.5,0.861565070595466,2.1420528754735146
+2161,THE DOE RUN COMPANY,the doe run company,"Doe Run Resources Corp, Private Company",104002,doe run resources corp,False,0.5833333333333333,0.6666666666666666,0.8849132267987989,2.134913226798799
+763,"ATTORNEYS' TITLE GUARANTY FUND, INC.","attorneys' title guaranty fund, inc","Attorney's Title Guaranty Fund Inc, Private Company",4296461046,attorney's title guaranty fund inc,False,0.9830508474576272,0.5,0.6496088103105564,2.1326596577681833
+2318,YOUNGSTOWN WARREN REGIONAL CHAMBER,youngstown warren regional chamber,"Youngstown Warren Regional Chamber of Commerce Foundation, Private Company",5044843701,youngstown warren regional chamber of commerce foundation,False,0.7472527472527473,0.5714285714285714,0.8129312810113796,2.1316125996926982
+2402,CLARK STREET ASSOCIATES LLC,clark street associates llc,"General Clark Street Associates III LLC, Private Company",5079711891,general clark street associates iii llc,False,0.7931034482758621,0.6,0.7377488606732403,2.1308523089491027
+2412,TRUGREEN,trugreen,"TruGreen LP, Private Company",4298097407,trugreen lp,False,0.8421052631578947,0.5,0.787938093943411,2.1300433571013055
+1288,ROCK HOLDINGS INC.,rock holdings inc,"Crystal Rock Holdings Inc, Private Company",69598,crystal rock holdings inc,False,0.7647058823529411,0.6666666666666666,0.69021302196727,2.121585570986878
+111,"RRI ENERGY, INC.","rri energy, inc","Rri Energy Communications Inc, Private Company",4296786188,rri energy communications inc,False,0.5714285714285714,0.6666666666666666,0.87265804489246,2.110753282987698
+1120,AMERICAN ENERGY CORPORATION,american energy corporation,"Triton American Energy Corp, Public Company",3464857,triton american energy corp,True,0.8108108108108107,0.6666666666666666,0.6127529158437717,2.0902303933212494
+2243,GPA MIDSTREAM ASSN,gpa midstream assn,"GPA MIDSTREAM ASSOCIATION, Private Company",5055451904,gpa midstream association,False,0.8372093023255813,0.5,0.7384669386919642,2.0756762410175456
+2051,DIRECT ENERGY,direct energy,"Direct Energy Purchasing Ltd, Private Company",5037368227,direct energy purchasing ltd,False,0.7027027027027026,0.6666666666666666,0.7026070076787326,2.071976377048102
+455,CONE MILLS CORPORATION,cone mills corporation,"Reorganized Cone Mills Corp, Private Company",17807763,reorganized cone mills corp,False,0.625,0.6666666666666666,0.7778833435766648,2.069550010243331
+1119,ADVANCED ACOUSTIC CONCEPTS INC,advanced acoustic concepts inc,"Advanced Acoustical Concepts Inc, Private Company",4296818023,advanced acoustical concepts inc,False,0.962962962962963,0.5,0.6023876868921537,2.065350649855117
+915,H. J. HEINZ COMPANY,h j heinz company,"H J Heinz Company Australia Ltd, Private Company",4296811387,h j heinz company australia ltd,False,0.6428571428571428,0.75,0.6675197747262477,2.0603769175833904
+426,BLUE CROSS & BLUE SHIELD,blue cross & blue shield,"Blue Cross Blue Shield of North Dakota, Private Company",4296952501,blue cross blue shield of north dakota,False,0.7333333333333334,0.5,0.8269162692159194,2.060249602549253
+37,"TRUE OIL CO, TRUE DRILLING CO,...","true oil co, true drilling co,","True Oil Co LLC, Private Company",5040791480,true oil co llc,False,0.5333333333333333,0.6666666666666666,0.8599918004252438,2.0599918004252435
+962,"S.C. JOHNSON & SON, INC.","sc johnson & son, inc","JV-SC Johnson & Son Lioncorp Inc, Private Company",5044247973,jv-sc johnson & son lioncorp inc,False,0.7,0.6,0.7455014681159622,2.045501468115962
+1914,PHARMATHENE INC,pharmathene inc,"Pharmathene Canada Inc, Private Company",5039177857,pharmathene canada inc,False,0.7586206896551724,0.5,0.7708421842891269,2.0294628739442993
+2465,RAPISURE,rapisure,"Rapisure Pty Ltd, Private Company",5036232234,rapisure pty ltd,False,0.8,0.5,0.7192488540738061,2.019248854073806
+2272,ORANO,orano,"Orano SA, Private Company",29024132,orano sa,False,0.7692307692307692,0.5,0.7492694669149367,2.018500236145706
+933,KEYSTONE CORP,keystone corp,"First Keystone Corp, Public Company",71878,first keystone corp,True,0.7272727272727273,0.5,0.7905134617156985,2.017786188988426
+2475,WESTERN ALLIANCE BANCORPORATION,western alliance bancorporation,"Western Alliance Bancorp, Public Company",27803344,western alliance bancorp,True,0.8727272727272728,0.5,0.644032847927561,2.016760120654834
+1977,CABOT OIL & GAS CORPORATION,cabot oil & gas corporation,"Cabot Oil & Gas Pension Plan Corp, Private Company",5035175541,cabot oil & gas pension plan corp,False,0.6666666666666667,0.6,0.7442428868650803,2.010909553531747
+1653,GROUP W INC,group w inc,"Group W Inc, Private Company",5001303304,group w inc,False,1.0,1.0,0.0,2.0
+1487,PARAMETRIC TECHNOLOGY CORPORATION,parametric technology corporation,"Parametric Technology Corp (Malaysia) Sdn Bhd, Private Company",5000184990,parametric technology corp (malaysia) sdn bhd,False,0.84,0.5,0.6562449836738766,1.9962449836738765
+823,ROE ENTERPRISES INC,roe enterprises inc,"Burns and Roe Enterprises Inc, Private Company",4297315673,burns and roe enterprises inc,False,0.75,0.5,0.7428418915666962,1.9928418915666963
+695,POLARIS INDUSTRIES INC,polaris industries inc,"Polaris Industries Partners LP, Private Company",4295904746,polaris industries partners lp,False,0.75,0.5,0.7420282708770896,1.9920282708770896
+503,SECURITY BENEFIT CORPORATION,security benefit corporation,"Security Benefit Life Insurance Co, Private Company",117418,security benefit life insurance co,False,0.6808510638297872,0.5,0.810886727392258,1.9917377912220453
+1890,NEWPAGE CORPORATION,newpage corporation,"NewPage Holdings Inc, Private Company",25325006,newpage holdings inc,False,0.6086956521739131,0.5,0.8827610931056373,1.9914567452795504
+523,LEHIGH CEMENT COMPANY,lehigh cement company,"Texas Lehigh Cement Co LP, Private Company",4296299338,texas lehigh cement co lp,False,0.7428571428571429,0.5,0.7422423621238026,1.9850995049809455
+876,MIDSTREAM FUEL SERVICE LLC,midstream fuel service llc,"Midstream Fuel Services L L C, Private Company",4296876138,midstream fuel services l l c,False,0.8627450980392157,0.3333333333333333,0.7842880632359989,1.980366494608548
+592,ENERGYSOUTH,energysouth,"Spire Energysouth Inc, Private Company, Delisted (merged with Spire Inc)",27000,spire energysouth inc (merged with spire inc),False,0.7857142857142857,0.5,0.690343579576995,1.9760578652912806
+217,"SECURIAN, INC","securian, inc","Securian Financial Group Inc, Private Company",4945271,securian financial group inc,False,0.6153846153846154,0.5,0.8569815199475638,1.9723661353321793
+3,NATIONAL EDUCATION ASSOCIATION,national education association,"National Education Association of United States, Private Company",4298214772,national education association of united states,False,0.7792207792207793,0.5,0.6865330773672876,1.965753856588067
+1188,BUTZEL LONG,butzel long,"Butzel Long A Professional Corp, Private Company",4296996558,butzel long a professional corp,False,0.5945945945945945,0.5,0.8642033123391264,1.958797906933721
+1590,"FOREX CAPITAL MARKETS, LLC","forex capital markets, llc","Z Forex Capital Market LLC, Private Company",5085409439,z forex capital market llc,False,0.9302325581395349,0.4,0.6254608153575072,1.955693373497042
+2433,PARKHILL,parkhill,"Parkhill 2000 Ltd, Private Company",4298338901,parkhill 2000 ltd,False,0.7619047619047619,0.5,0.690343579576995,1.9522483414817569
+1274,RESPIRONICS INC,respironics inc,"Respironics California LLC, Private Company",5000191331,respironics california llc,False,0.6666666666666667,0.5,0.7829103085184712,1.949576975185138
+1578,IBERDROLA RENEWABLES,iberdrola renewables,"Iberdrola Renewables Romania SRL, Private Company",5035775358,iberdrola renewables romania srl,False,0.7692307692307692,0.5,0.6720686040474225,1.9412993732781918
+1300,RHODIA INC,rhodia inc,"Rhodia Holding Inc, Private Company",4298215994,rhodia holding inc,False,0.6,0.5,0.8337337535107584,1.9337337535107584
+1888,AVERY DENNISON CORPORATION EMPLOYEE POLITICAL ACTION COMMITTEE (ADEPAC),avery dennison corporation employee,"Avery Dennison Corp Employee Stock Benefit Trust, Private Company",5035496776,avery dennison corp employee stock benefit trust,False,0.696969696969697,0.5,0.7346175155853336,1.9315872125550306
+733,BI-LO INC,bi-lo inc,"Nel'S Bi-Lo Inc, Private Company",5083978905,nel's bi-lo inc,False,0.625,0.5,0.80343850497441,1.9284385049744102
+2311,THE J.M. SMUCKER COMPANY,the jm smucker company,"J M Smucker Co, Public Company",36464,j m smucker co,True,0.9523809523809523,0.25,0.7192488540738061,1.9216298064547583
+1944,"MCAFEE, INC.","mcafee, inc","Pat McAfee Inc, Private Company",5076091993,pat mcafee inc,False,0.75,0.5,0.6675197747262477,1.9175197747262476
+1097,SUNRISE MEDICAL INC,sunrise medical inc,"Sunrise Medical Hldg BV, Private Company",17833105,sunrise medical hldg bv,False,0.7894736842105263,0.5,0.625323944595711,1.9147976288062374
+367,SANTA ANITA OPERATING COMPANY,santa anita operating company,"Santa Anita Cos Inc, Private Company",4296859493,santa anita cos inc,False,0.7222222222222222,0.5,0.6894473391706688,1.9116695613928911
+288,NALCO COMPANY,nalco company,"Nalco Company OOO, Private Company",5037942001,nalco company ooo,False,0.7142857142857143,0.5,0.690343579576995,1.9046292938627094
+849,AIRTRAN AIRWAYS,airtran airways,"Airtran Airways 717 Leasing Corp, Private Company",5034919949,airtran airways 717 leasing corp,False,0.7142857142857143,0.5,0.6880777569576427,1.902363471243357
+112,J. G. BOSWELL COMPANY,j g boswell company,"JG Boswell Co, Public Company",68929,jg boswell co,True,0.9523809523809523,0.25,0.690343579576995,1.8927245319579473
+496,GENERAL ATOMICS,general atomics,"General Atomics Europe GmbH, Private Company",4295947054,general atomics europe gmbh,False,0.7142857142857143,0.5,0.6741809829075536,1.888466697193268
+22,PUBLIC SERVICE CO OF NM,public service co of nm,"Public Service Company of New Mexico, Public Company",1701691,public service company of new mexico,True,0.8333333333333334,0.5,0.5549542518730722,1.8882875852064056
+1533,VIDIENT SYSTEMS,vidient systems,"Vidient Sytems Inc, Private Company",4297225551,vidient sytems inc,False,0.9655172413793104,0.3333333333333333,0.587419720809107,1.8862702955217507
+1386,TORCH TECHNOLOGIES INC,torch technologies inc,"Torch Technology Inc, Private Company",5059930458,torch technology inc,False,0.8823529411764706,0.3333333333333333,0.6679593067285168,1.8836455812383206
+670,STE. MICHELLE WINE ESTATES LTD.,ste michelle wine estates ltd,"STE Michelle Wine Estates Retirement Income Plan Trust Ltd, Private Company",5085220485,ste michelle wine estates retirement income plan trust ltd,False,0.6329113924050633,0.5,0.749246424023078,1.8821578164281414
+1816,"FREEDOM FEDERAL, INC.","freedom , inc","Project Freedom Inc, Private Company",4296804480,project freedom inc,False,0.6363636363636364,0.5,0.7434087884709305,1.8797724248345666
+1175,GAMBRO HEALTHCARE INC,gambro healthcare inc,"Gambro Healthcare Laboratory Services Inc, Private Company",5060611205,gambro healthcare laboratory services inc,False,0.6296296296296297,0.5,0.7498031569922872,1.879432786621917
+1107,PENNSYLVANIA BUSINESS BANK,pennsylvania business bank,"Pennsylvania Business BankPhiladelphiaPennsylvania, Private Company",5044266203,pennsylvania business bankphiladelphiapennsylvania,False,0.6842105263157895,0.5,0.689201340325881,1.8734118666416704
+1093,ROCK-TENN COMPANY,rock-tenn company,"Rock-Tenn of California Co, Private Company",5083075926,rock-tenn of california co,False,0.5625,0.5,0.8084952149362603,1.8709952149362603
+1743,"CBEYOND, INC.","cbeyond, inc","Cbeyond Leasing Inc, Private Company",5000284519,cbeyond leasing inc,False,0.6363636363636364,0.5,0.72880069047333,1.8651643268369662
+1677,OXLEY GROUP LLC,oxley group llc,"Oxley Insurance Group LLC, Private Company",5063605415,oxley insurance group llc,False,0.5,0.5,0.8604434817225912,1.8604434817225912
+1434,BANK OF CUSHING,bank of cushing,"Bank Of Cushing & Trust CoCushingOklahoma, Private Company",5064692991,bank of cushing & trust cocushingoklahoma,False,0.5555555555555556,0.6,0.7048431977673422,1.8603987533228976
+2062,WALTER ENERGY INC FEDERAL POLITICAL ACTION COMMITTEE,walter energy inc,"Walter Energy Canada Holding Inc, Private Company",5037447764,walter energy canada holding inc,False,0.6341463414634146,0.5,0.7255956721314107,1.8597420135948255
+954,MIM HEALTH PLANS INC,mim health plans inc,"Mim Health Plans Of Puerto RiCo Inc, Private Company",5000312319,mim health plans of puerto rico inc,False,0.6808510638297872,0.5,0.6786013752672356,1.8594524390970228
+202,HARDAWAY COMPANY,hardaway company,"Hardaway Concrete Co Inc, Private Company",4297308920,hardaway concrete co inc,False,0.64,0.5,0.7192488540738061,1.8592488540738064
+1757,MCALISTER'S CORPORATION,mcalister's corporation,"Mcalister Drug Corp, Private Company",5046057665,mcalister drug corp,False,0.8,0.3333333333333333,0.7192488540738061,1.8525821874071395
+215,NSTAR,nstar,"NSTAR Electric Co, Public Company",43928,nstar electric co,True,0.5263157894736843,0.5,0.8206405141527984,1.8469563036264827
+598,LAFARGE CORPORATION,lafarge corporation,"Lafarge Africa PLC, Public Company",73359,lafarge africa plc,True,0.6666666666666667,0.5,0.6777325124601382,1.844399179126805
+2343,ALLERGY ASSOCIATES P.A.,allergy associates pa,"Eastern Shore Ent & Allergy Associates PA, Private Company",5055794039,eastern shore ent & allergy associates pa,False,0.7,0.5,0.6370638114416483,1.8370638114416482
+226,BEECHCRAFT INC. POLITICAL ACTION COMMITTEE (BEECHCRAFT PAC),beechcraft inc,"Executive Beechcraft Inc, Private Company",4297466663,executive beechcraft inc,False,0.6666666666666667,0.5,0.6675197747262477,1.8341864413929145
+521,AT&T WIRELESS SERVICES INC,at&t wireless services inc,"JV-at&T Wireless Services IncBellsouth Cellular Corp, Private Company",5044204943,jv-at&t wireless services incbellsouth cellular corp,False,0.6376811594202898,0.5714285714285714,0.6226541382837292,1.8317638691325904
+260,QUIXOTE CORPORATION,quixote corporation,"Quixote Traffic Corp, Private Company",5000113106,quixote traffic corp,False,0.6363636363636364,0.5,0.690343579576995,1.8267072159406312
+103,ONTARIO CORPORATION,ontario corporation,"2364201 Ontario Corp, Private Company",5055412943,2364201 ontario corp,False,0.6363636363636364,0.5,0.690343579576995,1.8267072159406312
+1779,GUARANTY BANK & TRUST  POLITICAL ACTION COMMITTEE,guaranty bank & trust,"Guaranty Bank & Trust Co Of Delhi LouisiaNA, Private Company",16897157,guaranty bank & trust co of delhi louisiana,False,0.6666666666666667,0.5,0.6456712970019292,1.812337963668596
+85,STANLEY WORKS,stanley works,"Stanley Works Capital Trust I, Private Company",4575661,stanley works capital trust i,False,0.6190476190476191,0.4,0.7871554145507613,1.8062030335983803
+478,HOLCIM US,holcim us,"Holcim US Finance (Luxembourg) SA, Private Company",12010984,holcim us finance (luxembourg) sa,False,0.6206896551724138,0.5,0.68191014930072,1.8025998044731337
+846,NATIONAL ASSOCIATION OF DENTAL PLANS,national association of dental plans,"of Dental Plans NA Inc, Private Company",5002814667,of dental plans na inc,False,0.5555555555555556,0.5,0.7467121992824354,1.8022677548379908
+1707,SHIELD TECHNOLOGIES CORP,shield technologies corp,"Shield Technology Corp, Private Company",5035860771,shield technology corp,False,0.8888888888888888,0.3333333333333333,0.5724762527217213,1.7946984749439434
+852,SENIOR CARE INC,senior care inc,"High Plains Senior Care Inc, Private Company",5071572122,high plains senior care inc,False,0.6470588235294117,0.5,0.6388533254701321,1.7859121489995438
+976,L-3 Communications Corporation,l-3 communications corporation,"L-3 Communications Master Trust Corp, Private Company",5057684617,l-3 communications master trust corp,False,0.7346938775510203,0.6,0.4492329591572076,1.7839268367082282
+165,BECHTEL,bechtel,"Bechtel Investments Inc, Private Company",4296548235,bechtel investments inc,False,0.5384615384615384,0.5,0.7434087884709305,1.7818703269324687
+687,LEAGUE OF CONSERVATION VOTERS ACTION FUND,league of conservation voters  fund,"New Jersey League of Conservation Voters Education Fund A NJ Nonprofit Corp, Private Company",5081465252,new jersey league of conservation voters education fund a nj nonprofit corp,False,0.6538461538461539,0.45454545454545453,0.6730382603566082,1.7814298687482166
+1694,"ERICKSON RETIREMENT COMMUNITIES, LLC","erickson retirement communities, llc","SENIOR LIVING RETIREMENT COMMUNITIES, LLC, Private Company",4297072034,"senior living retirement communities, llc",False,0.8059701492537313,0.4,0.5618886765716286,1.76785882582536
+1880,FGS GLOBAL (US) LLC,fgs global  llc,"Fgs LLC, Private Company",4297673640,fgs llc,False,0.46153846153846156,0.5,0.8055454045683044,1.7670838661067658
+814,FIRST SAVINGS BANK SLA,first savings bank sla,"First Savings Bank Sla Employee Stock Ownership Plan, Private Company",5000378286,first savings bank sla employee stock ownership plan,False,0.5945945945945945,0.5,0.6695149414425272,1.7641095360371217
+2323,MCAFEE ACQUISITIONS CORP.,mcafee acquisitions corp,"Mcafee Acquisition Corp, Private Company",5083763910,mcafee acquisition corp,False,0.972972972972973,0.3333333333333333,0.4570680762919794,1.7633743825982857
+2303,"SWITCH, INC.","switch, inc","Hermetic Switch Inc, Private Company",5001308657,hermetic switch inc,False,0.5714285714285714,0.5,0.690343579576995,1.7617721510055664
+213,BAXTER HEALTHCARE CORPORATION,baxter healthcare corporation,"Baxter Healthcare Corp Transfusion Therapies, Private Company",4298128628,baxter healthcare corp transfusion therapies,False,0.6071428571428572,0.5,0.6455351898885688,1.752678047031426
+851,FIRST COMMAND FINANCIAL PLANNING INC.,first command financial planning inc,"First Command Financial Planning Inc Employee Stock Ownership Plan Trust, Private Company",5048817991,first command financial planning inc employee stock ownership plan trust,False,0.64,0.4444444444444444,0.6581641049542222,1.7426085493986665
+1473,PACIFIC CONSOLIDATED INDUSTRIES,pacific consolidated industries,"Pacific Consolidated Industries Pci Gases India Pvt Ltd, Private Company",5082516811,pacific consolidated industries pci gases india pvt ltd,False,0.7560975609756098,0.42857142857142855,0.5516395678719701,1.7363085574190085
+452,CGU CORPORATION,cgu corporation,"CGU Insurance Ltd (Auckland Branch), Private Company",21225456,cgu insurance ltd (auckland branch),False,0.375,0.5,0.8604434817225912,1.7354434817225912
+387,STEPHAN COMPANY,stephan company,"STEPHAN & COMPANY ACCESSORIES, LTD., Private Company",5006201942,"stephan & company accessories, ltd.",False,0.5384615384615384,0.5,0.690343579576995,1.7288051180385333
+1357,WORTHINGTON INDUSTRIES,worthington industries,"Worthington Industries International RL SA, Private Company",5035459805,worthington industries international rl sa,False,0.6875,0.4,0.6399304465922047,1.7274304465922046
+554,ASTORIA FEDERAL SAVINGS,astoria  savings,"Astoria Bank, Private Company",18678265,astoria bank,False,0.7407407407407407,0.3333333333333333,0.649944618896258,1.7240186929703318
+2432,SHIELD AI,shield ai,"SHIELD AI Technologies Pte Ltd, Private Company",5064614995,shield ai technologies pte ltd,False,0.5142857142857142,0.5,0.7088096494205149,1.7230953637062292
+536,BANK OF MOBILE POLITICAL ACTION COMMITTEE,bank of mobile,"FIRST NATIONAL BANK OF MOBILE ALABAMA, Private Company",4296469380,first national bank of mobile alabama,False,0.5490196078431373,0.5,0.6732460784050354,1.7222656862481727
+140,MUTUAL OF OMAHA,mutual of omaha,"Mutual of Omaha Companies Global Funding, Private Company",43026795,mutual of omaha companies global funding,False,0.5454545454545454,0.5,0.6764414192557402,1.7218959647102856
+1783,CRGT INC,crgt inc,"Salient CRGT Inc, Private Company",5001195316,salient crgt inc,False,0.5,0.5,0.7192488540738061,1.7192488540738062
+546,OKLAHOMA FARMERS UNION,oklahoma farmers union,"Oklahoma State Union of Farmers Education & Cooperative Union of Oklahoma, Private Company",5028611116,oklahoma state union of farmers education & cooperative union of oklahoma,False,0.4731182795698925,0.42857142857142855,0.8010679355089358,1.702757643650257
+1179,EQUITY BANK CORPORATION,equity bank corporation,"Equity Group Holdings Ltd, Public Company",6604188,equity group holdings ltd,True,0.6153846153846154,0.3333333333333333,0.7530869993042306,1.7018049480221793
+1961,HOLZER CLINIC INC,holzer clinic inc,"Holzer Clinic of West Virginia, Inc., Private Company",5055817267,"holzer clinic of west virginia, inc.",False,0.6046511627906976,0.4,0.6883629638018802,1.693014126592578
+2045,CREE INC,cree inc,"Dernier Cree Inc, Private Company",5038484202,dernier cree inc,False,0.5,0.5,0.690343579576995,1.690343579576995
+200,PILGRIM'S PRIDE CORPORATION,pilgrim's pride corporation,"Pilgrims Pride Corp, Public Company",31479,pilgrims pride corp,True,0.9655172413793104,0.25,0.4708563815833452,1.6863736229626558
+811,Planned Parenthood Action Fund Inc.,planned parenthood  fund inc,"Planned Parenthood of Rochester/Syracuse Region Action Fund Inc, Private Company",5039187304,planned parenthood of rochester/syracuse region action fund inc,False,0.6133333333333333,0.42857142857142855,0.6414851334762341,1.683389895380996
+1226,ABBOTT,abbott,"Abbott Laboratories, Public Company",36877,abbott laboratories,True,0.48,0.5,0.694752535737378,1.674752535737378
+2116,"DINEEQUITY, INC.","dineequity, inc","DINEEQUITY INC-APPLEBEE'S, Private Company",5001228068,dineequity inc-applebee's,False,0.6451612903225806,0.3333333333333333,0.690343579576995,1.668838203232909
+567,TRANSAMERICA,transamerica,"Transamerica Capital II, Private Company",3899372,transamerica capital ii,False,0.6857142857142857,0.3333333333333333,0.649512090973774,1.668559710021393
+458,U.A. Political Education Committee,ua  education,"Cooperatieve Vanta Education UA, Private Company",5001200699,cooperatieve vanta education ua,False,0.5116279069767442,0.5,0.6463173069499839,1.6579452139267281
+1111,WOODWARD GOVERNOR COMPANY,woodward governor company,"Woodward Governor Co Profit Sharing Trust, Private Company",5035494697,woodward governor co profit sharing trust,False,0.6181818181818182,0.4,0.639167182375926,1.657349000557744
+16,MISSOURI FARM BUREAU,missouri farm bureau,"Missouri Farm Bureau Federation and Affiliated Companies, Private Company",5000416031,missouri farm bureau federation and affiliated companies,False,0.5263157894736843,0.42857142857142855,0.6934486816527111,1.6483358996978241
+617,RBC BANCORPORATION (USA),rbc bancorporation,"RBC Bancorp (USA), Private Company",46166,rbc bancorp (usa),False,0.7586206896551724,0.3333333333333333,0.5533254715222319,1.6452794945107376
+1648,PIEDMONT HEALTHCARE PA,piedmont healthcare pa,"Piedmont Triad Anesthesia Pa, Private Company",5001933357,piedmont triad anesthesia pa,False,0.64,0.4,0.6049103098111637,1.6449103098111637
+185,TOTAL PETROCHEMICALS USA INC.,total petrochemicals usa inc,"Totalenergies Petrochemicals & Refining Usa Inc, Private Company",4298217646,totalenergies petrochemicals & refining usa inc,False,0.7384615384615385,0.4,0.5032119637500841,1.6416735022116224
+1692,SUNRISE MEDICAL (US) LLC,sunrise medical  llc,"Sunrise Hospital and Medical Center LLC, Private Company",4295018812,sunrise hospital and medical center llc,False,0.6,0.4,0.6394726764362297,1.6394726764362297
+318,SPARKS NUGGET INC,sparks nugget inc,"Sparks Nugget Employee Benefit PL Inc, Private Company",5053502221,sparks nugget employee benefit pl inc,False,0.5652173913043479,0.4,0.6677411556492622,1.63295854695361
+737,ROQUETTE AMERICA INC,roquette america inc,"Roquette UK Ltd, Private Company",4296751104,roquette uk ltd,False,0.6666666666666667,0.3333333333333333,0.6282163910097028,1.628216391009703
+1520,ST MARY'S CEMENT INC,st mary's cement inc,"St Marys Cement Inc Canada, Private Company",22722513,st marys cement inc canada,False,0.7894736842105263,0.3333333333333333,0.5029825604301609,1.6257895779740204
+1190,K12 INC,k12 inc,"Glimpse K12 Inc, Private Company",5054217202,glimpse k12 inc,False,0.4285714285714286,0.5,0.690343579576995,1.6189150081484236
+236,"BOC GROUP, INC","boc group, inc","Boc Edwards, Private Company",4297732225,boc edwards,False,0.4285714285714286,0.5,0.690343579576995,1.6189150081484236
+1965,HEALTH PARTNERS OF PHILADELPHIA INC,health partners of philadelphia inc,"Health Partners Plans Inc, Private Company",4295948640,health partners plans inc,False,0.7307692307692308,0.4,0.46599329717303417,1.596762527942265
+508,MSE INC,mse inc,"Smithers Mse Inc, Private Company",4297854362,smithers mse inc,False,0.4,0.5,0.690343579576995,1.5903435795769951
+2035,THEMISTOCLES LLC,themistocles llc,"Themistocles Capital Management LLC, Private Company",5074210789,themistocles capital management llc,False,0.5581395348837209,0.3333333333333333,0.6984028788242592,1.5898757470413134
+1993,COUNTRY VILLA HEALTH SERVICES,country villa health services,"Country Villa Belmont Height Health Care Center Inc, Private Company",5044724973,country villa belmont height health care center inc,False,0.631578947368421,0.375,0.5728664004887878,1.5794453478572088
+2342,BOLD OCEAN LLC,bold ocean llc,"Bold Holdco LLC, Private Company",5089995102,bold holdco llc,False,0.6666666666666667,0.3333333333333333,0.572742912756769,1.5727429127567691
+671,CAPITAL BLUECROSS,capital bluecross,"Capital Blue Cross, Private Company",4296810722,capital blue cross,False,0.9714285714285714,0.25,0.3422890178757749,1.5637175893043465
+467,SCHENCK,schenck,"Carl Schenck AG, Private Company, Delisted (acquired by Duerr Gmbh)",14736,carl schenck ag (acquired by duerr gmbh),False,0.6363636363636364,0.3333333333333333,0.5918196416969316,1.5615166113939014
+30,NOVARTIS CORPORATION,novartis corporation,"Novartis Corporation (Malaysia) Sdn Bhd, Private Company",5000807928,novartis corporation (malaysia) sdn bhd,False,0.6666666666666667,0.3333333333333333,0.5533600739976535,1.5533600739976534
+1852,XLHEALTH CORPORATION,xlhealth corporation,"XLhealth Corporation India Pvt Ltd, Private Company",5038063967,xlhealth corporation india pvt ltd,False,0.6153846153846154,0.3333333333333333,0.6002292352028652,1.5489471839208138
+2351,CONTIEM,contiem,"Contiem Holdings UK Ltd, Private Company",5019502481,contiem holdings uk ltd,False,0.5384615384615384,0.3333333333333333,0.6717159700518176,1.5435108418466894
+2248,CATCHYSMILE,catchysmile,"Catchysmile Capital Investment Ltd, Private Company",5078904658,catchysmile capital investment ltd,False,0.5365853658536586,0.3333333333333333,0.6599224974959699,1.5298411966829617
+1158,CAITHNESS CORPORATION,caithness corporation,"Caithness Long Island LLC, Private Company",12855785,caithness long island llc,False,0.6,0.3333333333333333,0.5839030487665062,1.5172363820998396
+171,Enron Corp,enron corp,"Enron North America Corp, Private Company",4296779362,enron north america corp,False,0.41666666666666663,0.3333333333333333,0.7619881801245308,1.511988180124531
+589,KINDRED HEALTHCARE INC.,kindred healthcare inc,"Kindred at Home Inc, Private Company",5064009089,kindred at home inc,False,0.7272727272727273,0.25,0.5197007447189088,1.496973471991636
+1504,GIBBONS P.C.,gibbons pc,"Ryan Brown Berger & Gibbons PC, Private Company",5006914585,ryan brown berger & gibbons pc,False,0.5263157894736843,0.4,0.5693574204150236,1.4956732098887078
+279,COMPASS BANK,compass bank,"Wolf Benevolent Trust Compass Bank Co, Private Company",5083904404,wolf benevolent trust compass bank co,False,0.5217391304347826,0.4,0.5725072507188246,1.4942463811536073
+1206,"CEPHALON, INC.","cephalon, inc","Cephalon France SAS, Private Company",5000112921,cephalon france sas,False,0.5925925925925926,0.3333333333333333,0.568116815133787,1.4940427410597128
+295,ECOLOGY & ENVIRONMENT INC,ecology & environment inc,"Great Ecology & Environments Inc, Private Company",5044848995,great ecology & environments inc,False,0.8444444444444444,0.25,0.3974682591558006,1.491912703600245
+719,KLEIN BANK,klein bank,"Klein Bank Harris County Texas, Private Company",4296114427,klein bank harris county texas,False,0.5,0.4,0.5888080697588918,1.4888080697588917
+821,CSR AMERICA INC,csr america inc,"CSR New Material Technologies America Corp Inc, Private Company",5043951940,csr new material technologies america corp inc,False,0.45833333333333337,0.4,0.6296486984423206,1.487982031775654
+2189,VIRTUAL EDUCATION INC,virtual education inc,"North Carolina for Quality Virtual Education Inc, Private Company",5083563767,north carolina for quality virtual education inc,False,0.5573770491803278,0.3333333333333333,0.5964238755363425,1.4871342580500035
+1403,VGM MANAGEMENT LTD,vgm management ltd,"VGM Group Services Ltd, Private Company",5087040357,vgm group services ltd,False,0.46153846153846156,0.3333333333333333,0.6869990710066449,1.4818708658784399
+2176,TIMKENSTEEL CORPORATION,timkensteel corporation,"Datong Timkensteel Shanghai Corp Ltd, Private Company",5084614445,datong timkensteel shanghai corp ltd,False,0.5789473684210527,0.3333333333333333,0.5593126542675222,1.471593356021908
+96,NATIONWIDE,nationwide,"Nationwide Building Society, Public Company",39689,nationwide building society,True,0.5405405405405406,0.3333333333333333,0.5943629179652051,1.4682367918390788
+21,SUNOCO INC.,sunoco inc,"ETC Sunoco Holdings LLC, Private Company, Delisted (merged with Energy Transfer LP)",37091,etc sunoco holdings llc (merged with energy transfer lp),False,0.48,0.3333333333333333,0.6479905945190836,1.4613239278524168
+1316,HERZOG,herzog,"Herzog International Holdings Inc, Private Company",90839,herzog international holdings inc,False,0.34285714285714286,0.3333333333333333,0.7840505057315142,1.4602409819219906
+136,EL PASO CORPORATION,el paso corporation,"El Paso Employees Benefit Trust Corp, Private Company",5038033528,el paso employees benefit trust corp,False,0.368421052631579,0.4,0.6846306513833297,1.4530517040149087
+239,J A JONES INC,j a jones inc,"Richard A Jones Electric Inc, Private Company",5002440165,richard a jones electric inc,False,0.48484848484848486,0.4,0.55334483190697,1.4381933167554548
+1493,PERFORMANT FINANCIAL CORPORATION,performant financial corporation,"Performant Business Services Inc, Private Company",15428777,performant business services inc,False,0.5833333333333333,0.25,0.603065131704618,1.4363984650379513
+870,GATEWAY,gateway,"GMO Payment Gateway Inc, Public Company",4231303,gmo payment gateway inc,True,0.5384615384615384,0.3333333333333333,0.5593126542675222,1.431107526062394
+284,MISSISSIPPI CHEMICAL CORPORATION,mississippi chemical corporation,"Mississippi Limestone Corp, Private Company",5032559592,mississippi limestone corp,False,0.6341463414634146,0.3333333333333333,0.46056230145448035,1.4280419762512284
+772,COMMERCE BANK NATIONAL ASSOCIATION,commerce bank national association,"American Commerce Bank NA, Private Company",15696830,american commerce bank na,False,0.5423728813559322,0.3333333333333333,0.5513348752645285,1.4270410899537942
+1689,DUPAGE MEDICAL GROUP LTD,dupage medical group ltd,"Du Page Medical Group Ltd, Private Company",4296853393,du page medical group ltd,False,0.9655172413793104,0.25,0.2113671721565974,1.426884413535908
+24,Koch Industries Inc Political Action C,koch industries inc   c,"Koch Pipelines Canada LTDKoch Industries Inc, Private Company",5044201808,koch pipelines canada ltdkoch industries inc,False,0.5263157894736843,0.3333333333333333,0.5591473436384635,1.418796466445481
+77,KANEB SERVICES INC,kaneb services inc,"KANEB SERVICES INC EMPLOYEES ST PURCH PL, Private Company",4296318342,kaneb services inc employees st purch pl,False,0.56,0.3333333333333333,0.5254081880014203,1.4187415213347536
+1007,ARVINMERITOR INC,arvinmeritor inc,"ARVINMERITOR INC-BODY SYS BUS, Private Company",5000813567,arvinmeritor inc-body sys bus,False,0.6486486486486487,0.25,0.4881466264674882,1.3867952751161368
+306,MCM CORPORATION,mcm corporation,"MCM of Oneida Corp, Private Company",5007596477,mcm of oneida corp,False,0.375,0.3333333333333333,0.6725516648824178,1.380884998215751
+55,DOW CORNING CORPORATION,dow corning corporation,"Dow Silicones Corp, Private Company",58144,dow silicones corp,False,0.5833333333333333,0.3333333333333333,0.4593213584455314,1.3759880251121979
+2358,DIVERSIFIED GAS AND OIL CORPORATION,diversified gas and oil corporation,"Diversified Energy Company PLC, Public Company",27758432,diversified energy company plc,True,0.6341463414634146,0.2,0.5417079881220613,1.3758543295854762
+1882,IDAHO TECHNOLOGY INC,idaho technology inc,"Premier Technology Inc, Private Company",4297224909,premier technology inc,False,0.7058823529411764,0.3333333333333333,0.3359992669731856,1.3752149532476952
+375,Bellsouth Corporation,bellsouth corporation,"Bellsouth Representable Employees Corp, Private Company",5055429423,bellsouth representable employees corp,False,0.4285714285714286,0.3333333333333333,0.6105980697542713,1.372502831659033
+1318,MCI WORLDCOM INC,mci worldcom inc,"WORLDCOM CARIBBEAN INC, Private Company",5087009013,worldcom caribbean inc,False,0.5333333333333333,0.3333333333333333,0.49652882852796304,1.3631954951946297
+495,ALCATEL USA INC,alcatel usa inc,"Ale USA Inc, Private Company",5045063527,ale usa inc,False,0.7777777777777778,0.3333333333333333,0.24124549756701774,1.352356608678129
+1167,GEISINGER HEALTH SYSTEM,geisinger health system,"Geisinger Clinic, Private Company",4298409849,geisinger clinic,False,0.5641025641025641,0.25,0.5250432852246728,1.3391458493272368
+991,"TRIAD HOSPITALS, INC.","triad hospitals, inc","Beach HospitalTriad Hospitals Inc, Private Company",5044260457,beach hospitaltriad hospitals inc,False,0.6818181818181819,0.25,0.3977001561174535,1.3295183379356355
+611,UNITED LIQUORS LTD,united liquors ltd,"United Wineries Ltd, Private Company",5063260660,united wineries ltd,False,0.6896551724137931,0.3333333333333333,0.30627203781592677,1.3292605435630531
+848,NCR CORPORATION,ncr corporation,"NCR Corporation India Limited Pvt, Private Company",5068480115,ncr corporation india limited pvt,False,0.375,0.3333333333333333,0.6002292352028652,1.3085625685361983
+1602,FEDERAL ENGINEERS AND CONSTRUCTORS,engineers and constructors,"Samcrete Egypt Engineers and Contractors SAE, Private Company",6928004,samcrete egypt engineers and contractors sae,False,0.6857142857142857,0.2857142857142857,0.32889226459454984,1.3003208360231213
+344,TECH CENTER DEVELOPMENT INC,tech center development inc,"Torek Development Inc, Private Company",5030707177,torek development inc,False,0.7,0.25,0.340393228238837,1.290393228238837
+2088,SOLARCITY CORPORATION,solarcity corporation,"SOLARCITY ELECTRICAL NEW YORK CORPORATION, Private Company",5045515222,solarcity electrical new york corporation,False,0.4736842105263158,0.25,0.5608235104353418,1.2845077209616576
+706,AGRICULTURAL PRODUCERS,agricultural producers,"Agricultural Produce Marketing 2002 Ltd, Private Company",8019876,agricultural produce marketing 2002 ltd,False,0.736842105263158,0.2,0.3291009765102561,1.265943081773414
+726,AMERICREDIT CORP,americredit corp,"Americredit Auto Rec 1997 D, Private Company",4296071834,americredit auto rec 1997 d,False,0.5789473684210527,0.2,0.48252756056387697,1.2614749289849296
+376,NW NATURAL,nw natural,"Northwest Natural Gas Co, Private Company",29043,northwest natural gas co,False,0.6451612903225806,0.25,0.35813719787235765,1.2532984881949383
+145,International Steel Group Inc.,international steel group inc,"Armstrong Group International Inc, Private Company",5043318913,armstrong group international inc,False,0.6190476190476191,0.3333333333333333,0.30010928554174066,1.252490237922693
+2170,ROTHMAN INSTITUTE,rothman institute,"Rothman Institute Foundation for Opioid Research and Education, Private Company",5090861323,rothman institute foundation for opioid research and education,False,0.430379746835443,0.25,0.5637025750912918,1.2440823219267347
+1756,APPLETON PAPERS INC,appleton papers inc,"East Shore Chemical CoAppleton Papers Inc/Wigginsteape Appleton, Private Company",5044269871,east shore chemical coappleton papers inc/wigginsteape appleton,False,0.4054054054054054,0.2857142857142857,0.5496235572902921,1.2407432484099832
+1668,COVIDIEN,covidien,"Covidien International Finance SA, Private Company",10405174,covidien international finance sa,False,0.3902439024390244,0.25,0.5913175852323052,1.2315614876713297
+1240,W.R. BERKLEY CORPORATION,wr berkley corporation,"W R Berkley Europe AG, Private Company",27956136,w r berkley europe ag,False,0.6451612903225806,0.16666666666666666,0.41577981150932947,1.2276077684985767
+1389,TMA ASSOCIATES INC,tma associates inc,"Tax Management Associates Inc, Private Company",5001397256,tax management associates inc,False,0.717948717948718,0.25,0.24985062318672988,1.2177993411354477
+2102,"TRANSCANADA USA SERVICES, INC.","transcanada usa services, inc","Transcanada Usa Services GTM Management and Nbu Emp Welfare Benefits Trust Inc, Private Company",5081464500,transcanada usa services gtm management and nbu emp welfare benefits trust inc,False,0.4897959183673469,0.2727272727272727,0.4484123229906986,1.2109355140853182
+485,WERTHEIM SCHRODER & CO INC,wertheim schroder & co inc,"Schroder Wertheim & Co Inc 1996 European Investment Partnership LP, Private Company",5000116443,schroder wertheim & co inc 1996 european investment partnership lp,False,0.3513513513513513,0.2857142857142857,0.5528928092203478,1.189958446285985
+1935,"VMWARE, INC","vmware, inc","Vmware Middle East Fz-Llc, Private Company",5038848991,vmware middle east fz-llc,False,0.4444444444444444,0.25,0.49511481904290044,1.1895592634873449
+924,FAM HOLDINGS INC,fam holdings inc,"Farm Family Holdings Inc, Private Company, Delisted (merged with American National Insurance Co)",87792,farm family holdings inc (merged with american national insurance co),False,0.75,0.25,0.18676769154187545,1.1867676915418754
+393,"AMERICA'S POLITICAL ACTION COMMITTEE, INC.","america's   , inc","Reinsurance Group of America Inc, Public Company",45511,reinsurance group of america inc,True,0.4516129032258065,0.25,0.47151267003377456,1.1731255732595811
+315,ONEIDA LTD,oneida ltd,"Oneida Employees Credit Union Ltd Inc, Private Company",5046058546,oneida employees credit union ltd inc,False,0.34285714285714286,0.25,0.5776585161859187,1.1705156590430614
+281,MCI LLC,mci llc,"Midwest Division Mci LLC, Private Company",5000486022,midwest division mci llc,False,0.26086956521739135,0.3333333333333333,0.5731008751563508,1.1673037737070753
+569,"KOCH, INC.","koch, inc","Steigerwald Gordon & Koch Inc, Private Company",5001222073,steigerwald gordon & koch inc,False,0.2962962962962963,0.3333333333333333,0.5354024056936194,1.1650320353232488
+1610,VIKING RANGE CORPORATION,viking range corporation,"Viking Range Corporation do Brasil Importacao e Comercio Ltda, Private Company",5042218648,viking range corporation do brasil importacao e comercio ltda,False,0.39344262295081966,0.25,0.5166891217430227,1.1601317446938424
+1409,NYSE EURONEXT,nyse euronext,"Euronext Brussels NV, Private Company",108,euronext brussels nv,False,0.48484848484848486,0.25,0.41467363043416783,1.1495221152826527
+579,GUARDIAN INDUSTRIES CORP.,guardian industries corp,"Guardian Luxguard I RL SA, Private Company",4296898512,guardian luxguard i rl sa,False,0.5909090909090908,0.16666666666666666,0.39113230599907506,1.1487080635748326
+658,GREAT-WEST LIFE & ANNUITY INSURANCE COMPANY,great-west life & annuity insurance company,"CIGNA Health and Life Insurance Co, Private Company",5435570,cigna health and life insurance co,False,0.625,0.25,0.26194021990096245,1.1369402199009624
+170,DELTA AIRLINES,delta airlines,"Delta Airlines 2020-1 Class Aa Pass Through Trust, Private Company",34701352,delta airlines 2020-1 class aa pass through trust,False,0.4444444444444444,0.2222222222222222,0.4617397390129776,1.1284064056796441
+1453,AMERICA FIRST COMPANIES LLC,america first companies llc,"First American Resources Co LLC, Private Company",5012485667,first american resources co llc,False,0.5531914893617021,0.2,0.35316988628453094,1.1063613756462332
+414,BEAM SUNTORY INC,beam suntory inc,"Suntory Global Spirits Inc, Private Company, Delisted (merged with Suntory Holdings Ltd)",40884,suntory global spirits inc (merged with suntory holdings ltd),False,0.4117647058823529,0.25,0.44358558028760403,1.105350286169957
+1809,PROTECTIVE PRODUCTS INTERNATIONAL CORP,protective products international corp,"Ppi International Corp, Private Company",4297619516,ppi international corp,False,0.64,0.25,0.2100409788731761,1.1000409788731762
+784,OXFORD HEALTH PLANS INC,oxford health plans inc,"Oaktree Health Plan Inc, Private Company",4296417828,oaktree health plan inc,False,0.736842105263158,0.2,0.16222484788306352,1.0990669531462214
+779,OCEAN FEDERAL SAVINGS BANK,ocean  savings bank,"Tianjin Bonded Branch Ocean Petroleum Savings Office, Private Company",5081714897,tianjin bonded branch ocean petroleum savings office,False,0.4,0.25,0.4421619541403542,1.0921619541403542
+653,ALOE HOLDING COMPANY,aloe holding company,"Pec Aloe RL SA, Private Company",5083471993,pec aloe rl sa,False,0.46153846153846156,0.2,0.4269891543926053,1.088527615931067
+2166,MARIN RESOURCE RECOVERY,marin resource recovery,"Marin Sanitary Service, Private Company",5038056497,marin sanitary service,False,0.5333333333333333,0.2,0.35266796431760217,1.0860012976509354
+35,ANHEUSER-BUSCH COMPANIES INC.,anheuser-busch companies inc,"Busch Creative Svcs(Anheuser), Private Company",4296729994,busch creative svcs(anheuser),False,0.5116279069767442,0.2,0.3616984013003238,1.073326308277068
+54,INTERNATIONAL TEXTILE GROUP INC,international textile group inc,"International Contract Furnishings Inc, Private Company",5004042771,international contract furnishings inc,False,0.6181818181818182,0.25,0.17947523887564226,1.0476570570574604
+453,WELL FARGO FINANCIAL INC,well fargo financial inc,"Wells Fargo Home Mortgage Inc, Private Company",3498490,wells fargo home mortgage inc,False,0.5333333333333333,0.16666666666666666,0.32163330190600803,1.021633301906008
+1337,Pacific Defense Systems,pacific defense systems,"Ge Aviation Systems Pacific Service Centre Pte Ltd, Private Company",5056432193,ge aviation systems pacific service centre pte ltd,False,0.4347826086956522,0.25,0.33334743711483067,1.018130045810483
+514,"ENTERPRISE HOLDINGS, INC.","enterprise holdings, inc","National Restaurant Enterprises Holdings Inc, Private Company",3325395,national restaurant enterprises holdings inc,False,0.6440677966101696,0.2,0.1734475848470759,1.0175153814572453
+528,INTERNATIONAL MINERALS & CHEMICAL CORP,international minerals & chemical corp,"Vibrantz International Corp, Private Company",4297612632,vibrantz international corp,False,0.49056603773584906,0.25,0.19551236984727718,0.9360784075831262
+2224,PEN-LINK LTD,pen-link ltd,"PenLink Ltd, Private Company",5038071577,penlink ltd,False,0.9333333333333333,0.0,0.0,0.9333333333333333
+2556,"IEM INTERNATIONAL, INC.","iem international, inc","International Engineering & Manufacturing Inc, Private Company",5008339173,international engineering & manufacturing inc,False,0.4642857142857143,0.25,0.21455357930478636,0.9288392935905007
+1144,THE WENDYS COMPANY,the wendys company,"Wendy's Co, Public Company",49101,wendy's co,True,0.9230769230769231,0.0,0.0,0.9230769230769231
+2390,SPOWER,spower,"S-Power Co Ltd, Private Company",5044197284,s-power co ltd,False,0.9230769230769231,0.0,0.0,0.9230769230769231
+1307,CC SERVICES INC COUNTRY POLITICAL ACTION COMMITTEE,cc services inc country,"Country Christian School Inc, Private Company",5002414372,country christian school inc,False,0.37209302325581395,0.2,0.310378518805935,0.8824715420617488
+2241,THE LADY AND THE BROOM,the lady and the broom,"Ladies On Broom Cleaning Services PTY Ltd, Private Company",5082904940,ladies on broom cleaning services pty ltd,False,0.43137254901960786,0.125,0.2759731940861434,0.8323457431057513
+1994,WEST CORPORATION,west corporation,"Nippon Telegraph And Telephone West Corp, Private Company",5386357,nippon telegraph and telephone west corp,False,0.20512820512820518,0.2,0.4160741507331324,0.8212023558613376
+860,THE SPECTRUM GROUP,the spectrum group,"Spectra Group Inc, Private Company",4297759746,spectra group inc,False,0.8,0.0,0.0,0.8
+588,RadioShack Corporation,radioshack corporation,"Radio Shack Egypt, Private Company",17418845,radio shack egypt,False,0.7407407407407407,0.0,0.0,0.7407407407407407
+1574,PRAGMATICS INCORPORATED POLITICAL ACTION COMMITTEE,pragmatics incorporated,"Pragmatic Ventures Inc, Private Company",5084056007,pragmatic ventures inc,False,0.7142857142857143,0.0,0.0,0.7142857142857143
+2020,INSPIRE BRANDS INC.,inspire brands inc,"Dowlis Inspired Branding Inc, Private Company",5083922049,dowlis inspired branding inc,False,0.6842105263157895,0.0,0.0,0.6842105263157895
+543,WOODMEN ACCIDENT AND LIFE COMPANY,woodmen accident and life company,"Assurity Life Insurance Co, Private Company",17784233,assurity life insurance co,False,0.33333333333333337,0.16666666666666666,0.17867671647743308,0.6786767164774331
+564,"S&B ENGINEERS AND CONSTRUCTORS, LTD.","s&b engineers and constructors, ltd","S & B Holdings Ltd, Private Company",4298219378,s & b holdings ltd,False,0.33333333333333337,0.3333333333333333,0.0,0.6666666666666667
+1585,SUNOVION PHARMACEUTICALS INC.,sunovion pharmaceuticals inc,"Sumitomo Pharma America Inc, Private Company, Delisted (merged with Aptiom Inc)",57761,sumitomo pharma america inc (merged with aptiom inc),False,0.6382978723404256,0.0,0.0,0.6382978723404256
+1145,HOSTS Corporation,hosts corporation,"HMS Host Corp, Private Company",5011837640,hms host corp,False,0.6153846153846154,0.0,0.0,0.6153846153846154
+607,"PUBLIC STRATEGIES, INCORPORATED","public strategies, incorporated","Bluesky Strategy Group Inc, Private Company",5000479789,bluesky strategy group inc,False,0.6060606060606061,0.0,0.0,0.6060606060606061
+1423,VALUE OPTIONS INC,value options inc,"Option Supply Co Inc, Private Company",5012032390,option supply co inc,False,0.5384615384615384,0.0,0.0,0.5384615384615384
+950,VARTEC TELECOM INC,vartec telecom inc,"Excel Telecommunications Inc, Private Company",4297533209,excel telecommunications inc,False,0.5263157894736843,0.0,0.0,0.5263157894736843
+750,OHIO NATIONAL FINANCIAL SERVICES POLITICAL ACTION COMMITTEE,ohio national financial services,"Constellation Insurance Inc, Private Company",132682,constellation insurance inc,False,0.509090909090909,0.0,0.0,0.509090909090909
+1893,"KING PHARMACEUTICALS, INC.","king pharmaceuticals, inc","Jones Pharma Inc, Private Company",22883,jones pharma inc,False,0.5,0.0,0.0,0.5
+177,WALTER INDUSTRIES INC.,walter industries inc,"Jim Walters Co, Private Company",4296369667,jim walters co,False,0.5,0.0,0.0,0.5
+1445,"REHABCARE GROUP, INC.","rehabcare group, inc","Rehab UnLtd Inc, Private Company",4296635794,rehab unltd inc,False,0.5,0.0,0.0,0.5
+380,PEOPLE'S BANK FEDERAL POLITICAL ACTION COMMITTEE,people's bank,"Peoples Bancorp of North Carolina Inc, Public Company",31040,peoples bancorp of north carolina inc,True,0.4782608695652174,0.0,0.0,0.4782608695652174
+619,AGL RESOURCES INC,agl resources inc,"Capitol Fuels Inc(Georgia Gas), Private Company",4296650946,capitol fuels inc(georgia gas),False,0.46153846153846156,0.0,0.0,0.46153846153846156
+2242,"BRIGHTERGY, LLC","brightergy, llc","Solarity LLC, Private Company",5070757704,solarity llc,False,0.4444444444444444,0.0,0.0,0.4444444444444444
+1615,SUDDENLINK COMMUNICATIONS,suddenlink communications,"Cebridge Acquisition LLC, Private Company",4297027861,cebridge acquisition llc,False,0.4444444444444444,0.0,0.0,0.4444444444444444
+1212,ABBOTT MEDICAL OPTICS INC.,abbott medical optics inc,"AMO Development LLC, Private Company, Delisted (merged with Abbott Medical Optics Inc)",3475923,amo development llc (merged with abbott medical optics inc),False,0.4444444444444444,0.0,0.0,0.4444444444444444
+330,National Community Action Foundation,national community  foundation,"New Life International, Private Company",5000768439,new life international,False,0.43137254901960786,0.0,0.0,0.43137254901960786
+2100,MIRACA LIFE SCIENCES,miraca life sciences,"Inform Diagnostics Inc, Private Company",9442176,inform diagnostics inc,False,0.42105263157894735,0.0,0.0,0.42105263157894735
+1919,"POLYENGINEERING, INC.","polyengineering, inc","Poly Inc, Private Company",5002011770,poly inc,False,0.42105263157894735,0.0,0.0,0.42105263157894735
+1841,CARMEUSE LIME & STONE,carmeuse lime & stone,"O-N Marine Services Co, Private Company",5000152109,o-n marine services co,False,0.42105263157894735,0.0,0.0,0.42105263157894735
+473,UTILICORP UNITED INC,utilicorp united inc,"Aquila Gas Pipeline Corp, Private Company",45118,aquila gas pipeline corp,False,0.4,0.0,0.0,0.4
+1194,SYNTROLEUM CORPORATION,syntroleum corporation,"Sooner Holdings Inc, Private Company, Delisted (merged with Renewable Energy Group Inc)",118062,sooner holdings inc (merged with renewable energy group inc),False,0.4,0.0,0.0,0.4
+1101,SAFT,saft,"Safety Insurance Group Inc, Public Company",212583,safety insurance group inc,True,0.4,0.0,0.0,0.4
+1150,ANALYTICAL GRAPHICS INC,analytical graphics inc,"Ansys Government Initiatives Inc, Private Company",4296450473,ansys government initiatives inc,False,0.3829787234042553,0.0,0.0,0.3829787234042553
+1066,"AMAZON.COM SERVICES, INC.","amazoncom services, inc","AcceptCom Finl(AmazonCom), Private Company",4296778434,acceptcom finl(amazoncom),False,0.375,0.0,0.0,0.375
+758,TDS TELECOMMUNICATIONS CORPORATION,tds telecommunications corporation,"Telephone and Data Systems Inc, Public Company",38552,telephone and data systems inc,True,0.375,0.0,0.0,0.375
+222,USBancorp,usbancorp,"Firstar Corp, Private Company",16007,firstar corp,False,0.375,0.0,0.0,0.375
+2521,HOUSTON PILOTS,houston pilots,"Beatty Street Properties Inc, Private Company",5001252611,beatty street properties inc,False,0.368421052631579,0.0,0.0,0.368421052631579
+771,NESTLE WATERS NORTH AMERICA INC.,nestle waters north america inc,"BlueTriton Brands Inc, Private Company",5000479276,bluetriton brands inc,False,0.36363636363636365,0.0,0.0,0.36363636363636365
+1514,"ASSOCIATIONS, INC.","associations, inc","Tri-State Generation and Transmission Association Inc, Private Company",3874970,tri-state generation and transmission association inc,False,0.360655737704918,0.0,0.0,0.360655737704918
+244,WASHINGTON MUTUAL INC,washington mutual inc,"Western Bank Companies, Private Company",42349,western bank companies,False,0.3589743589743589,0.0,0.0,0.3589743589743589
+262,HUMAN LIFE,human life,"Medicalinformatics Co Ltd, Private Company",5064663706,medicalinformatics co ltd,False,0.3571428571428571,0.0,0.0,0.3571428571428571
+2425,SMITHS GROUP SERVICES CORPORATION POLITICAL ACTION COMMITTEE,smiths group services corporation,"Merrill Lynch & Co Inc, Private Company",10977,merrill lynch & co inc,False,0.3571428571428571,0.0,0.0,0.3571428571428571
+960,United Defense,united defense,"BAE Systems Land & Armaments Inc, Private Company, Delisted (merged with BAE Systems Inc)",104285,bae systems land & armaments inc (merged with bae systems inc),False,0.35,0.0,0.0,0.35
+1891,"WESTWOOD COLLEGE, INC.","westwood college, inc","El Nell Inc, Private Company",5087088309,el nell inc,False,0.34782608695652173,0.0,0.0,0.34782608695652173
+1341,"PILGRIMS PRIDE CORPORATION POLITICAL ACTION COMMITTEE, INC.","pilgrims pride corporation   , inc","WLR Foods Inc, Private Company",41842,wlr foods inc,False,0.34782608695652173,0.0,0.0,0.34782608695652173
+390,HILL & KNOWLTON INC.,hill & knowlton inc,"Blanc & Otus, Private Company",4295956484,blanc & otus,False,0.34782608695652173,0.0,0.0,0.34782608695652173
+1230,"ALCON LABORATORIES, INC","alcon laboratories, inc","Summit Autonomous Inc, Private Company",37696,summit autonomous inc,False,0.34285714285714286,0.0,0.0,0.34285714285714286
+1599,WCI Communities,wci communities,"FIRST FIDELITY TITLE, INC., Private Company",4296859094,"first fidelity title, inc.",False,0.34285714285714286,0.0,0.0,0.34285714285714286
+1241,PRECISION THERAPEUTICS INC,precision therapeutics inc,"Helomics Corp, Private Company",9254174,helomics corp,False,0.33333333333333337,0.0,0.0,0.33333333333333337
+1030,PIONEER COMPANIES INC,pioneer companies inc,"Cummins Inc, Public Company",48911,cummins inc,True,0.33333333333333337,0.0,0.0,0.33333333333333337
+1355,RSA SECURITY INC,rsa security inc,"Xcert International Inc, Private Company",4296413031,xcert international inc,False,0.32258064516129037,0.0,0.0,0.32258064516129037
+1377,Fiserv Health Inc,fiserv health inc,"Umr Holdings Inc, Private Company",4297786829,umr holdings inc,False,0.31999999999999995,0.0,0.0,0.31999999999999995
+630,ESCO ELECTRONICS CORPORATION,esco electronics corporation,"Hazeltine Corp, Private Company",4295910197,hazeltine corp,False,0.31999999999999995,0.0,0.0,0.31999999999999995
+1697,PULTE HOMES INC,pulte homes inc,"Del Webb Corp(Pulte Homes Inc), Private Company",42130,del webb corp(pulte homes inc),False,0.3157894736842105,0.0,0.0,0.3157894736842105
+1308,WESTAR ENERGY,westar energy,"Evergy Kansas South Inc, Private Company",23103,evergy kansas south inc,False,0.3125,0.0,0.0,0.3125
+1071,UNITED STATES SENIOR ASSOCIATION INC,united states senior association inc,"Btab Ecommerce Group Inc, Public Company",226235,btab ecommerce group inc,True,0.30434782608695654,0.0,0.0,0.30434782608695654
+2169,"ULTRA ELECTRONICS, INC.","ultra electronics, inc","Magneto-Inductive Systems Usa Ltd, Private Company",5001335100,magneto-inductive systems usa ltd,False,0.30434782608695654,0.0,0.0,0.30434782608695654
+129,FEDERATED DEPARTMENT STORES INC,federated department stores inc,"Liberty House Inc, Private Company",4296455786,liberty house inc,False,0.30000000000000004,0.0,0.0,0.30000000000000004
+1448,COMPORIUM INC,comporium inc,"PBT Communications Inc, Private Company",5043323445,pbt communications inc,False,0.2962962962962963,0.0,0.0,0.2962962962962963
+729,"PUTNAM INVESTMENTS, LLC","putnam investments, llc","Empower Holdings LLC, Private Company",5000060749,empower holdings llc,False,0.2941176470588235,0.0,0.0,0.2941176470588235
+1340,WABTEC CORPORATION,wabtec corporation,"Westinghouse Air Brake Technologies Corp, Public Company",87623,westinghouse air brake technologies corp,True,0.29268292682926833,0.0,0.0,0.29268292682926833
+585,Pacificare Health Systems Inc.,pacificare health systems inc,"UHC of California, Private Company",4296617172,uhc of california,False,0.2857142857142857,0.0,0.0,0.2857142857142857
+415,NBSC,nbsc,"New Brunswick Scientific Co Inc, Private Company, Delisted (merged with Eppendorf AG)",28292,new brunswick scientific co inc (merged with eppendorf ag),False,0.2857142857142857,0.0,0.0,0.2857142857142857
+153,"PETER PAN SEAFOODS, INC.","peter pan seafoods, inc","PSF Inc, Private Company",4297247415,psf inc,False,0.2857142857142857,0.0,0.0,0.2857142857142857
+2310,PETSMART INC,petsmart inc,"K FROYEAR PVM(PETSMART INC), Private Company",4296888762,k froyear pvm(petsmart inc),False,0.2857142857142857,0.0,0.0,0.2857142857142857
+881,BAE Systems North America,bae systems north america,"Condor Pacific Industries Inc, Private Company",4296381563,condor pacific industries inc,False,0.28,0.0,0.0,0.28
+1651,LAFARGE NORTH AMERICA,lafarge north america,"Holcim Canada Holdings LLC, Private Company, Delisted (merged with Lafarge SA)",23846,holcim canada holdings llc (merged with lafarge sa),False,0.2790697674418605,0.0,0.0,0.2790697674418605
+2004,NEWELL RUBBERMAID INC.,newell rubbermaid inc,"Reynolds SAS, Private Company",4295867353,reynolds sas,False,0.27586206896551724,0.0,0.0,0.27586206896551724
+1185,Key Plastics LLC,key plastics llc,"Novares US LLC, Private Company",4298009539,novares us llc,False,0.2727272727272727,0.0,0.0,0.2727272727272727
+1988,ONCURE MEDICAL CORP,oncure medical corp,"Delaware Radiation Therapy Management Services Inc, Private Company, Delisted (acquired by Genstar Capital LLC)",86466,delaware radiation therapy management services inc (acquired by genstar capital llc),False,0.2666666666666667,0.0,0.0,0.2666666666666667
+1906,"MACTEC, INC.","mactec, inc","AMEC E&I Holdings Inc, Private Company",4297916204,amec e&i holdings inc,False,0.26086956521739135,0.0,0.0,0.26086956521739135
+109,TEMPLE-INLAND INC.,temple-inland inc,"HF Bancorp Inc, Private Company",93286,hf bancorp inc,False,0.26086956521739135,0.0,0.0,0.26086956521739135
+2133,"OPTIMUM NUTRITION, INC.","optimum nutrition, inc","American Body Building Product, Private Company",4296842389,american body building product,False,0.25531914893617025,0.0,0.0,0.25531914893617025
+1117,UICI,uici,"Eduserv Technologies Inc(Uici), Private Company",4296756810,eduserv technologies inc(uici),False,0.25,0.0,0.0,0.25
+1754,ADVANCED TECHNOLOGY SERVICES INC,advanced technology services inc,"Atsi(Prodeo Technologies Inc), Private Company",4296754244,atsi(prodeo technologies inc),False,0.25,0.0,0.0,0.25
+833,GREY ADVERTISING INC,grey advertising inc,"Essencemediacom Norway AS, Private Company",4296746065,essencemediacom norway as,False,0.24390243902439024,0.0,0.0,0.24390243902439024
+4,J.P. Morgan Chase & Co. Federal Politi,jp morgan chase & co,"Comdominio(Jp Morgan Chase), Private Company",4296950213,comdominio(jp morgan chase),False,0.24,0.0,0.0,0.24
+1013,OMNOVA SOLUTIONS INC,omnova solutions inc,"Synthomer Inc, Private Company",116020,synthomer inc,False,0.24,0.0,0.0,0.24
+580,PHOENIX CEMENT COMPANY,phoenix cement company,"Salt River Sand & Rock, Private Company",5038064084,salt river sand & rock,False,0.23529411764705888,0.0,0.0,0.23529411764705888
+867,SINCLAIR BROADCAST GROUP INC,sinclair broadcast group inc,"Grant Television Inc, Private Company",4296714300,grant television inc,False,0.23529411764705888,0.0,0.0,0.23529411764705888
+533,LG&E - KU POLITICAL ACTION COMMITTEE,lg&e - ku,"Louisville Gas and Electric Co, Private Company",60368,louisville gas and electric co,False,0.23529411764705888,0.0,0.0,0.23529411764705888
+1060,C.R. BARD INC.,cr bard inc,"Catheter Technology Corp, Private Company",4296465480,catheter technology corp,False,0.23076923076923073,0.0,0.0,0.23076923076923073
+887,WYOMING REFINING COMPANY,wyoming refining company,"Hermes Consolidated LLC, Private Company",4296742678,hermes consolidated llc,False,0.22857142857142854,0.0,0.0,0.22857142857142854
+802,"ALLIANCE ONE INTERNATIONAL, INC.","alliance one international, inc","Old Holdco Inc, Private Company",69407,old holdco inc,False,0.2222222222222222,0.0,0.0,0.2222222222222222
+126,Nestle USA Inc.,nestle usa inc,"Powerbar Inc, Private Company",4296597568,powerbar inc,False,0.2222222222222222,0.0,0.0,0.2222222222222222
+1629,AMERIGROUP CORPORATION,amerigroup corporation,"Wellpoint Corp, Private Company, Delisted (merged with Anthem Inc)",136384,wellpoint corp (merged with anthem inc),False,0.21052631578947367,0.0,0.0,0.21052631578947367
+993,Sun Microsystems Inc.,sun microsystems inc,"LSC Inc, Private Company, Delisted (merged with Oracle America Inc)",137683,lsc inc (merged with oracle america inc),False,0.21052631578947367,0.0,0.0,0.21052631578947367
+193,EDS,eds,"Electricite de Strasbourg SA, Public Company",16768,electricite de strasbourg sa,True,0.19354838709677424,0.0,0.0,0.19354838709677424
+1848,RGA,rga,"Reinsurance Group of America Inc, Public Company",45511,reinsurance group of america inc,True,0.16000000000000003,0.0,0.0,0.16000000000000003
+911,CORNELL CORRECTIONS INC,cornell corrections inc,"Abraxas Group Inc, Private Company",5000389973,abraxas group inc,False,0.15384615384615385,0.0,0.0,0.15384615384615385
+932,HARTMARX CORPORATION,hartmarx corporation,"XMH Corp 1, Private Company, Delisted (acquired by Authentic Brands Group LLC)",19744,xmh corp 1 (acquired by authentic brands group llc),False,0.15384615384615385,0.0,0.0,0.15384615384615385
+2447,IEC CORPORATION,iec corporation,"Integrated Engineers and Contractors Corp, Private Company",5031441229,integrated engineers and contractors corp,False,0.15384615384615385,0.0,0.0,0.15384615384615385
+618,GROUP HEALTH INCORPORATED,group health incorporated,"Reinsurance Group of America Inc, Public Company",45511,reinsurance group of america inc,True,0.1428571428571429,0.0,0.0,0.1428571428571429
+1276,KEANE INC,keane inc,"Signaltree Solutions Hldg, Private Company",4296629533,signaltree solutions hldg,False,0.1333333333333333,0.0,0.0,0.1333333333333333
+1015,Conoco Inc.,conoco inc,"Cardinal States Gathering Co, Private Company",4297093878,cardinal states gathering co,False,0.12903225806451613,0.0,0.0,0.12903225806451613
+555,KAMBER GROUP,kamber group,"V K Holding Co Inc, Private Company",5044521861,v k holding co inc,False,0.11764705882352944,0.0,0.0,0.11764705882352944
+583,VECTREN CORPORATION,vectren corporation,"Indiana Gas Company Inc, Private Company",93401,indiana gas company inc,False,0.11111111111111116,0.0,0.0,0.11111111111111116
+2498,EXP,exp,"Eagle Materials Inc, Public Company",46249,eagle materials inc,True,0.11111111111111116,0.0,0.0,0.11111111111111116
+95,BB&T,bb&t,"Truist Financial Corp, Public Company",36771,truist financial corp,True,0.09999999999999998,0.0,0.0,0.09999999999999998
+1859,"EXPEDIA, INC.","expedia, inc","VacationspotCom, Private Company",4296955523,vacationspotcom,False,0.09090909090909094,0.0,0.0,0.09090909090909094
+1656,MVP HEALTH CARE INC.,mvp health care inc,"MVP Health Care Inc, Membership/Community Organization",4297158327,,False,0.0,0.0,0.0,0.0
+1515,PATRIOT CONSTRUCTION MGMT INC,patriot construction mgmt inc,,,,False,0.0,0.0,0.0,0.0
+1531,"STANLEY CONSULTANTS INC., PAC","stanley consultants inc, pac",,,,False,0.0,0.0,0.0,0.0
+1623,JASPER WYMAN & SON PAC,jasper wyman & son pac,,,,False,0.0,0.0,0.0,0.0
+1532,WHITETAIL DEER FARMERS OF OHIO INC.,whitetail deer farmers of ohio inc,,,,False,0.0,0.0,0.0,0.0
+1620,SOUTHWEST BUSINESS CORPORATION PAC (SWBCPAC),southwest business corporation pac,,,,False,0.0,0.0,0.0,0.0
+1660,GODADDY.COM,godaddycom,,,,False,0.0,0.0,0.0,0.0
+1661,"HSP DIRECT, LLC","hsp direct, llc",,,,False,0.0,0.0,0.0,0.0
+1552,FIRST HAWAIIAN BANK CITIZENSHIP COMMITTEE,first hawaiian bank citizenship,,,,False,0.0,0.0,0.0,0.0
+1547,DPWN HOLDINGS (USA) INC/DHL,dpwn holdings  inc/dhl,,,,False,0.0,0.0,0.0,0.0
+1618,"AMYLIN PHARMACEUTICALS, INC.","amylin pharmaceuticals, inc",,,,False,0.0,0.0,0.0,0.0
+1575,VOYAGER HOLDING CORPORATION,voyager holding corporation,,,,False,0.0,0.0,0.0,0.0
+1595,WHYTE HIRSCHBOECK DUDEK S C WHYTE HIRSCHBOECK DUDEK GOVERNMENT AFFAIRS LLC,whyte hirschboeck dudek s c whyte hirschboeck dudek government affairs llc,,,,False,0.0,0.0,0.0,0.0
+1709,QBASE INC,qbase inc,,,,False,0.0,0.0,0.0,0.0
+1545,BARGE WAGGONER SUMNER & CANNON INC,barge waggoner sumner & cannon inc,,,,False,0.0,0.0,0.0,0.0
+1625,LEATHERWOOD ENTERPRISES,leatherwood enterprises,,,,False,0.0,0.0,0.0,0.0
+1564,STOP GOP INC,stop gop inc,,,,False,0.0,0.0,0.0,0.0
+1568,STUDENTS MOTHERS AND CONCERNED CITIZEN,students mothers and concerned citizen,,,,False,0.0,0.0,0.0,0.0
+1716,SCIELE PHARMA INC,sciele pharma inc,,,,False,0.0,0.0,0.0,0.0
+1628,"ALLSTREAM BUSINESS US, INC.","allstream business us, inc",,,,False,0.0,0.0,0.0,0.0
+1524,VOLUNTEER PAC,volunteer pac,,,,False,0.0,0.0,0.0,0.0
+1573,"CAPELLA HEALTHCARE, INC.","capella healthcare, inc",,,,False,0.0,0.0,0.0,0.0
+1521,OHIO SOYBEAN ASSOCIATION,ohio soybean association,,,,False,0.0,0.0,0.0,0.0
+1726,"SKILLED HEALTHCARE GROUP, INC.","skilled healthcare group, inc","Skilled Healthcare Group Inc, Holding Company",5051769562,,False,0.0,0.0,0.0,0.0
+1639,MILLENNIUM ENGINEERING AND INTEGRATION COMPANY,millennium engineering and integration company,,,,False,0.0,0.0,0.0,0.0
+1571,DynCorp International LLC Political Ac,dyncorp international llc  ac,,,,False,0.0,0.0,0.0,0.0
+1485,"OTSUKA AMERICA, INC.","otsuka america, inc","Otsuka America Inc, Holding Company",4297550929,,False,0.0,0.0,0.0,0.0
+1735,NEWFIELD EXPLORATION COMPANY,newfield exploration company,,,,False,0.0,0.0,0.0,0.0
+1526,ADM PAC,adm pac,,,,False,0.0,0.0,0.0,0.0
+1543,BLUE UTOPIA LLC,blue utopia llc,,,,False,0.0,0.0,0.0,0.0
+1486,HEALTH ALLIANCE PLAN,health alliance plan,"Health Alliance Plan of Michigan, Foundation/Charity",4296367787,,False,0.0,0.0,0.0,0.0
+1688,CARMEN GROUP INC.,carmen group inc,,,,False,0.0,0.0,0.0,0.0
+1506,"WAKE EMERGENCY PHYSICIANS, PA","wake emergency physicians, pa",,,,False,0.0,0.0,0.0,0.0
+1680,NATIONAL SURGICAL HOSPITALS INC PAC,national surgical hospitals inc pac,,,,False,0.0,0.0,0.0,0.0
+1496,"SALTCHUK RESOURCES, INC. PAC","saltchuk resources, inc pac",,,,False,0.0,0.0,0.0,0.0
+1594,BERKSHIRE HATHAWAY ENERGY COMPANY PAC,berkshire hathaway energy company pac,,,,False,0.0,0.0,0.0,0.0
+1597,"WYNDHAM DESTINATIONS, INC","wyndham destinations, inc",,,,False,0.0,0.0,0.0,0.0
+1681,WHITE ACRE EQUITIES LLC,white acre equities llc,,,,False,0.0,0.0,0.0,0.0
+1593,FAIRCHILD CONTROLS CORPORATION,fairchild controls corporation,,,,False,0.0,0.0,0.0,0.0
+1670,CCFI COMPANIES LLC (FKA CHECKSMART FINANCIAL LLC AND CCFI LLC) POLITICAL ACTION COMMITTEE,ccfi companies llc,,,,False,0.0,0.0,0.0,0.0
+1683,LENOVO (UNITED STATES) INC. NON-PARTISAN CMTE FOR GOOD GOVT (LENOVOPAC),lenovo  inc non-partisan cmte for good govt,,,,False,0.0,0.0,0.0,0.0
+1669,"SUREID, INC.","sureid, inc",,,,False,0.0,0.0,0.0,0.0
+1598,IMPERIAL SUGAR COMPANY,imperial sugar company,,,,False,0.0,0.0,0.0,0.0
+1686,DNC SERVICES CORPORATION/DEMOCRATIC NA,dnc services corporation/democratic na,,,,False,0.0,0.0,0.0,0.0
+1583,ALSTOM PAC INC.,alstom pac inc,,,,False,0.0,0.0,0.0,0.0
+1536,ROCK ENGINEERING AND TESTING LABORATOR,rock engineering and testing laborator,,,,False,0.0,0.0,0.0,0.0
+1691,AMERICAN ASSOCIATION OF BREAST CARE PROFESSIONALS AKA (AABCP),american association of breast care professionals aka,,,,False,0.0,0.0,0.0,0.0
+1603,TRI-CITY LOCAL BUSINESS ASSOCIATION,tri-city local business association,,,,False,0.0,0.0,0.0,0.0
+1541,"BSA , THE SOFTWARE ALLIANCE","bsa , the software alliance",,,,False,0.0,0.0,0.0,0.0
+1582,AEROFLEX INCORPORATED,aeroflex incorporated,,,,False,0.0,0.0,0.0,0.0
+1665,RESEARCH IN MOTION CORPORATION USA,research in motion corporation usa,,,,False,0.0,0.0,0.0,0.0
+1488,FEDERAL HOME LOAN BANK OF TOPEKA,home loan bank of topeka,"Federal Home Loan Bank of Topeka, Government Agency",5407655,,False,0.0,0.0,0.0,0.0
+1605,CYTEC ENGINEERED MATERIALS POLITICAL ACTION COMMITTEE AKA CEM PAC,cytec engineered materials    aka cem pac,,,,False,0.0,0.0,0.0,0.0
+1510,"MWW GROUP, INC.","mww group, inc",,,,False,0.0,0.0,0.0,0.0
+1539,STANLEY CONSULTANTS INC PAC,stanley consultants inc pac,,,,False,0.0,0.0,0.0,0.0
+1693,US ARMENIA PUBLIC AFFAIRS COMMITTEE,us armenia public affairs,,,,False,0.0,0.0,0.0,0.0
+1500,Old National Bank in Evansville OLBANK,old national bank in evansville olbank,,,,False,0.0,0.0,0.0,0.0
+1538,LIGHTSQUARED LP,lightsquared lp,,,,False,0.0,0.0,0.0,0.0
+1640,WELLS FARGO AND COMPANY EMPLOYEE PAC (AKA WELLS FARGO EMPLOYEE PAC),wells fargo and company employee pac,,,,False,0.0,0.0,0.0,0.0
+1969,CLOUD PEAK ENERGY RESOURCES LLC EMPLOYEE PAC,cloud peak energy resources llc employee pac,,,,False,0.0,0.0,0.0,0.0
+1744,POLSINELLI PAC,polsinelli pac,,,,False,0.0,0.0,0.0,0.0
+2258,BDIGITAL ENTERTAINMENT LLC,bdigital entertainment llc,,,,False,0.0,0.0,0.0,0.0
+2265,KILROY RISING LLC,kilroy rising llc,,,,False,0.0,0.0,0.0,0.0
+2266,JACKSON OFFSHORE OPERATORS LLC PAC,jackson offshore operators llc pac,,,,False,0.0,0.0,0.0,0.0
+2267,TRANS UNITED FUND,trans united fund,"iShares US Transportation ETF, Fund Entity",4474281,,False,0.0,0.0,0.0,0.0
+2271,PENNSYLVANIA LIBERTY PAC,pennsylvania liberty pac,,,,False,0.0,0.0,0.0,0.0
+2276,WEIDLINGER ASSOCIATES INC PAC,weidlinger associates inc pac,,,,False,0.0,0.0,0.0,0.0
+2280,"HEALTHY GOVERNMENT COMMITTEE-THE POLITICAL ACTION COMMITTEE OF BLUE CROSS & BLUE SHIELD OF ARIZONA, INC.","healthy government -the    of blue cross & blue shield of arizona, inc",,,,False,0.0,0.0,0.0,0.0
+2282,"EMIGRANT BANCORP, INC.","emigrant bancorp, inc","Emigrant Bancorp Inc, Holding Company",4298009298,,False,0.0,0.0,0.0,0.0
+2296,GOLDEN TERPS LLC,golden terps llc,,,,False,0.0,0.0,0.0,0.0
+2314,LONESTAR GUN RIGHTS,lonestar gun rights,,,,False,0.0,0.0,0.0,0.0
+2315,"ALL OF US, INC","all of us, inc",,,,False,0.0,0.0,0.0,0.0
+2319,HEIGHTS FINANCE HOLDING CO PAC,heights finance holding co pac,,,,False,0.0,0.0,0.0,0.0
+2320,"REFRESH CLUB, INC. DBA THE WING","refresh club, inc dba the wing",,,,False,0.0,0.0,0.0,0.0
+2329,LACY JOHNSON FOR CONGRESS,lacy johnson for congress,,,,False,0.0,0.0,0.0,0.0
+2331,JACKSON HOLDINGS LLC AND JACKSON NATIONAL LIFE INSURANCE COMPANY SEPARATE SEGREGATED FUND (JACKSON N,jackson holdings llc and jackson national life insurance company separate segregated fund (jackson n,,,,False,0.0,0.0,0.0,0.0
+2335,PATTERN ENERGY GROUP INC,pattern energy group inc,,,,False,0.0,0.0,0.0,0.0
+2347,SHASHAMANE ETHIOPIA FEDERAL AGENTS ASSOCIATION THE,shashamane ethiopia  agents association the,,,,False,0.0,0.0,0.0,0.0
+2357,"IRAQ AND AFGHANISTAN VETERANS OF AMERICA ACTION FUND, INC.","iraq and afghanistan veterans of america  fund, inc",,,,False,0.0,0.0,0.0,0.0
+2262,HEALTHCARE MEDIA OSTEOARTHRITIS RELIEF PAC,healthcare media osteoarthritis relief pac,,,,False,0.0,0.0,0.0,0.0
+2257,"IEX GROUP, INC. PAC","iex group, inc pac",,,,False,0.0,0.0,0.0,0.0
+2137,WE 2 CORPORATION,we 2 corporation,,,,False,0.0,0.0,0.0,0.0
+2247,SAN DIEGO ASIAN AMERICANS FOR EQUALITY FOUNDATION,san diego asian americans for equality foundation,,,,False,0.0,0.0,0.0,0.0
+2143,THE CENTER FOR FREETHOUGHT EQUALITY,the center for freethought equality,,,,False,0.0,0.0,0.0,0.0
+2144,DOMINION RESOURCES INC.,dominion resources inc,"Strats(SM) Trust for Dominion Resources Inc Securities Series 2005-6, Fund Entity",17244899,,False,0.0,0.0,0.0,0.0
+2145,SUPERIOR AIR-GROUND AMBULANCE SERVICE INC EMPLOYEES PAC (SUPERIOR AMBULANCE EMPLOYEES P,superior air-ground ambulance service inc employees pac (superior ambulance employees p,,,,False,0.0,0.0,0.0,0.0
+2155,KINNEY DRUGS INC,kinney drugs inc,"Kinney Drugs Foundation Inc, Foundation/Charity",4296979479,,False,0.0,0.0,0.0,0.0
+2162,QWIKCOMPLIANCE INC,qwikcompliance inc,,,,False,0.0,0.0,0.0,0.0
+2164,ASHTON WOODS CORP.,ashton woods corp,,,,False,0.0,0.0,0.0,0.0
+2171,PDC ENERGY INC PAC,pdc energy inc pac,,,,False,0.0,0.0,0.0,0.0
+2178,"FIDELITY NATIONAL INFORMATION SYSTEMS, INC.","fidelity national information systems, inc",,,,False,0.0,0.0,0.0,0.0
+2179,THE FRANKLIN FORUM,the franklin forum,,,,False,0.0,0.0,0.0,0.0
+2202,CIBC BANCORP US INC.,cibc bancorp us inc,,,,False,0.0,0.0,0.0,0.0
+2207,BRAVO AG GROUP INC,bravo ag group inc,,,,False,0.0,0.0,0.0,0.0
+2210,CAPOZZI ADLER PAC,capozzi adler pac,,,,False,0.0,0.0,0.0,0.0
+2217,"THE PRIVATE INVESTOR COALITION, INC.","the private investor coalition, inc",,,,False,0.0,0.0,0.0,0.0
+2231,"AMERICAN SOCIETY FOR METABOLIC AND BARIATRIC SURGERY, INC.","american society for metabolic and bariatric surgery, inc",,,,False,0.0,0.0,0.0,0.0
+2234,GENCANNA GLOBAL USA INCORPORATED,gencanna global usa incorporated,,,,False,0.0,0.0,0.0,0.0
+2239,ASEA BROWN BOVERI (ABB) POLICY IMPROVEMENT PROGRAM,asea brown boveri  policy improvement program,,,,False,0.0,0.0,0.0,0.0
+2245,"IGNITE FUELING INNOVATION, INC. FEDERAL PAC","ignite fueling innovation, inc  pac",,,,False,0.0,0.0,0.0,0.0
+2362,"ACORN GROWTH COMPANIES, LLC","acorn growth companies, llc","Acorn Growth Companies LLC, Investment Company",4297952284,,False,0.0,0.0,0.0,0.0
+2363,NAMMO INC.,nammo inc,"Nammo Inc, Holding Company",5036807188,,False,0.0,0.0,0.0,0.0
+2378,HEARTLAND FUND INC.,heartland fund inc,"Heartland Group Inc, Investment Company",4296549092,,False,0.0,0.0,0.0,0.0
+2385,VILLAGEMD PAC,villagemd pac,,,,False,0.0,0.0,0.0,0.0
+2480,WEST REALM SHIRES SERVICES INC. D/B/A FTX US,west realm shires services inc d/b/a ftx us,,,,False,0.0,0.0,0.0,0.0
+2492,YOUTH MEDICAL EDUCATION INITIATIVE,youth medical education initiative,,,,False,0.0,0.0,0.0,0.0
+2499,SIERRA NEVADA CORPORATION PAC,sierra nevada corporation pac,,,,False,0.0,0.0,0.0,0.0
+2501,CARESOURCE MISSION,caresource mission,,,,False,0.0,0.0,0.0,0.0
+2502,"RPM INTERNATIONAL INC. MANUFACTURING IN AMERICA PAC, DBA RPM MANUFACTURING IN AMERICA PAC","rpm international inc manufacturing in america pac, dba rpm manufacturing in america pac",,,,False,0.0,0.0,0.0,0.0
+2505,"VETERANS ACROSS AMERICA, LLC","veterans across america, llc",,,,False,0.0,0.0,0.0,0.0
+2513,AL-CORN CLEAN FUEL,al-corn clean fuel,,,,False,0.0,0.0,0.0,0.0
+2524,AEVEX HOLDING LLC,aevex holding llc,,,,False,0.0,0.0,0.0,0.0
+2525,CONNECTED HOLDING II LLC,connected holding ii llc,,,,False,0.0,0.0,0.0,0.0
+2527,ANALYTICA THERAPEUTICS AG,analytica therapeutics ag,,,,False,0.0,0.0,0.0,0.0
+2532,A4PP INC,a4pp inc,,,,False,0.0,0.0,0.0,0.0
+2533,BABST CALLAND CLEMENTS & ZOMNIR PC,babst calland clements & zomnir pc,,,,False,0.0,0.0,0.0,0.0
+2540,SUMMER DAWN SMITH,summer dawn smith,,,,False,0.0,0.0,0.0,0.0
+2544,GALAXY DIGITAL SERVICES II LLC,galaxy digital services ii llc,,,,False,0.0,0.0,0.0,0.0
+2555,"AMENTUM HOLDINGS, INC. PAC (AMENTUM PAC)","amentum holdings, inc pac",,,,False,0.0,0.0,0.0,0.0
+2557,LUMINIS HEALTH,luminis health,"Luminis Health Inc, Membership/Community Organization",4297034340,,False,0.0,0.0,0.0,0.0
+2562,"UNDERDOG SPORTS HOLDINGS, INC.","underdog sports holdings, inc",,,,False,0.0,0.0,0.0,0.0
+2464,"KNIGHT HEALTH HOLDINGS, LLC D/B/A SCIONHEALTH","knight health holdings, llc d/b/a scionhealth",,,,False,0.0,0.0,0.0,0.0
+2459,CONRAD SHIPYARD LLC PAC,conrad shipyard llc pac,,,,False,0.0,0.0,0.0,0.0
+2457,RESTORE TRUTH TOKEN,restore truth token,,,,False,0.0,0.0,0.0,0.0
+2417,CRONOS USA HOLDINGS INC.,cronos usa holdings inc,,,,False,0.0,0.0,0.0,0.0
+2389,COLORADO COMMON SENSE COUNTY LEADERSHIP,colorado common sense county leadership,,,,False,0.0,0.0,0.0,0.0
+2391,PATRIOTIC PROGRESSIVE AMERICAN PEOPLES PARTY (PPP),patriotic progressive american peoples party,,,,False,0.0,0.0,0.0,0.0
+2392,"C3.AI, INC. PAC","c3ai, inc pac",,,,False,0.0,0.0,0.0,0.0
+2396,PART THE RED SEA INC.,part the red sea inc,,,,False,0.0,0.0,0.0,0.0
+2403,"SMILE DIRECT CLUB, INC.","smile direct club, inc",,,,False,0.0,0.0,0.0,0.0
+2404,ELECTIONS MATTER - NEBRASKA,elections matter - nebraska,,,,False,0.0,0.0,0.0,0.0
+2416,OUR GLOBAL COMMONS,our global commons,,,,False,0.0,0.0,0.0,0.0
+2418,"VITA INCLINATA TECHNOLOGIES, INCORPORATED","vita inclinata technologies, incorporated",,,,False,0.0,0.0,0.0,0.0
+2456,"TOTAL COMMUNITY OPTIONS, INC. DBA INNOVAGE","total community options, inc dba innovage",,,,False,0.0,0.0,0.0,0.0
+2420,VETERANS GUARDIAN VA CLAIM CONSULTING,veterans guardian va claim consulting,,,,False,0.0,0.0,0.0,0.0
+2434,"TORCH RESEARCH, LLC DBA TORCH.AI POLITICAL ACTION COMMITTEE (TORCH.AI PAC)","torch research, llc dba torchai",,,,False,0.0,0.0,0.0,0.0
+2435,UNION HOME MORTAGE CORP.,union home mortage corp,,,,False,0.0,0.0,0.0,0.0
+2438,"MECCA AFFILIATES, INC.","mecca affiliates, inc",,,,False,0.0,0.0,0.0,0.0
+2449,RUIZ & SMART PLLC,ruiz & smart pllc,,,,False,0.0,0.0,0.0,0.0
+2451,MICHAEL JOHN HACKMER,michael john hackmer,,,,False,0.0,0.0,0.0,0.0
+2453,INDEPENDENCE BLUE CROSS LLC PAC,independence blue cross llc pac,,,,False,0.0,0.0,0.0,0.0
+2140,CAROLINA NEUROSURGERY AND SPINE ASSOCIATES P A PAC,carolina neurosurgery and spine associates p a pac,,,,False,0.0,0.0,0.0,0.0
+2130,SHIRE VIROPHARMA INCORPORATED,shire viropharma incorporated,,,,False,0.0,0.0,0.0,0.0
+1745,JCM PROPERTIES L P,jcm properties l p,,,,False,0.0,0.0,0.0,0.0
+1829,COALITION OF FRANCHISEE ASSOCIATIONS,coalition of franchisee associations,,,,False,0.0,0.0,0.0,0.0
+1832,GEORGE P. JOHNSON COMPANY PAC,george p johnson company pac,,,,False,0.0,0.0,0.0,0.0
+1836,FBB FEDERAL RELATIONS,fbb  relations,,,,False,0.0,0.0,0.0,0.0
+1838,MARINETTE MARINE CORPORATION PAC MMCPAC,marinette marine corporation pac mmcpac,,,,False,0.0,0.0,0.0,0.0
+1844,"THE AGA GROUP, LLC","the aga group, llc",,,,False,0.0,0.0,0.0,0.0
+1846,NATL ASSOC OF RETIRED & VETERAN RAILWAY EMPLOYEES INC,natl assoc of retired & veteran railway employees inc,,,,False,0.0,0.0,0.0,0.0
+1847,RYAN RUSSELL OGDEN AND SELTZER PC,ryan russell ogden and seltzer pc,,,,False,0.0,0.0,0.0,0.0
+1849,OHIO VETERANS UNITED PAC,ohio veterans united pac,,,,False,0.0,0.0,0.0,0.0
+1850,KIMMITT SENTER COATES AND WEINFURTER INC.  AKA (KSCW INC),kimmitt senter coates and weinfurter inc  aka,,,,False,0.0,0.0,0.0,0.0
+1864,INVESTIGATIVE & SECURITY PROFESSIONALS FOR LEGISLATIVE ACTION,investigative & security professionals for legislative,,,,False,0.0,0.0,0.0,0.0
+1867,BURK BURNETT INC,burk burnett inc,,,,False,0.0,0.0,0.0,0.0
+1869,AMERICAN MARITIME HOLDINGS INCORPORATED,american maritime holdings incorporated,,,,False,0.0,0.0,0.0,0.0
+1871,US CITIZENS ASSOCIATION PAC,us citizens association pac,,,,False,0.0,0.0,0.0,0.0
+1872,SAGINAW VALLEY NEUROSURGERY PLLC,saginaw valley neurosurgery pllc,,,,False,0.0,0.0,0.0,0.0
+1874,"BALDWIN TITLE COMPANY OF LOUISIANA, L.L.C.","baldwin title company of louisiana, llc",,,,False,0.0,0.0,0.0,0.0
+1878,DEGARCIA & ASSOCIATES INC,degarcia & associates inc,,,,False,0.0,0.0,0.0,0.0
+1892,LIVEOPS.INC,liveopsinc,,,,False,0.0,0.0,0.0,0.0
+1896,"DEMOCRACY ENGINE, INC.","democracy engine, inc",,,,False,0.0,0.0,0.0,0.0
+1831,BLUEWAVE NJ A NONPROFIT CORPORATION,bluewave nj a nonprofit corporation,,,,False,0.0,0.0,0.0,0.0
+1825,PREIT-RUBIN INC,preit-rubin inc,"Preit Rubin Inc, REIT",5000584936,,False,0.0,0.0,0.0,0.0
+2124,ADVOCATING FOR CARE TOGETHER,advocating for care together,,,,False,0.0,0.0,0.0,0.0
+1824,BLUE CROSS BLUE SHIELD OF ALABAMA,blue cross blue shield of alabama,"Blue Cross and Blue Shield of Alabama, Membership/Community Organization",4298219066,,False,0.0,0.0,0.0,0.0
+1749,FEDERATION OF WOMEN CONTRACTORS,federation of women contractors,,,,False,0.0,0.0,0.0,0.0
+1755,JOHN MANEELY COMPANY,john maneely company,,,,False,0.0,0.0,0.0,0.0
+1759,"UNISON MARKETPLACE, INC.","unison marketplace, inc",,,,False,0.0,0.0,0.0,0.0
+1763,"BARCLAYS GROUP US, INC.","barclays group us, inc","Barclays Group US Inc, Holding Company",5000048367,,False,0.0,0.0,0.0,0.0
+1772,PAETEC HOLDING CORPORATION,paetec holding corporation,,,,False,0.0,0.0,0.0,0.0
+1777,NORTH CENTRAL ACADEMY OF CHIROPRACTIC,north central academy of chiropractic,,,,False,0.0,0.0,0.0,0.0
+1781,"LEWIS, RICE & FINGERSH, LC","lewis, rice & fingersh, lc",,,,False,0.0,0.0,0.0,0.0
+1784,SPACE SYSTEMS/LORAL INC,space systems/loral inc,,,,False,0.0,0.0,0.0,0.0
+1785,CONSERVATIVE REPUBLICAN ALLIANCE INC,conservative republican alliance inc,,,,False,0.0,0.0,0.0,0.0
+1792,HOLSTON MEDICAL GROUP P C,holston medical group p c,,,,False,0.0,0.0,0.0,0.0
+1793,GOVERNMENT AFFAIRS COMMITTEE OF AXIS SPECIALTY US SERVICES INC,government affairs  of axis specialty us services inc,,,,False,0.0,0.0,0.0,0.0
+1795,CAPMARK FINANCIAL GROUP INC. POLITICAL ACTION COMMITTEE (CAPMARK PAC),capmark financial group inc,,,,False,0.0,0.0,0.0,0.0
+1800,CNL FINANCIAL GROUP INC POLITICIAL ACTION COMMITTEE,cnl financial group inc politicial,,,,False,0.0,0.0,0.0,0.0
+1802,NEW SOUTH BANCSHARES INC/COMMITTEE FOR FAIRNESS IN GOVERNMENT,new south bancshares inc/ for fairness in government,,,,False,0.0,0.0,0.0,0.0
+1818,YEMENI AMERICAN PUBLIC AFFAIRS COUNCIL,yemeni american public affairs council,,,,False,0.0,0.0,0.0,0.0
+1820,DEMOCRACY FOR AMERICA MIAMI DADE INC,democracy for america miami dade inc,,,,False,0.0,0.0,0.0,0.0
+1822,MODDY NOLAN-WASHINGTON DC LLC,moddy nolan-washington dc llc,,,,False,0.0,0.0,0.0,0.0
+1898,NORTH BAY PATRIOTS,north bay patriots,,,,False,0.0,0.0,0.0,0.0
+1900,"TAMPA 912 PROJECT, INC.","tampa 912 project, inc",,,,False,0.0,0.0,0.0,0.0
+1904,TUBE CITY IMS CORPORATION,tube city ims corporation,,,,False,0.0,0.0,0.0,0.0
+1907,NEW ORLEANS REGIONAL PHYSICIAN HOSPITAL ORGANIZATION INC,new orleans regional physician hospital organization inc,,,,False,0.0,0.0,0.0,0.0
+2007,BERKEBILE NELOSN IMMENSCHUH MCDOWELL INCORPORATED,berkebile nelosn immenschuh mcdowell incorporated,,,,False,0.0,0.0,0.0,0.0
+2013,"WARD AND SMITH, P.A.","ward and smith, pa",,,,False,0.0,0.0,0.0,0.0
+2015,GEP ADMINISTRATIVE SERVICES INC DBA ENTERTAINMENT PARTNERS,gep administrative services inc dba entertainment partners,,,,False,0.0,0.0,0.0,0.0
+2027,9.12 PROJECT TENNESSEE,912 project tennessee,,,,False,0.0,0.0,0.0,0.0
+2044,STRATEGIC PUBLIC PARTNERS LLC PAC (SPP-PAC),strategic public partners llc pac,,,,False,0.0,0.0,0.0,0.0
+2053,"HEALTHTEXAS MANAGEMENT COMPANY, LLC","healthtexas management company, llc",,,,False,0.0,0.0,0.0,0.0
+2054,WISCONSIN FAMILY ACTION FEDERAL PAC,wisconsin family   pac,,,,False,0.0,0.0,0.0,0.0
+2056,"NATIXIS U.S. HOLDINGS, INC.","natixis us holdings, inc",,,,False,0.0,0.0,0.0,0.0
+2064,CERRIS INC.,cerris inc,,,,False,0.0,0.0,0.0,0.0
+2071,"EVOC REGULATORY SERVICES, INC.","evoc regulatory services, inc",,,,False,0.0,0.0,0.0,0.0
+2072,"SSAB US HOLDING INC, SSAB ENTERPRISES LLC","ssab us holding inc, ssab enterprises llc",,,,False,0.0,0.0,0.0,0.0
+2090,"SUNCREST HEALTHCARE, INC PAC","suncrest healthcare, inc pac",,,,False,0.0,0.0,0.0,0.0
+2111,THE GELATERIA ICE CREAM DESSERT LOUNGE INC,the gelateria ice cream dessert lounge inc,,,,False,0.0,0.0,0.0,0.0
+2114,PESTER MARKETING COMPANY ALTA FUELS LLC,pester marketing company alta fuels llc,,,,False,0.0,0.0,0.0,0.0
+2117,CHRISTMAN ENTERPRISES INC,christman enterprises inc,,,,False,0.0,0.0,0.0,0.0
+2120,VERMEER EQUIPMENT OF TEXAS INC,vermeer equipment of texas inc,,,,False,0.0,0.0,0.0,0.0
+2123,THE PARALEGAL OFFICES OF THE EFFECTIVE ASSISTANT TO COUNSEL INCORPORATED,the paralegal offices of the effective assistant to counsel incorporated,,,,False,0.0,0.0,0.0,0.0
+2002,"ALVAREZ & MARSAL HOLDINGS, LLC PAC","alvarez & marsal holdings, llc pac",,,,False,0.0,0.0,0.0,0.0
+1999,WESTMED MEDICAL GROUP PC,westmed medical group pc,,,,False,0.0,0.0,0.0,0.0
+1990,OHIO TITLE CORP/THE REAL ESTATE GROUP LLC,ohio title corp/the real estate group llc,,,,False,0.0,0.0,0.0,0.0
+1951,TENASKA INC EMPLOYEES POLITICAL ACTION COMMITTEE,tenaska inc employees,,,,False,0.0,0.0,0.0,0.0
+1911,"LINCARE HOLDINGS, INC. EMPLOYEE ACTION FUND (LINCARE EMPLOYEE ACTION FUND)","lincare holdings, inc employee  fund",,,,False,0.0,0.0,0.0,0.0
+1920,PSS WORLD MEDICAL INC,pss world medical inc,,,,False,0.0,0.0,0.0,0.0
+1923,JIM BEAM BRANDS CO. POLTICAL ACTION COMMITTEE,jim beam brands co poltical,,,,False,0.0,0.0,0.0,0.0
+1924,CPF-THE FATHERHOOD COALITION,cpf-the fatherhood coalition,,,,False,0.0,0.0,0.0,0.0
+1928,DULCICH INC. DBA PACIFIC SEAFOOD GROUP,dulcich inc dba pacific seafood group,,,,False,0.0,0.0,0.0,0.0
+1930,CONVERTEAM HOLDINGS NORTH AMERICA INC AND SUBSIDIARIES,converteam holdings north america inc and subsidiaries,,,,False,0.0,0.0,0.0,0.0
+1943,POWER POLITICAL ACTION COMMITTEE OF VISTRA ENERGY,power    of vistra energy,,,,False,0.0,0.0,0.0,0.0
+1952,BRIGHTPOINT INC D/B/A BRIGHTPOINT ECLIPSE PAC,brightpoint inc d/b/a brightpoint eclipse pac,,,,False,0.0,0.0,0.0,0.0
+1981,JMH GROUP INC,jmh group inc,,,,False,0.0,0.0,0.0,0.0
+1954,MIDCOUNTRY FINANCIAL CORP.,midcountry financial corp,"MidCountry Financial Corp, Financing Company",4296894287,,False,0.0,0.0,0.0,0.0
+1956,CYBERONICS INC,cyberonics inc,,,,False,0.0,0.0,0.0,0.0
+1957,BNSF RAILWAY COMPANY RAILPAC (BNSF RAILPAC),bnsf railway company railpac,,,,False,0.0,0.0,0.0,0.0
+1963,"JOCHUM SHORE & TROSSEVIN, PC","jochum shore & trossevin, pc",,,,False,0.0,0.0,0.0,0.0
+1964,PLYMOUTH ENERGY LLC PAC,plymouth energy llc pac,,,,False,0.0,0.0,0.0,0.0
+1968,JETBLUE AIRWAYS CORPORATION CREWMEMBER GOOD GOVERNMENT FUND,jetblue airways corporation crewmember good government fund,,,,False,0.0,0.0,0.0,0.0
+1971,LIBERTY MARITIME CORPORATION,liberty maritime corporation,,,,False,0.0,0.0,0.0,0.0
+1479,American Clincial Laboratory Associati,american clincial laboratory associati,,,,False,0.0,0.0,0.0,0.0
+1140,LUSSIER GREGOR VIENNA & ASSOCIATES,lussier gregor vienna & associates,,,,False,0.0,0.0,0.0,0.0
+1472,"SANDLER, TRAVIS & ROSENBERG, P.A.","sandler, travis & rosenberg, pa",,,,False,0.0,0.0,0.0,0.0
+553,"UNITED STATES SUGAR CORPORATION EMPLOYEE STOCK OWNERSHIP PLAN POLITICAL ACTION COMMITTEE,","united states sugar corporation employee stock ownership plan   ,",,,,False,0.0,0.0,0.0,0.0
+517,NAT RURAL ELEC COOP ASSOC ACTION CMTE THE; BASIN ELEC POWER COOP PAC,nat rural elec coop assoc  cmte the; basin elec power coop pac,,,,False,0.0,0.0,0.0,0.0
+518,TENNESSEE RIGHT TO LIFE INC,tennessee right to life inc,,,,False,0.0,0.0,0.0,0.0
+526,HARLEY-DAVIDSON INC PAC,harley-davidson inc pac,,,,False,0.0,0.0,0.0,0.0
+530,BARCLAY WHITE INCORPORATED,barclay white incorporated,,,,False,0.0,0.0,0.0,0.0
+534,"ROETZEL & ANDRESS CO, LPA FSL PAC","roetzel & andress co, lpa fsl pac",,,,False,0.0,0.0,0.0,0.0
+541,FOWLER WHITE BOGGS BANKER PA,fowler white boggs banker pa,,,,False,0.0,0.0,0.0,0.0
+544,UNITED HEALTH GROUP INCORPORATED POLIT,united health group incorporated polit,,,,False,0.0,0.0,0.0,0.0
+545,KUPELIAN ORMOND & A PROF CORP,kupelian ormond & a prof corp,,,,False,0.0,0.0,0.0,0.0
+549,"JENKENS & GILCHRIST, P C","jenkens & gilchrist, p c",,,,False,0.0,0.0,0.0,0.0
+557,SO CAR POLICY COUNCIL STATE PAC INC,so car policy council state pac inc,,,,False,0.0,0.0,0.0,0.0
+597,DANIS INDUSTRIES CORPORATION,danis industries corporation,,,,False,0.0,0.0,0.0,0.0
+561,CHROMALLOY CORPORATION/CHROMALLOY GAS TURBINE LLC,chromalloy corporation/chromalloy gas turbine llc,,,,False,0.0,0.0,0.0,0.0
+562,Credit Union Legislative Action Counci,credit union legislative  counci,,,,False,0.0,0.0,0.0,0.0
+565,DOWNEY SAVINGS AND LOAN ASSOCIATION F A,downey savings and loan association f a,,,,False,0.0,0.0,0.0,0.0
+571,C-COR.NET CORP,c-cornet corp,,,,False,0.0,0.0,0.0,0.0
+574,PORTLAND CEMENT ASSOCIATION,portland cement association,"Portland Cement Association, Membership/Community Organization",4296083090,,False,0.0,0.0,0.0,0.0
+576,FIDUCIARY TRUST COMPANY INTERNATIONAL,fiduciary trust company international,"Fiduciary Trust Company International of Pennsylvania, Investment Trust",4297377090,,False,0.0,0.0,0.0,0.0
+578,"CORRIDOR 67, INC.","corridor 67, inc",,,,False,0.0,0.0,0.0,0.0
+587,FIRST NATIONAL BANK OF FLORENCE,first national bank of florence,,,,False,0.0,0.0,0.0,0.0
+593,HY-VEE PAC,hy-vee pac,,,,False,0.0,0.0,0.0,0.0
+504,VERIZON COMMUNICATION INC. GOOD GOVT CLUB,verizon communication inc good govt club,,,,False,0.0,0.0,0.0,0.0
+501,ANESTHESIA SERVICE MEDICAL GROUP ADVOCACY FUND,anesthesia service medical group advocacy fund,,,,False,0.0,0.0,0.0,0.0
+490,SUNTRUST BANK GOOD GOVERNMENT GROUP-GEORGIA,suntrust bank good government group-georgia,,,,False,0.0,0.0,0.0,0.0
+488,STV INFRASTRUCTURE PAC,stv infrastructure pac,,,,False,0.0,0.0,0.0,0.0
+431,BLUE CROSS & BLUE SHIELD OF MASS INC,blue cross & blue shield of mass inc,,,,False,0.0,0.0,0.0,0.0
+434,Armor Holdings Inc. Political Action C,armor holdings inc   c,,,,False,0.0,0.0,0.0,0.0
+436,HEALTH CARE SERVICE CORPORATION,health care service corporation,"Brookhaven Health Care Services Corp, Foundation/Charity",5049109726,,False,0.0,0.0,0.0,0.0
+437,FBL FINANCIAL GROUP INC. PAC,fbl financial group inc pac,,,,False,0.0,0.0,0.0,0.0
+442,NORTHCOAST HEALTH SYSTEMS,northcoast health systems,,,,False,0.0,0.0,0.0,0.0
+446,NATIONAL RURAL WATER ASSN,national rural water assn,,,,False,0.0,0.0,0.0,0.0
+449,PERRY MANUFACTURING COMPANY,perry manufacturing company,,,,False,0.0,0.0,0.0,0.0
+450,JOHN D WILLIAMS COMPANY,john d williams company,,,,False,0.0,0.0,0.0,0.0
+460,METRO-GOLDWYN-MAYER INC/TRACINDA CORP,metro-goldwyn-mayer inc/tracinda corp,,,,False,0.0,0.0,0.0,0.0
+461,NBT BANK N A,nbt bank n a,,,,False,0.0,0.0,0.0,0.0
+462,EMPIRE DISTRICT ELECTRIC COMPANY AND LIBERTY UTILITIES CO. POLITICAL ACTION COMMITTEE D/B/A LIBERTY UTILITIES PAC,empire district electric company and liberty utilities co    d/b/a liberty utilities pac,,,,False,0.0,0.0,0.0,0.0
+463,MANAGMENT & TRAINING CORPORATION,managment & training corporation,,,,False,0.0,0.0,0.0,0.0
+465,IRECO INCORPORATED,ireco incorporated,,,,False,0.0,0.0,0.0,0.0
+469,FIRST COMMERCIAL BANK N.A. OF MEMPHIS,first commercial bank na of memphis,,,,False,0.0,0.0,0.0,0.0
+472,OHIOHEALTH STAR CORPORATION POLITICAL ACTION COMMITTEE DBA OHIOHEALTH PAC,ohiohealth star corporation    dba ohiohealth pac,,,,False,0.0,0.0,0.0,0.0
+476,"ALBERT H. HALFF ASSC., INC.","albert h halff assc, inc",,,,False,0.0,0.0,0.0,0.0
+479,CTA INCORPORATED,cta incorporated,,,,False,0.0,0.0,0.0,0.0
+484,HUNTER ENGINEERING COMPANY PAC,hunter engineering company pac,,,,False,0.0,0.0,0.0,0.0
+487,OVERSEAS SHIPHOLDING GROUP INC PAC,overseas shipholding group inc pac,,,,False,0.0,0.0,0.0,0.0
+595,COLOGNE LIFE REINSURANCE COMPANY,cologne life reinsurance company,,,,False,0.0,0.0,0.0,0.0
+600,AMER TASK FOR LEBANON LEGISLATIVE COUN,amer task for lebanon legislative coun,,,,False,0.0,0.0,0.0,0.0
+754,AMERICAN SHORT LINE RAILROAD ASSOC,american short line railroad assoc,,,,False,0.0,0.0,0.0,0.0
+714,"ZB, N.A. DBA AMEGY BANK","zb, na dba amegy bank",,,,False,0.0,0.0,0.0,0.0
+680,BLUE CROSS AND BLUE SHIELD OF NEBRASKA PAC,blue cross and blue shield of nebraska pac,,,,False,0.0,0.0,0.0,0.0
+682,BUZZI UNICEM USA INC PAC,buzzi unicem usa inc pac,,,,False,0.0,0.0,0.0,0.0
+686,CHRISTIAN VOTER PROJECT,christian voter project,,,,False,0.0,0.0,0.0,0.0
+689,"SUFFOLK COUNTY DETECTIVES ASSN INC., POLITICAL ACTION COMMITTEE","suffolk county detectives assn inc,",,,,False,0.0,0.0,0.0,0.0
+697,ARIZONA ORTHOPAEDIC SOCIETY,arizona orthopaedic society,,,,False,0.0,0.0,0.0,0.0
+701,"THE PMA GROUP, INC.","the pma group, inc",,,,False,0.0,0.0,0.0,0.0
+702,Comcast Corp Political Action Committe,comcast corp   committe,,,,False,0.0,0.0,0.0,0.0
+703,ASSOCIATION OF AMERICAN RAILROADS,association of american railroads,"Association of American Railroads, Membership/Community Organization",4298208162,,False,0.0,0.0,0.0,0.0
+711,AM GENERAL SALES CORPORATION,am general sales corporation,,,,False,0.0,0.0,0.0,0.0
+716,"LINCARE HOLDINGS, INC. EMPLOYEE ACTION FUND","lincare holdings, inc employee  fund",,,,False,0.0,0.0,0.0,0.0
+601,NY ST CONF OF THE INT'L UNION OF OPERATING ENGINEERS FED VPAF (NYS CONF IUOE FED VPAF),ny st conf of the int'l union of operating engineers fed vpaf,,,,False,0.0,0.0,0.0,0.0
+717,PacifiCare Health Systems Inc. Employe,pacificare health systems inc employe,,,,False,0.0,0.0,0.0,0.0
+718,CAPITAL ONE FINANCIAL CORPORATION ASSOC POLITICAL FUND,capital one financial corporation assoc  fund,,,,False,0.0,0.0,0.0,0.0
+720,CENTRAL BENEFITS MUTUAL INSURANCE COMP,central benefits mutual insurance comp,,,,False,0.0,0.0,0.0,0.0
+722,CAREFIRST BLUECROSS BLUESHIELD ASSOCIATES,carefirst bluecross blueshield associates,,,,False,0.0,0.0,0.0,0.0
+732,LAW ENFORCEMENT ALLIANCE/AMERICA INC,law enforcement alliance/america inc,,,,False,0.0,0.0,0.0,0.0
+739,STANDARD COMMERCIAL TOBACCO CO INC,standard commercial tobacco co inc,,,,False,0.0,0.0,0.0,0.0
+744,UNITEDHEALTH GROUP INCORPORATED PAC (U,unitedhealth group incorporated pac (u,,,,False,0.0,0.0,0.0,0.0
+745,"DYER, ELLIS, & JOSEPH PROF CORP","dyer, ellis, & joseph prof corp",,,,False,0.0,0.0,0.0,0.0
+747,TEJAS ENERGY LLC (LIMITED LIABILITY CO,tejas energy llc (limited liability co,,,,False,0.0,0.0,0.0,0.0
+675,Olsson Frank & Weeda P.C.,olsson frank & weeda pc,,,,False,0.0,0.0,0.0,0.0
+674,AMERICAN ASSOCIATION OF CLINICAL UROLO,american association of clinical urolo,,,,False,0.0,0.0,0.0,0.0
+668,EVERETT MUTUAL SAVINGS BANK,everett mutual savings bank,,,,False,0.0,0.0,0.0,0.0
+667,Golden rule Financial Corporation - Po,golden rule financial corporation - po,,,,False,0.0,0.0,0.0,0.0
+604,McCROSKEY FELDMAN COCHRANE & BROCK PLC,mccroskey feldman cochrane & brock plc,,,,False,0.0,0.0,0.0,0.0
+605,"BROUSE & MCDOWELL, A LEGAL PROFESSIONAL ASSOCIATION FSL PAC","brouse & mcdowell, a legal professional association fsl pac",,,,False,0.0,0.0,0.0,0.0
+610,INDIANA RIGHT TO LIFE INC,indiana right to life inc,,,,False,0.0,0.0,0.0,0.0
+613,JOINT COUNCIL OF ALLERGY ASTHMA & IMMUNOLOGY,joint council of allergy asthma & immunology,,,,False,0.0,0.0,0.0,0.0
+615,NORTHROP GRUMMAN INNOVATION SYSTEMS INC.,northrop grumman innovation systems inc,,,,False,0.0,0.0,0.0,0.0
+621,BAY POINT YACHT AND COUNTRY CLUB INC,bay point yacht and country club inc,,,,False,0.0,0.0,0.0,0.0
+624,KAMO ELECTRIC COOPERATIVE INCORPORATED,kamo electric cooperative incorporated,,,,False,0.0,0.0,0.0,0.0
+635,JACKSON HOLDINGS LLC AND JACKSON NATIONAL LIFE INSURANCE COMPANY FEDERAL SSF (JACKSON NATIONAL FEDER,jackson holdings llc and jackson national life insurance company  ssf (jackson national feder,,,,False,0.0,0.0,0.0,0.0
+637,"PLUM CREEK TIMBER COMPANY, INC.","plum creek timber company, inc","Plum Creek Timber Company Inc, Fund Entity, Delisted (merged with Weyerhaeuser Co)",31698,,False,0.0,0.0,0.0,0.0
+641,ENERGY LEADERS POLITICAL ACTION COMMITTEE OF VISTRA ENERGY,energy leaders    of vistra energy,,,,False,0.0,0.0,0.0,0.0
+644,BRIAN D SULLIVAN,brian d sullivan,,,,False,0.0,0.0,0.0,0.0
+646,OKLAHOMA ASSOC/COMM ACTION AGENCIES,oklahoma assoc/comm  agencies,,,,False,0.0,0.0,0.0,0.0
+647,GLOBAL CROSSING DEVELOPMENT CORPORATION,global crossing development corporation,,,,False,0.0,0.0,0.0,0.0
+649,SHASTA BUILDERS EXCHANGE INC,shasta builders exchange inc,,,,False,0.0,0.0,0.0,0.0
+652,NEW JERSEY RIGHT TO LIFE,new jersey right to life,,,,False,0.0,0.0,0.0,0.0
+656,COUNCIL/NEW JERSEY CHIROPRACTORS INC,council/new jersey chiropractors inc,,,,False,0.0,0.0,0.0,0.0
+657,"S&T BANK/S&T BANCORP, INC. POLITICAL ACTION COMMITTEE","s&t bank/s&t bancorp, inc",,,,False,0.0,0.0,0.0,0.0
+660,YUASA-EXIDE INC,yuasa-exide inc,,,,False,0.0,0.0,0.0,0.0
+662,DKW LAW GROUP PC,dkw law group pc,,,,False,0.0,0.0,0.0,0.0
+411,FIRST MIDWEST BANCORP INC GOVERNMENT AFFAIRS FUND,first midwest bancorp inc government affairs fund,,,,False,0.0,0.0,0.0,0.0
+409,NAT'L ASSN OF REHAB AGENCIES INC,nat'l assn of rehab agencies inc,,,,False,0.0,0.0,0.0,0.0
+406,MANUFACTURERS AND TRADERS TRUST COMPAN,manufacturers and traders trust compan,,,,False,0.0,0.0,0.0,0.0
+148,DOMINION QUESTAR CORPORATION EMPLOYEE POLITICAL ACTION COMMITTEE,dominion questar corporation employee,,,,False,0.0,0.0,0.0,0.0
+116,DEAN OPERATIONS INC,dean operations inc,"Dean Operations Inc, Holding Company",4298367988,,False,0.0,0.0,0.0,0.0
+117,FEDERAL-MOGUL CORPORATION,-mogul corporation,,,,False,0.0,0.0,0.0,0.0
+120,BMO HARRIS BANK N.A. POLITICAL ACTION COMMITTEE,bmo harris bank na,"Bmo Harris Bank NA (Milwaukee Branch), Organization Branch",5066588705,,False,0.0,0.0,0.0,0.0
+122,CITIZENS STATE BANK WOODVILLE TEXAS POLITICAL ACTION COMMITTEE,citizens state bank woodville texas,,,,False,0.0,0.0,0.0,0.0
+125,R.J. Reynolds Political Action Committ,rj reynolds   committ,,,,False,0.0,0.0,0.0,0.0
+130,PROGRESS ENERGY EMPLOYEES' CAROLINAS PAC,progress energy employees' carolinas pac,,,,False,0.0,0.0,0.0,0.0
+133,AK STEEL CORPORATION,ak steel corporation,,,,False,0.0,0.0,0.0,0.0
+134,AUSTIN INDUSTRIES COMPANIES POLITICAL ACTION COMMITTEE,austin industries companies,,,,False,0.0,0.0,0.0,0.0
+135,MIDAMERICAN ENERGY COMPANY PAC,midamerican energy company pac,,,,False,0.0,0.0,0.0,0.0
+152,THE GOODYEAR TIRE & RUBBER COMPANY GOOD GOVERNMENT FUND (GOODYEAR GOOD GOVERNMENT FUND),the goodyear tire & rubber company good government fund,,,,False,0.0,0.0,0.0,0.0
+402,NORTHWESTERN ENEREGY,northwestern eneregy,,,,False,0.0,0.0,0.0,0.0
+168,ARCELORMITTAL SALES AND ADMINISTRATION LLC,arcelormittal sales and administration llc,,,,False,0.0,0.0,0.0,0.0
+174,RIGHT TO LIFE CMTE INC; NY STATE,right to life cmte inc; ny state,,,,False,0.0,0.0,0.0,0.0
+176,CVS CAREMARK CORPORATION EMPLOYEES PAC,cvs caremark corporation employees pac,,,,False,0.0,0.0,0.0,0.0
+190,EVERGY AND ITS SUBSIDIARIES,evergy and its subsidiaries,,,,False,0.0,0.0,0.0,0.0
+192,SUNTRUST BANK GOOD GOVERNMENT GROUP GEORGIA,suntrust bank good government group georgia,,,,False,0.0,0.0,0.0,0.0
+195,COLONIAL LIFE & ACCIDENT INS. COMPANY,colonial life & accident ins company,,,,False,0.0,0.0,0.0,0.0
+206,JPI CORPORATE INC,jpi corporate inc,,,,False,0.0,0.0,0.0,0.0
+207,NORTHVILLE INDUSTRIES CORPORATION,northville industries corporation,,,,False,0.0,0.0,0.0,0.0
+218,BUSINESS MEN'S ASSURANCE CO OF AMERICA,business men's assurance co of america,,,,False,0.0,0.0,0.0,0.0
+115,HARSCO PENNPAC,harsco pennpac,,,,False,0.0,0.0,0.0,0.0
+106,National Propane Gas Associatiion,national propane gas associatiion,,,,False,0.0,0.0,0.0,0.0
+105,UMB FINANCIAL CORPORATION AND AFFILIAT,umb financial corporation and affiliat,,,,False,0.0,0.0,0.0,0.0
+87,BETTER GOV FUND OF MCDERMOTT INCORP,better gov fund of mcdermott incorp,,,,False,0.0,0.0,0.0,0.0
+8,MEREDITH CORPORATION EMPLOYEES FUND FOR BETTER GOVERNMENT,meredith corporation employees fund for better government,,,,False,0.0,0.0,0.0,0.0
+9,MRG RESTAURANTS CORP,mrg restaurants corp,,,,False,0.0,0.0,0.0,0.0
+12,WELLS FARGO AND COMPANY,wells fargo and company,"Wells Fargo Capital IV, Special Purpose Vehicle",4296410552,,False,0.0,0.0,0.0,0.0
+13,CENTRAL SOYA COMPANY INC,central soya company inc,,,,False,0.0,0.0,0.0,0.0
+14,KENTUCKY MEDICAL ASSOCIATION,kentucky medical association,"Kentucky Medical Association, Membership/Community Organization",5056407553,,False,0.0,0.0,0.0,0.0
+27,HSBC NORTH AMERICA,hsbc north america,"HSBC North America Holdings Inc, Holding Company",4297926148,,False,0.0,0.0,0.0,0.0
+60,AVISTA EMPLOYEES FOR EFFECTIVE GOVERNMENT,avista employees for effective government,,,,False,0.0,0.0,0.0,0.0
+63,POTLATCHDELTIC CORPORATION,potlatchdeltic corporation,"Potlatchdeltic Corp, Fund Entity",31901,,False,0.0,0.0,0.0,0.0
+67,The St. Paul Travelers Companies Inc.,the st paul travelers companies inc,,,,False,0.0,0.0,0.0,0.0
+69,JCPENNEY COPORATION,jcpenney coporation,,,,False,0.0,0.0,0.0,0.0
+70,"SUNTRUST BANK GOOD GOVERNMENT GROUP FLORIDA (COO111567),  SUNTRUST BANK GOOD GOVERNMENT GROUP MID-ATLANTIC (C0021496), SUNTRUST BANKD GOOD GOVERNMENT GROUP GEORGIA (C00009639), SUNTRUST PAC (C00386524","suntrust bank good government group florida ,  suntrust bank good government group mid-atlantic , suntrust bankd good government group georgia , suntrust pac (c00386524",,,,False,0.0,0.0,0.0,0.0
+71,CHRYSLER SERVICE CONTRACTS INC.,chrysler service contracts inc,,,,False,0.0,0.0,0.0,0.0
+72,Regions Financial Corporation Politica,regions financial corporation politica,,,,False,0.0,0.0,0.0,0.0
+75,SALT RIVER VALLEY WATER USERS' ASSOCIATION POLITICAL INVOLVEMENT COMMITTEE ( SRPPIC),salt river valley water users' association  involvement,,,,False,0.0,0.0,0.0,0.0
+78,Columbia Gas Transmission Corp. PAC,columbia gas transmission corp pac,,,,False,0.0,0.0,0.0,0.0
+79,Columbia Gas of Ohio Inc. PAC,columbia gas of ohio inc pac,,,,False,0.0,0.0,0.0,0.0
+81,TATE & LYLE INGREDIENTS AMERICAS INC,tate & lyle ingredients americas inc,,,,False,0.0,0.0,0.0,0.0
+82,HERCULES INCORPORATED,hercules incorporated,,,,False,0.0,0.0,0.0,0.0
+84,CME/PAC Chicago Mercantile Exchange In,cme/pac chicago mercantile exchange in,,,,False,0.0,0.0,0.0,0.0
+220,SOUTHERN COMPANY EMPLOYEES PAC,southern company employees pac,,,,False,0.0,0.0,0.0,0.0
+225,"FOREST CITY REALTY TRUST, INC.","forest city realty trust, inc","Forest City Realty Trust Inc, Fund Entity",27814432,,False,0.0,0.0,0.0,0.0
+227,SIMPAC STATE FUND,simpac state fund,,,,False,0.0,0.0,0.0,0.0
+328,AMERICAN PUBLIC POWER ASSOCIATION,american public power association,"American Public Power Association, Membership/Community Organization",5001242779,,False,0.0,0.0,0.0,0.0
+336,National Right to Work PAC,national right to work pac,,,,False,0.0,0.0,0.0,0.0
+338,"METROBANK, FIRST BANCGROUP-ALABAMA, IN","metrobank, first bancgroup-alabama, in",,,,False,0.0,0.0,0.0,0.0
+347,American Shipping Group-Marine Resourc,american shipping group-marine resourc,,,,False,0.0,0.0,0.0,0.0
+350,"BLUE BELL CREAMERIES USA, INC PAC","blue bell creameries usa, inc pac",,,,False,0.0,0.0,0.0,0.0
+351,ALLIED DOMECQ SPIRITS & WINE USA INC,allied domecq spirits & wine usa inc,,,,False,0.0,0.0,0.0,0.0
+352,CASEY KEYSTONE VICTORY FUND,casey keystone victory fund,,,,False,0.0,0.0,0.0,0.0
+357,REGIONS POLITICAL ACTION COMMITTEE,regions,"Macao Special Administrative Region of People's Republic of China (Government), Government",15488626,,False,0.0,0.0,0.0,0.0
+361,TECK COMINCO AMERICAN INCORPORATED,teck cominco american incorporated,,,,False,0.0,0.0,0.0,0.0
+365,eyePAC American Society of Cataract an,eyepac american society of cataract an,,,,False,0.0,0.0,0.0,0.0
+372,AMERICAN ASSOCIATION OF NURSE ANESTHETISTS,american association of nurse anesthetists,"American Association of Nurse Anesthetists, Foundation/Charity",5001242483,,False,0.0,0.0,0.0,0.0
+377,TEXAS INDUSTRIES INC POLITICAL ACTION COMM,texas industries inc   comm,,,,False,0.0,0.0,0.0,0.0
+379,ASPLUNDH TREE EXPERT CO POLITICAL ACTION COMMITTEE (ATE PAC),asplundh tree expert co,,,,False,0.0,0.0,0.0,0.0
+383,IRISH NATIONAL CAUCUS,irish national caucus,"Irish National Caucus, Membership/Community Organization",4296105400,,False,0.0,0.0,0.0,0.0
+384,NYSE ALTERNEXT US LLC,nyse alternext us llc,,,,False,0.0,0.0,0.0,0.0
+391,"ERICKSON & SEDERSTROM, P C","erickson & sederstrom, p c",,,,False,0.0,0.0,0.0,0.0
+394,AT&T Inc. Federal Political Action Com,at&t inc    com,,,,False,0.0,0.0,0.0,0.0
+395,CIBC OPPENHEIMER CORP,cibc oppenheimer corp,,,,False,0.0,0.0,0.0,0.0
+396,"UNIVERSAL HEALTH SERVICES, INC. GOOD GOVERNMENT FUND (UHS GOOD GOVERNMENT FUND)","universal health services, inc good government fund",,,,False,0.0,0.0,0.0,0.0
+398,THE Bank of New York Mellon Corporatio,the bank of new york mellon corporatio,,,,False,0.0,0.0,0.0,0.0
+331,STAR RTE MAIL CONTRACTORS ASS'N NAT'L,star rte mail contractors ass'n nat'l,,,,False,0.0,0.0,0.0,0.0
+325,GUIDEWELL MUTUAL HOLDING CORPORATION,guidewell mutual holding corporation,"Guidewell Mutual Holding Corp, Holding Company",5046707431,,False,0.0,0.0,0.0,0.0
+228,HECLA MINING COMPANY POLITICAL ACTION COMMITEE,hecla mining company   commitee,,,,False,0.0,0.0,0.0,0.0
+324,BACARDI U S A INC POLITICAL ACTION COMMITTEE,bacardi u s a inc,,,,False,0.0,0.0,0.0,0.0
+238,RAISIN BARGAINING ASSOCIATION,raisin bargaining association,,,,False,0.0,0.0,0.0,0.0
+242,EQUITABLE LIFE ASSURANCE SOCIETY OF TH,equitable life assurance society of th,,,,False,0.0,0.0,0.0,0.0
+248,COMPUTER SCIENCES CORPORATION PAC,computer sciences corporation pac,,,,False,0.0,0.0,0.0,0.0
+249,THE IRVINE COMPANY,the irvine company,"Irvine Company LLC, Investment Company",4296124164,,False,0.0,0.0,0.0,0.0
+251,OKLAHOMA ASSN OF ELECTRIC COOPS,oklahoma assn of electric coops,,,,False,0.0,0.0,0.0,0.0
+252,WellPoint Health Networks WellPac,wellpoint health networks wellpac,,,,False,0.0,0.0,0.0,0.0
+267,"AMERICA'S CREDIT UNION PAC OF CREDIT UNION NATIONAL ASSOCIATION, INC","america's credit union pac of credit union national association, inc",,,,False,0.0,0.0,0.0,0.0
+270,N.A.W.G,nawg,,,,False,0.0,0.0,0.0,0.0
+271,SHELTER MUTUAL INSURANCE COMPANY FEDERAL PAC,shelter mutual insurance company  pac,,,,False,0.0,0.0,0.0,0.0
+280,SIERRA DEVELOPMENT COMPANY INC,sierra development company inc,,,,False,0.0,0.0,0.0,0.0
+283,"ONEAMERICA FINANCIAL PARTNERS, INC. PAC","oneamerica financial partners, inc pac",,,,False,0.0,0.0,0.0,0.0
+285,JACOBS GOOD GOVERNMENT FUND OF JACOBS ENGINEERING GROUP INC,jacobs good government fund of jacobs engineering group inc,,,,False,0.0,0.0,0.0,0.0
+291,"BAKER MANOCK & JENSEN, A PROFESSIONAL CORPORATION, POLITICAL ACTION COMMITTEE","baker manock & jensen, a professional corporation,",,,,False,0.0,0.0,0.0,0.0
+292,DUKE ENERGY CORPORATION PAC,duke energy corporation pac,,,,False,0.0,0.0,0.0,0.0
+294,CROWLEY MARITIME CORPORATION FEDERAL PAC,crowley maritime corporation  pac,,,,False,0.0,0.0,0.0,0.0
+297,CONTRAN CORPORATION,contran corporation,"Contran Corp, Holding Company",4296358814,,False,0.0,0.0,0.0,0.0
+300,THE FARMERS EDUCATION & CO-OPERATIVE UNION OF AMERICA PAC (NATFARMPAC),the farmers education & co-operative union of america pac,,,,False,0.0,0.0,0.0,0.0
+303,Meyer Suozzi English & Klein PC - Fede,meyer suozzi english & klein pc - fede,,,,False,0.0,0.0,0.0,0.0
+309,M&I MARSHALL & ISLEY BANK,m&i marshall & isley bank,,,,False,0.0,0.0,0.0,0.0
+753,Embarq Corporation Employees' Politica,embarq corporation employees' politica,,,,False,0.0,0.0,0.0,0.0
+756,YAMANOUCHI CONSUMER INC,yamanouchi consumer inc,,,,False,0.0,0.0,0.0,0.0
+1463,USPROTECT CORPORATION,usprotect corporation,,,,False,0.0,0.0,0.0,0.0
+1232,CITIZENS FOR SOCIAL REFORM POLITICAL A,citizens for social reform  a,,,,False,0.0,0.0,0.0,0.0
+1201,"SCIOTTO, GAYNOR & ASSOCIATES LLC DBA A","sciotto, gaynor & associates llc dba a",,,,False,0.0,0.0,0.0,0.0
+1203,STAR SCIENTIFIC INC,star scientific inc,,,,False,0.0,0.0,0.0,0.0
+1205,M-E COMPANIES INC,m-e companies inc,,,,False,0.0,0.0,0.0,0.0
+1211,"SSAB ENTERPRISES, LLC PAC","ssab enterprises, llc pac",,,,False,0.0,0.0,0.0,0.0
+1213,EXPERIAN NORTH AMERICA INC.,experian north america inc,,,,False,0.0,0.0,0.0,0.0
+1220,1POINT ADMINISTRATIVE SERVICES,1point administrative services,,,,False,0.0,0.0,0.0,0.0
+1227,HALL OF FAME TALENT AGENCY INCORPORATE,hall of fame talent agency incorporate,,,,False,0.0,0.0,0.0,0.0
+1229,FRESENIUS MEDICAL CARE NORTH AMERICA P,fresenius medical care north america p,,,,False,0.0,0.0,0.0,0.0
+1231,GSP CONSULTING CORP,gsp consulting corp,,,,False,0.0,0.0,0.0,0.0
+1236,ALMOST FAMILY INC PAC (AFAM PAC),almost family inc pac,,,,False,0.0,0.0,0.0,0.0
+1265,GENTEX CORPORATION POLITICAL ACTION COMMITTEE; THE,gentex corporation   ; the,,,,False,0.0,0.0,0.0,0.0
+1242,"BIRCH, HORTON, BITTNER AND CHEROT PC","birch, horton, bittner and cherot pc",,,,False,0.0,0.0,0.0,0.0
+1243,OHIO AMBULANCE AND MEDICAL TRANSPORTATION ASSOCIATION,ohio ambulance and medical transportation association,,,,False,0.0,0.0,0.0,0.0
+1244,ARTHURS LESTRANGE INVESTMENT ADVISORS,arthurs lestrange investment advisors,,,,False,0.0,0.0,0.0,0.0
+1245,INTEGIC CORPORATION,integic corporation,,,,False,0.0,0.0,0.0,0.0
+1249,CALIFORNIA PEAR GROWERS,california pear growers,,,,False,0.0,0.0,0.0,0.0
+1251,EXPRESS SCRIPTS INC. POLITICAL FUND (A/K/A EXPRESS SCRIPTS PAC),express scripts inc  fund,,,,False,0.0,0.0,0.0,0.0
+1252,NELSON LEVINE DELUCA & HORST LLC,nelson levine deluca & horst llc,,,,False,0.0,0.0,0.0,0.0
+1258,Jacobs Good Government Fund of Jacobs,jacobs good government fund of jacobs,,,,False,0.0,0.0,0.0,0.0
+1260,NANA DEVELOPMENT CORPORATION INC POLITICAL ACTION COMMITTEE (NDCPAC),nana development corporation inc,,,,False,0.0,0.0,0.0,0.0
+1200,II-VI INCORPORATED PAC,ii-vi incorporated pac,,,,False,0.0,0.0,0.0,0.0
+1198,THREE RIVERS ADMIN SERVS LLC,three rivers admin servs llc,,,,False,0.0,0.0,0.0,0.0
+1182,HORIZON TELCOM INC,horizon telcom inc,,,,False,0.0,0.0,0.0,0.0
+1181,FAITH AND PATIENCE INC N P,faith and patience inc n p,,,,False,0.0,0.0,0.0,0.0
+1118,KLETT ROONEY LIEBER & SCHORLING PR CRP,klett rooney lieber & schorling pr crp,,,,False,0.0,0.0,0.0,0.0
+1121,AMERICAN BUSINESS FINANCIAL SVCS INC,american business financial svcs inc,,,,False,0.0,0.0,0.0,0.0
+1123,Intergrated Electrical Service Inc.,intergrated electrical service inc,,,,False,0.0,0.0,0.0,0.0
+1125,METROPOLITAN TRANS AUTH POLICE BENE...,metropolitan trans auth police bene,,,,False,0.0,0.0,0.0,0.0
+1128,IDT CORPORATION PAC ('IDT PAC'),idt corporation pac,,,,False,0.0,0.0,0.0,0.0
+1130,AMERICAN ENTERPRISE MUTUAL HOLDING COMPANY PAC,american enterprise mutual holding company pac,,,,False,0.0,0.0,0.0,0.0
+1132,LINCOLN CLUB OF SW RIVERSIDE COUNTY,lincoln club of sw riverside county,,,,False,0.0,0.0,0.0,0.0
+1133,SHUGHART THOMSON & KILROY PC,shughart thomson & kilroy pc,,,,False,0.0,0.0,0.0,0.0
+1136,LOUISIANA RURAL ELECTRIC ASSOC INC,louisiana rural electric assoc inc,,,,False,0.0,0.0,0.0,0.0
+1137,Office of the Commissioner of Major Le,office of the commissioner of major le,,,,False,0.0,0.0,0.0,0.0
+1146,AMERIQUEST CAPITAL CORPORATION,ameriquest capital corporation,,,,False,0.0,0.0,0.0,0.0
+1148,PROLOGIC INC PAC,prologic inc pac,,,,False,0.0,0.0,0.0,0.0
+1154,ATLANTIC HEALTH MANGEMENT CORP,atlantic health mangement corp,,,,False,0.0,0.0,0.0,0.0
+1159,IAC/INTERACTIVECORP,iac/interactivecorp,,,,False,0.0,0.0,0.0,0.0
+1164,WASHINGTON CAPITOL GROUP INC,washington capitol group inc,,,,False,0.0,0.0,0.0,0.0
+1169,PROVINCE HEALTHCARE CO,province healthcare co,,,,False,0.0,0.0,0.0,0.0
+1170,Caremark Rx Inc. Employees Political A,caremark rx inc employees  a,,,,False,0.0,0.0,0.0,0.0
+1172,"RADIANCE TCEHNOLOGIES, INC","radiance tcehnologies, inc",,,,False,0.0,0.0,0.0,0.0
+1176,MARTIN & SEIBERT L C,martin & seibert l c,,,,False,0.0,0.0,0.0,0.0
+1263,"ATKINSREALIS USA HOLDINGS, LLC","atkinsrealis usa holdings, llc",,,,False,0.0,0.0,0.0,0.0
+1266,"HOLT, MULROY & GERMANN PUBLIC AFFAIRS","holt, mulroy & germann public affairs",,,,False,0.0,0.0,0.0,0.0
+762,STERNS & WEINROTH A PROF CORP,sterns & weinroth a prof corp,,,,False,0.0,0.0,0.0,0.0
+1411,CEISLER JUBELIRER LLC,ceisler jubelirer llc,,,,False,0.0,0.0,0.0,0.0
+1371,GHC ANCILLARY CORPORATION POLITICAL ACTION COMMITTEE,ghc ancillary corporation,,,,False,0.0,0.0,0.0,0.0
+1376,GRASSROOTS COMMISSION PAC INC,grassroots commission pac inc,,,,False,0.0,0.0,0.0,0.0
+1380,NEVADACARI INC,nevadacari inc,,,,False,0.0,0.0,0.0,0.0
+1382,LOUISIANA HEART HOSPITAL HEART HOSPITA,louisiana heart hospital heart hospita,,,,False,0.0,0.0,0.0,0.0
+1398,UNITED SURGICAL PARTNERS INTERNATIONAL INC. PAC (TEXAS),united surgical partners international inc pac,,,,False,0.0,0.0,0.0,0.0
+1401,ASHLAND INC. POLITICAL ACTION COMMITTEE FOR EMPLOYEES (PACE),ashland inc    for employees,,,,False,0.0,0.0,0.0,0.0
+1406,Cyber Security Industry Alliance Inc.,cyber security industry alliance inc,,,,False,0.0,0.0,0.0,0.0
+1407,TIME WARNER CABLE INC. PAC,time warner cable inc pac,,,,False,0.0,0.0,0.0,0.0
+1410,EQUITY OFFICE PROPERTIES MANAGEMENT CO,equity office properties management co,,,,False,0.0,0.0,0.0,0.0
+1414,BROOKFIELD ATLANTIC CORPORATION,brookfield atlantic corporation,,,,False,0.0,0.0,0.0,0.0
+1267,US LEC CORP.,us lec corp,,,,False,0.0,0.0,0.0,0.0
+1417,WELLS REAL ESTATE FUNDS INC.,wells real estate funds inc,,,,False,0.0,0.0,0.0,0.0
+1418,FEDERAL HOME LOAN MORTGAGE CORPORATION,home loan mortgage corporation,"Federal Home Loan Mortgage Corp, Government Agency",14726,,False,0.0,0.0,0.0,0.0
+1422,LEAGUE OF INDEPENDENT VOTERS,league of independent voters,,,,False,0.0,0.0,0.0,0.0
+1425,SLOAN CONSULTING INC,sloan consulting inc,,,,False,0.0,0.0,0.0,0.0
+1429,UPPER OHIO VALLEY IPA INC,upper ohio valley ipa inc,,,,False,0.0,0.0,0.0,0.0
+1438,"MBE-PAC NATIONAL, INC.","mbe-pac national, inc",,,,False,0.0,0.0,0.0,0.0
+1442,SOMERSET MEDICAL COMMUNITY FUND FOR QU,somerset medical community fund for qu,,,,False,0.0,0.0,0.0,0.0
+1450,CONSOLIDATED EDISON INC. EMPLOYEES' POLITICAL ACTION COMMITTEE (CEIPAC),consolidated edison inc employees',,,,False,0.0,0.0,0.0,0.0
+1462,"TELAPEX, INC","telapex, inc","Telapex Inc, Holding Company",5000308246,,False,0.0,0.0,0.0,0.0
+1370,SCHWARTZ COOPER GREENBERGER & KRAUSS C,schwartz cooper greenberger & krauss c,,,,False,0.0,0.0,0.0,0.0
+1367,Z-TEL COMMUNICATIONS INC,z-tel communications inc,,,,False,0.0,0.0,0.0,0.0
+1363,NORCAL MUTUAL INSURANCE COMPANY,norcal mutual insurance company,,,,False,0.0,0.0,0.0,0.0
+1360,CROSSCOUNTRY CITRUS CORP,crosscountry citrus corp,,,,False,0.0,0.0,0.0,0.0
+1268,The Fidlar Company,the fidlar company,,,,False,0.0,0.0,0.0,0.0
+1270,HEALTH PARTNERS OF PHILA INC,health partners of phila inc,,,,False,0.0,0.0,0.0,0.0
+1277,AGRIUM US INC PAC,agrium us inc pac,,,,False,0.0,0.0,0.0,0.0
+1289,X L AMERICA INC,x l america inc,,,,False,0.0,0.0,0.0,0.0
+1294,ARIZONA LEAGUE OF CONSERVATION VOTERS,arizona league of conservation voters,,,,False,0.0,0.0,0.0,0.0
+1296,"STANLEY, INC.  PAC","stanley, inc  pac",,,,False,0.0,0.0,0.0,0.0
+1302,LINCOLN INSURANCE GROUP INC  (SEE ATTA,lincoln insurance group inc  (see atta,,,,False,0.0,0.0,0.0,0.0
+1309,Overnite Corporation,overnite corporation,,,,False,0.0,0.0,0.0,0.0
+1314,FRIEDMAN BILLINGS RAMSEY GROUP INC.,friedman billings ramsey group inc,,,,False,0.0,0.0,0.0,0.0
+1321,PALM BEACH COUNTY HUMAN RIGHTS COUNCIL,palm beach county human rights council,,,,False,0.0,0.0,0.0,0.0
+1324,"OMNICARE, INC.  POLITCAL ACTION COMMITTEE","omnicare, inc  politcal",,,,False,0.0,0.0,0.0,0.0
+1328,FEDERAL NATIONAL MORTGAGE ASSOCIATION,national mortgage association,"Federal National Mortgage Association, Government Agency",11045,,False,0.0,0.0,0.0,0.0
+1331,MULTIMAX INCORPORATED,multimax incorporated,,,,False,0.0,0.0,0.0,0.0
+1332,TIMOTHY RUPLI AND ASSOCIATES INC,timothy rupli and associates inc,,,,False,0.0,0.0,0.0,0.0
+1343,NORTHSTAR BUSINESS ENTERPRISES,northstar business enterprises,,,,False,0.0,0.0,0.0,0.0
+1346,HANNON ARMSTRONG,hannon armstrong,"Hannon Armstrong Sustainable Infrastructure Capital Inc, Fund Entity",24888782,,False,0.0,0.0,0.0,0.0
+1348,CONKLING FISKUM & MCCORMICK FEDERAL PAC,conkling fiskum & mccormick  pac,,,,False,0.0,0.0,0.0,0.0
+1351,TD AMERITRADE HOLDING CORPORATION,td ameritrade holding corporation,,,,False,0.0,0.0,0.0,0.0
+1353,PROFESSIONAL ASSOCIATION FOR CUSTOMER ENGAGEMENT PAC,professional association for customer engagement pac,,,,False,0.0,0.0,0.0,0.0
+1112,PAXSON COMMUNICATIONS CORPORATION,paxson communications corporation,,,,False,0.0,0.0,0.0,0.0
+1108,PENNSYLVANIA-AMERICAN WATER COMPANY,pennsylvania-american water company,,,,False,0.0,0.0,0.0,0.0
+1103,SPAULDING & SLYE COLLIERS INTERNATIONA,spaulding & slye colliers internationa,,,,False,0.0,0.0,0.0,0.0
+883,NOOTER CORPORATION,nooter corporation,,,,False,0.0,0.0,0.0,0.0
+856,Water Applications & Systems Corporati,water applications & systems corporati,,,,False,0.0,0.0,0.0,0.0
+857,"PARRY AND ROMANI ASSOC INC DBA PARRY, ROMANI, DECONCINI & SYMMS","parry and romani assoc inc dba parry, romani, deconcini & symms",,,,False,0.0,0.0,0.0,0.0
+859,AMALGAMATED SUGAR COMPANY LLC PAC,amalgamated sugar company llc pac,,,,False,0.0,0.0,0.0,0.0
+861,GREAT WEST CASUALTY COMPANY EMPLOYEE & AGENT PAC,great west casualty company employee & agent pac,,,,False,0.0,0.0,0.0,0.0
+862,Allegheny Energy Inc. Federal Politica,allegheny energy inc  politica,,,,False,0.0,0.0,0.0,0.0
+866,LOCKHEED MARTIN EMPLOYEES PAC,lockheed martin employees pac,,,,False,0.0,0.0,0.0,0.0
+872,COLONIAL PROPERTIES TRUST,colonial properties trust,"Colonial Properties Trust, Fund Entity, Delisted (merged with Mid-America Apartment Communities Inc)",54964,,False,0.0,0.0,0.0,0.0
+874,CVS/CAREMARK CORPORATION,cvs/caremark corporation,,,,False,0.0,0.0,0.0,0.0
+880,"TWENTY-FIRST CENTURY FOX, INC.","twenty-first century fox, inc","Twenty-First Century Fox Inc (Australia Branch), Organization Branch",5055458132,,False,0.0,0.0,0.0,0.0
+888,RAMADA OF NV TROPICANA RESORT & CASINO,ramada of nv tropicana resort & casino,,,,False,0.0,0.0,0.0,0.0
+1094,AES EASTERN ENERGY L P,aes eastern energy l p,,,,False,0.0,0.0,0.0,0.0
+891,NAVIENT CORPORATION PAC (NAVIENT PAC),navient corporation pac,,,,False,0.0,0.0,0.0,0.0
+898,BAE Systems Inc. Political Action Comm,bae systems inc   comm,,,,False,0.0,0.0,0.0,0.0
+901,UNISOURCE ENERGY CORPORATION,unisource energy corporation,,,,False,0.0,0.0,0.0,0.0
+905,Burrell Foster Inc.,burrell foster inc,,,,False,0.0,0.0,0.0,0.0
+908,NOVA CHEMICALS INC & NOVA CHEMICALS SRVCS INC COMMITTEE FOR POLITICAL ACTION & ENGAGEMENT,nova chemicals inc & nova chemicals srvcs inc  for   & engagement,,,,False,0.0,0.0,0.0,0.0
+914,ASHTA CHEMICALS INC,ashta chemicals inc,,,,False,0.0,0.0,0.0,0.0
+916,XO COMMUNICATIONS INC PAC (XO PAC),xo communications inc pac,,,,False,0.0,0.0,0.0,0.0
+917,SCHERING-PLOUGH CORPORATION BETTER GOV,schering-plough corporation better gov,,,,False,0.0,0.0,0.0,0.0
+919,MOTORISTS MUTUAL INSURANCE COMPANY CIVIC FUND,motorists mutual insurance company civic fund,,,,False,0.0,0.0,0.0,0.0
+854,SOUTH ALABAMA BANCORPORATION PAC,south alabama bancorporation pac,,,,False,0.0,0.0,0.0,0.0
+850,CHEMFIRST INC/CHEMFIRST INC POL ACT CO,chemfirst inc/chemfirst inc pol act co,,,,False,0.0,0.0,0.0,0.0
+842,NEW HAMPSHIRE ASSOC/PROTECT/HUMAN INC,new hampshire assoc/protect/human inc,,,,False,0.0,0.0,0.0,0.0
+841,RIGHT TO LIFE OF WYOMING INC,right to life of wyoming inc,,,,False,0.0,0.0,0.0,0.0
+765,PILLSBURY COMPANY; THE,pillsbury company; the,,,,False,0.0,0.0,0.0,0.0
+766,VIVRA INCORPORATED,vivra incorporated,,,,False,0.0,0.0,0.0,0.0
+769,GRANGE MUTUAL HOLDING CO.,grange mutual holding co,,,,False,0.0,0.0,0.0,0.0
+773,CONSECO INC CONCERNED CITIZENS POLITICAL ACTION COMMITTEE (PAC),conseco inc concerned citizens,,,,False,0.0,0.0,0.0,0.0
+775,THE NORTH AMERICAN COAL CORPORATION,the north american coal corporation,,,,False,0.0,0.0,0.0,0.0
+778,Sprint/United Telephone Company of Ohi,sprint/united telephone company of ohi,,,,False,0.0,0.0,0.0,0.0
+782,TERRA INDUSTRIES INC AND SUBSIDIARIES,terra industries inc and subsidiaries,,,,False,0.0,0.0,0.0,0.0
+783,SABREPAC SABRELINER CORPORATION POLITI,sabrepac sabreliner corporation,,,,False,0.0,0.0,0.0,0.0
+786,"MAYER ELECTRIC SUPPLY COMPANY INC, THE","mayer electric supply company inc, the",,,,False,0.0,0.0,0.0,0.0
+787,"HAMMEL GREEN AND ABRAHAMSON, INC., PAC","hammel green and abrahamson, inc, pac",,,,False,0.0,0.0,0.0,0.0
+789,OREGON WILD CONSERVATION LEADERS FUND,oregon wild conservation leaders fund,,,,False,0.0,0.0,0.0,0.0
+791,"SOUTHEAST ANESTHESIA ASSOCIATES, P.A.","southeast anesthesia associates, pa",,,,False,0.0,0.0,0.0,0.0
+793,NEW YORK STATE ASSOCIATION OF HEALTH CARE PROVIDERS INC FEDERAL PAC (HCP FEDERAL PAC),new york state association of health care providers inc  pac,,,,False,0.0,0.0,0.0,0.0
+805,BLUE CROSS AND BLUE SHIELD OF NORTH CAROLINA EMPLOYEE POLITICAL ACTION COMMITTEE,blue cross and blue shield of north carolina employee,,,,False,0.0,0.0,0.0,0.0
+815,OHIO GUN COLLECTORS ASSOCIATION,ohio gun collectors association,,,,False,0.0,0.0,0.0,0.0
+822,INTERIM SERVICES INC,interim services inc,Norrell Corp,52722,,False,0.0,0.0,0.0,0.0
+826,GEORGIA OILMEN'S ASSOC INC,georgia oilmen's assoc inc,,,,False,0.0,0.0,0.0,0.0
+829,NY BUILDING CONGRESS CONST IND PAC,ny building congress const ind pac,,,,False,0.0,0.0,0.0,0.0
+840,YRCWORLDWIDE PAC,yrcworldwide pac,,,,False,0.0,0.0,0.0,0.0
+922,General Dynamics Voluntary Political C,general dynamics voluntary  c,,,,False,0.0,0.0,0.0,0.0
+923,COMMONWEALTH TELEPHONE ENTPRSES INC,commonwealth telephone entprses inc,,,,False,0.0,0.0,0.0,0.0
+935,ADCS INC,adcs inc,,,,False,0.0,0.0,0.0,0.0
+1040,MCMORAN EXPLORATION CO. CITIZENSHIP COMMITTEE,mcmoran exploration co citizenship,,,,False,0.0,0.0,0.0,0.0
+1044,Metris Companies Inc.,metris companies inc,,,,False,0.0,0.0,0.0,0.0
+1045,FIRE ISLAND PINES PROP OWNERS ASSO INC,fire island pines prop owners asso inc,,,,False,0.0,0.0,0.0,0.0
+1048,SAGEM MORPHO INC,sagem morpho inc,,,,False,0.0,0.0,0.0,0.0
+1049,CORINTHIAN COLLEGES INC PAC,corinthian colleges inc pac,,,,False,0.0,0.0,0.0,0.0
+1051,PEMCO AVIATION GROUP INC,pemco aviation group inc,,,,False,0.0,0.0,0.0,0.0
+1052,ARMENIAN AMERICAN PAC INC,armenian american pac inc,,,,False,0.0,0.0,0.0,0.0
+1053,MONTANA CONSERVATION VOTERS,montana conservation voters,,,,False,0.0,0.0,0.0,0.0
+1056,REXALL SUNDOWN INC,rexall sundown inc,Rexall Sundown Inc,48145,,False,0.0,0.0,0.0,0.0
+1057,THE BRICKMAN GROUP LTD. LLC,the brickman group ltd llc,,,,False,0.0,0.0,0.0,0.0
+1061,VERTRUE INCORPORATED,vertrue incorporated,,,,False,0.0,0.0,0.0,0.0
+1065,"OLSSON, FRANK AND WEEDA PC","olsson, frank and weeda pc",,,,False,0.0,0.0,0.0,0.0
+1068,SUSQUEHANNA PARTNERS GP,susquehanna partners gp,,,,False,0.0,0.0,0.0,0.0
+1074,FAMILY RESEARCH FORUM OF WISCONSIN INC,family research forum of wisconsin inc,,,,False,0.0,0.0,0.0,0.0
+1082,COMNWLTH ASSOC SCH ADMNS TMS LOCAL 502,comnwlth assoc sch admns tms local 502,,,,False,0.0,0.0,0.0,0.0
+1085,EMPIRE STATE DEM INITIATIVE CORP,empire state dem initiative corp,,,,False,0.0,0.0,0.0,0.0
+1086,TRAVELOCITY.COM LP,travelocitycom lp,,,,False,0.0,0.0,0.0,0.0
+1087,AMERICAN LANDS CAMPAIGN,american lands campaign,,,,False,0.0,0.0,0.0,0.0
+1091,DIVCOWEST PROPERTIES,divcowest properties,,,,False,0.0,0.0,0.0,0.0
+1092,AVAYA INC.,avaya inc,"Quintus Corp, Private Company, Delisted (acquired by Avaya Inc)",118704,quintus corp (acquired by avaya inc),False,0.0,0.0,0.0,0.0
+1042,LEAR SIEGLER SERVICES INC PAC,lear siegler services inc pac,,,,False,0.0,0.0,0.0,0.0
+1034,SENECA RESOURCES CORPORATION,seneca resources corporation,,,,False,0.0,0.0,0.0,0.0
+936,TAXPAYERS LEAGUE OF MINNESOTA,taxpayers league of minnesota,,,,False,0.0,0.0,0.0,0.0
+1031,REFINED SUGARS INC,refined sugars inc,,,,False,0.0,0.0,0.0,0.0
+949,GIBSON & SHARPS PSC,gibson & sharps psc,,,,False,0.0,0.0,0.0,0.0
+951,ORIENTAL MEDICINE ASSOC OF NEW MEXICO,oriental medicine assoc of new mexico,,,,False,0.0,0.0,0.0,0.0
+956,DOLLAR THRIFTY AUTOMOTIVE GROUP INC PAC (DTAG PAC),dollar thrifty automotive group inc pac,,,,False,0.0,0.0,0.0,0.0
+969,SILLS CUMMIS RADIN TISCHMAN ET AL,sills cummis radin tischman et al,,,,False,0.0,0.0,0.0,0.0
+971,AMERICAN COLLEGE OF RADIOLOGY ASSOCIATION POLITICAL ACTION COMMITTEE,american college of radiology association,,,,False,0.0,0.0,0.0,0.0
+972,"PECKHAM INDUSTRIES, INC. FEDERAL PAC","peckham industries, inc  pac",,,,False,0.0,0.0,0.0,0.0
+979,"RES-CARE, INC. DBA BRIGHTSPRING HEALTH SERVICES","res-care, inc dba brightspring health services",,,,False,0.0,0.0,0.0,0.0
+983,YESCARE CORP.,yescare corp,,,,False,0.0,0.0,0.0,0.0
+987,GGNSC HOLDINGS LLC/GOLDEN HORIZONS CARE,ggnsc holdings llc/golden horizons care,,,,False,0.0,0.0,0.0,0.0
+990,REPUBLICAN MAJORITY FOR CHOICE,republican majority for choice,,,,False,0.0,0.0,0.0,0.0
+995,FIRSTRUST CORP.,firstrust corp,,,,False,0.0,0.0,0.0,0.0
+1000,"LIFEPOINT CORPORATE SERVICES, GENERAL PARTNERSHIP (LCSGP) AND FACILITIES WHICH ARE SUBSIDIARIES OF LIFEPOINT HEALTH (COLLECTIVELY LIFEPOINT)","lifepoint corporate services, general partnership  and facilities which are subsidiaries of lifepoint health",,,,False,0.0,0.0,0.0,0.0
+1002,FIRST COMMONWEALTH FINANCIAL CORPORATI,first commonwealth financial corporati,,,,False,0.0,0.0,0.0,0.0
+1003,"GTT COMMUNICATIONS, INC. PAC (GTT PAC)","gtt communications, inc pac",,,,False,0.0,0.0,0.0,0.0
+1006,MI NATIONAL BANK CITIZENS' PAC,mi national bank citizens' pac,,,,False,0.0,0.0,0.0,0.0
+1014,WILLIAMSPORT WIREROPE WORKS INC,williamsport wirerope works inc,,,,False,0.0,0.0,0.0,0.0
+1021,Pac DRS Technoliges Inc. Good Governme,pac drs technoliges inc good governme,,,,False,0.0,0.0,0.0,0.0
+1024,Society of Interventional Pain Managem,society of interventional pain managem,,,,False,0.0,0.0,0.0,0.0
+1029,AMER BIKERS ACTIVE TOWARD EDUC GA INC,amer bikers active toward educ ga inc,,,,False,0.0,0.0,0.0,0.0
+2567,"PHRONESISDC, LLC","phronesisdc, llc",,,,False,0.0,0.0,0.0,0.0

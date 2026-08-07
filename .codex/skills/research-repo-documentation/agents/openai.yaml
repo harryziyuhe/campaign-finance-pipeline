@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Repo Documentation"
+  short_description: "Maintain research repo docs"
+  default_prompt: "Use $research-repo-documentation to update the repository or project documentation with scripts, data, outputs, and replication steps."

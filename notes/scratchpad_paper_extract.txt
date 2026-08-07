@@ -1,0 +1,1634 @@
+--- PAGE 1 ---
+Buying Access or Buying Elections?
+Sectoral Partisan Alignment and Corporate PAC Contributions
+under Electoral Uncertainty
+Harry He
+May 26, 2026
+Abstract
+Why do firms sometimes contribute to electorally secure candidates and at other
+times support candidates in competitive races? I argue that corporate political ac-
+tion committee (PAC) contributions reflect a common investment problem under elec-
+toral uncertainty. Firms weigh the expected benefits of supporting future officeholders
+against the costs of contributing to candidates who may lose, producing a single-peaked
+relationship between candidates’ probability of victory and corporate contribution be-
+havior. I further argue that this trade-off varies systematically with sectoral partisan
+alignment: firms in sectors with stronger partisan policy stakes are more willing to
+tolerate electoral risk and support vulnerable candidates, while firms in weakly aligned
+sectors behave more like access-oriented contributors. I test these predictions using a
+novel firm–candidate panel linking Federal Election Commission corporate PAC con-
+tributions to firm characteristics, Inside Elections race ratings, and market-based mea-
+sures of sectoral partisan advantage across U.S. House elections from 2010 to 2022.
+The results show that corporate PAC giving follows an inverse U-shaped pattern, with
+contributions concentrated among candidates who are electorally viable but not cer-
+tain to win. This pattern varies across firms: firms in partisan-advantaged sectors are
+more likely to support challengers and electorally vulnerable candidates. The findings
+show that access-oriented and election-oriented accounts of corporate political giving
+are distinct strategies emerging from a shared decision problem under different firm-
+and sector-level political conditions.
+1 Introduction
+Business interests are central participants in American electoral politics, yet we know less
+about when corporate money follows political power and when it attempts to shape it. Cor-
+porate PACs often support incumbents and likely winners, suggesting an access-oriented
+strategy of cultivating relationships with future officeholders. But they also contribute to
+1
+--- PAGE 2 ---
+competitive races and vulnerable candidates, where marginal resources may be more elec-
+torally consequential. Why do firms sometimes invest in political access and at other times
+invest in electoral outcomes?
+Existing research has long treated corporate political giving as a form of investment, but
+it offers competing expectations about how firms distribute contributions across candidates.
+Access-oriented accounts theorize long-term relationships and predict that firms concentrate
+resources on likely winners to secure relationships with future policymakers (Welch 1980;
+Snyder 1990; Herrnson, Panagopoulos, and Bailey 2020). Election-oriented accounts instead
+emphasize short-term calculations and contributions to competitive races, where marginal re-
+sources may influence electoral outcomes (McCarty and Rothenberg 2000; Box-Steffensmeier,
+Radcliffe, and Bartels 2005). These perspectives are often presented as competing explana-
+tions for corporate PAC behavior, but both patterns are commonly observed in practice.
+I argue that these competing patterns reflect a common decision problem: firms allocate
+political investments under electoral uncertainty. Before electoral outcomes are resolved,
+firms must decide whether to contribute to candidates whose future political status remains
+uncertain. Contributions made at this stage are public and largely irreversible, exposing
+firms to the risk of backing losing candidates while offering the potential benefits of elec-
+toral influence, early access, and loyalty signaling. 1 This trade-off implies that contribution
+incentives are not monotonic in electoral probability. Firms should avoid both longshot can-
+didates, where the risk of loss is high, and prohibitive favorites, where the marginal value
+of additional support is low. The result is a single-peaked relationship between electoral
+probability and contribution behavior.
+This framework also clarifies why firms should differ in their contribution strategies. I
+focus on sectoral partisan alignment : the extent to which firms in a sector are expected to
+benefit more from one party’s control of government than from the other’s. When partisan
+1The irreversibility of contribution is conceptualized in a way that although contributions can be retracted
+financially through PACs requesting refunds from receipient committees, the public act of contributing itself
+is largely irreversible.
+2
+--- PAGE 3 ---
+control has larger expected consequences for a sector, the victory of an allied candidate
+can be politically consequential. This partisan asymmetry raises the expected benefit of
+investing before electoral uncertainty is resolved and increases firms’ willingness to tolerate
+electoral risk. Firms in partisan-advantaged sectors should therefore be more willing to
+support challengers and electorally vulnerable candidates. By contrast, firms in weakly
+aligned or non-advantaged sectors should place greater weight on maintaining relationships
+across parties and concentrate contributions on safer candidates. Access-buying and election-
+buying should therefore be understood as distinct strategies that emerge from a common
+investment problem under different firm-level political conditions.
+Corporate PAC contributions are only one channel through which firms participate in
+politics. Firms also devote substantial resources to lobbying, super PAC contributions,
+independent expenditures, and less visible forms of political activity. Executives may also
+play important roles in advancing firms’ strategic interests (Teso 2025), and firms may rely
+on less visible channels such as charitable giving (Bertrand et al. 2020), especially when
+direct political spending risks backlash. Nevertheless, corporate PAC contributions provide
+an especially useful setting for analyzing corporate political strategy because they are direct,
+public, candidate-specific, and repeatedly allocated across electoral contexts. Their visibility
+may also make them a conservative setting for observing aggressive or election-oriented
+strategies,(Richter and Werner 2017) implying that heterogeneity in PAC giving may only
+understate heterogeneity in firms’ broader political activity.
+I test these predictions in U.S. House elections from 2010 to 2022, a setting in which
+firms repeatedly allocate resources across a large pool of candidates facing varying levels of
+electoral uncertainty. I construct a novel firm–candidate panel linking Federal Election Com-
+mission (FEC) corporate PAC contributions to sponsoring firm identifiers from LSEG Data &
+Analytics, Inside Elections race ratings, and market-based measures of sectoral partisan ad-
+vantage. The main analysis uses all corporate PAC contributions to House candidates within
+each election cycle, with pre-election contributions during election years before Election Day
+3
+--- PAGE 4 ---
+analyzed as a robustness check. The results show a clear inverse U-shaped relationship be-
+tween candidates’ probability of victory and corporate PAC contribution behavior. Firms
+concentrate contributions on candidates who are electorally viable but not certain to win.
+This pattern varies systematically across firms. Firms in partisan-advantaged sectors reach
+their maximum contribution propensity at lower probabilities of victory, place less weight
+on incumbency, and are more willing to support challengers. These differences persist af-
+ter accounting for candidate type, indicating that sectoral partisan alignment shapes both
+candidate targeting and broader tolerance for electoral risk.
+The paper makes three contributions. First, it reconciles access-buying and election-
+buying accounts of corporate PAC behavior by showing that both can arise from a common
+investment problem under electoral uncertainty. Second, it presents a new dataset connecting
+corporate PAC contributions to sponsoring firm characteristics and electoral conditions. This
+includes developing a measure of sectoral partisan alignment that captures how partisan
+control changes the expected value of political outcomes for different firms. Third, it shows
+that corporate political behavior is systematically heterogeneous: firms do not simply differ
+in how much they give or their partisan giving preferences, but in the level of electoral risk
+they are willing to accept when allocating political resources. These findings suggest that
+business participation in electoral politics is more strategically differentiated than aggregate
+accounts of corporate giving imply.
+The remainder of the paper proceeds as follows. Section 2 reviews the relevant literature
+on corporate political investment and highlights the role of heterogeneity in contribution
+strategies. Section 3 develops a theoretical framework of campaign contributions under elec-
+toral uncertainty and derives testable hypotheses on both the overall contribution pattern
+and cross-firm variation. Section 4 describes the data, measurement strategy, and empiri-
+cal design. Section 5 presents the main results, first documenting the baseline relationship
+between electoral probability and contributions, and then examining heterogeneity and un-
+derlying mechanisms across firms. Section 6 concludes.
+4
+--- PAGE 5 ---
+2 Relevant Literature
+The dominant framework in the study of corporate money in politics conceptualizes cam-
+paign contributions as political investments. This perspective treats corporate donations
+as strategic expenditures undertaken in anticipation of political access, policy influence, or
+other forms of political return (Hillman and Hitt 1999; Evertsson 2018). Under this view,
+firms engage in electoral politics when the expected benefits of participation outweigh its
+costs and when political engagement is expected to shape the policy environment in ways
+that enhance firm value. Within this investment framework, scholars have articulated sev-
+eral distinct mechanisms through which contributions may generate returns. Transactional
+accounts emphasize quid pro quo exchanges in which contributions are traded for favorable
+policy outcomes (Baron 1989). The signaling perspective instead highlights how contri-
+butions convey policy-relevant information and signal ideological alignment to politicians
+(Hayes 1981; Lohmann 1995; Schnakenberg and Turner 2021). The information account,
+closely linked to the lobbying literature, stresses how contributions facilitate access to pol-
+icymakers and create opportunities for firms to provide expertise to resource-constrained
+policymakers (Weight 1990; Hall and Deardorff 2006). Despite their differences, these ap-
+proaches share a common premise, that corporate contributors behave as forward-looking
+investors whose political strategies are guided by expected returns.
+Within this investment framework, however, scholars disagree about how firms allocate
+contributions across candidates and races. The dominant view emphasizes access-oriented
+giving. In this view, firms use contributions as a way to cultivate and maintain relationships
+with current or likely future officeholders. This allows them to gain access to the legislative
+process (Schroedel 1986; Hall and Wayman 1990; Grier and Munger 1993) through subse-
+quent lobbying efforts (Herndon 1982; Langbein 1986; Kalla and Broockman 2016). Building
+on Snyder’s (1990) theory of contributions, this perspective predicts that firms concentrate
+resources on candidates with higher probabilities of victory in order to invest in relationships
+with anticipated policymakers (Barber 2016; Herrnson, Panagopoulos, and Bailey 2020).
+5
+--- PAGE 6 ---
+Subsequent work in this tradition has documented access-seeking PACs’ preferences for in-
+cumbents (Jacobson 2013; Fouirnaies and Hall 2014), candidates in safer seats (Welch 1980;
+Snyder 1993), and members of relevant committees (Powell and Grimmer 2016).
+A second view emphasizes ideology- or election-oriented giving. Rather than treating
+contributions primarily as investments in post-election access, this perspective focuses on
+contributions as attempts to affect electoral outcomes or support candidates when money
+is most electorally useful. In this view, PACs operate similar to party organizations or
+party-connected committees that seek to maximize the number of seats under their party’s
+control by allocating significant resources to electorally vulnerable candidates and well-
+positioned challengers (Jacobson 1985; Herrnson 1989; Herrnson 2009). Although most
+works on interest-group campaign contributions categorize corporate and trade association
+PACs as access-oriented and labor unions as a “mixed” type (for example, see Herrnson,
+Panagopoulos, and Bailey 2020), some suggest different ways to categorize interest-group mo-
+tivations and strategies and document partisan electoral motivations among corporate donors
+(Gopoian 1984; Eismeier and Pollock 1986a; Eismeier and Pollock 1986b). Without directly
+referencing ideological or electoral motivations, challengers of the “long-term contract” view
+of the access-buying perspective have argued that firm considerations are dominated by
+short-term electoral calculations (McCarty and Rothenberg 2000; Box-Steffensmeier, Rad-
+cliffe, and Bartels 2005), and recent empirical studies find that firms disproportionately sup-
+port electorally vulnerable candidates, which align substantively with the election-buying
+logic.
+Empirical research on the effects of corporate campaign contributions has struggled to
+adjudicate between these competing accounts. Studies examining the policy consequences
+of corporate contributions reach divergent conclusions. Some identify tangible benefits, such
+as favorable regulatory treatment (Figueiredo and Edwards 2007) or increased access to gov-
+ernment contracts (Witko 2011), while others find find limited to null effects on subsequent
+policy outcomes (Ansolabehere, Figueiredo, and Snyder 2003; Aggarwal 2010; Fouirnaies and
+6
+--- PAGE 7 ---
+Fowler 2022). Evidence from financial markets is similarly mixed. Some studies report pos-
+itive abnormal returns associated with supporting in-state candidates (Cooper, Gulen, and
+Ovtchinnikov 2010) electoral winners (Huber and Kirchler 2013), whereas others detect no
+systematic performance advantages (Hadani and Schuler 2013; Fowler, Garro, and Spenkuch
+2020). Even when positive effects are identified, they often face identification challenges,
+as it remains difficult to distinguish returns generated by political investment from broader
+policy changes following electoral outcomes. As a result, empirical findings provide limited
+guidance on which strategic logic best characterizes corporate behavior.
+One interpretation of these mixed results is that they undermine the investment frame-
+work itself. An alternative interpretation, however, is that they reflect heterogeneity in
+corporate strategy. Most empirical analyses evaluate aggregate patterns of giving or aver-
+age treatment effects, implicitly assuming a representative corporate donor. Studies often
+contrast corporate PACs with other types of actors such as individuals, labor unions, and
+party organizations, but devote less attention to systematic variations among firms them-
+selves. When variations among business interests are considered, it is often embedded within
+frameworks of analyzing interest-group politics more broadly (Barber and Eatough 2020) or
+examined narrowly within specific sectors, such as oil (Evans 1988), automobile (Hersch
+and McDougall 2000), or tobacco and alcohol (Taylor 2003). While these studies provide
+valuable insights, they typically focus on sector specific patterns or within-sector dynamics
+rather than developing generalizable frameworks for cross-sectoral variation. A notable ex-
+ception is Gimpel et al. (2014), who document substantial variation in partisan alignment
+across industries. Although corporations lean Republican in aggregate, partisan preferences
+and alignment vary significantly, with many industries exhibiting weak or mixed partisan
+preferences. These findings suggest that the business community is far from politically ho-
+mogeneous.
+This paper builds on these insights by reconceptualizing the relationship between access-
+buying and election-buying as a problem of strategic heterogeneity under electoral uncer-
+7
+--- PAGE 8 ---
+tainty. I develop a framework in which firms allocate contributions based on candidates’
+probabilities of victory, and in which both access-oriented and election-oriented patterns
+can emerge from the same underlying incentives. Rather than treating these strategies as
+competing explanations, the analysis shows how variation in firm characteristics shifts firms’
+tolerance for electoral risk and, consequently, their allocation of financial resources. Em-
+pirically, I move beyond aggregate patterns to examine systematic differences in how firms
+respond to electoral conditions, demonstrating that heterogeneity in corporate strategy plays
+a central role in shaping observed contribution behavior.
+3 Theorizing Corporate Campaign Contributions
+Building on the investment framework, I develop a theory of corporate campaign contri-
+butions under electoral uncertainty. The central claim is that access-oriented and election-
+oriented giving are not mutually exclusive explanations, but distinct strategies that can
+emerge from a common decision problem. Before electoral outcomes are known, firms must
+decide whether to commit resources when support may generate greater political returns
+but also exposes them to greater electoral risk. By placing candidates’ probability of victory
+at the center of this decision, the framework generates predictions about both aggregate
+contribution patterns and systematic heterogeneity across firms.
+Contributions made before electoral outcomes are resolved reflect a trade-off between ex-
+pected political returns and electoral risk. The potential benefits are several. Contributions
+may help allied candidates win office, strengthen relationships with eventual officeholders,
+and signal loyalty in ways that facilitate subsequent access to policymakers. These benefits
+are unlikely to increase monotonically with a candidate’s probability of victory. Contribu-
+tions to longshot candidates are unlikely to generate returns because those candidates are
+unlikely to hold office, while contributions to prohibitive favorites may have limited marginal
+value because these candidates already expect to win and can attract many contributors.
+8
+--- PAGE 9 ---
+The expected return to early support should therefore be highest for candidates who are
+electorally viable but not yet safe, for whom contributions are both consequential and infor-
+mative. The costs can also be substantial. Contributions consume limited PAC resources
+and become sunk once made. They may also generate relational or reputational costs if a
+firm backs a losing candidate and alienates the opposing candidate or party. Supporting
+losing candidates may further reduce a PAC manager’s perceived effectiveness by lowering
+the PAC’s win-loss record (Herrnson, Panagopoulos, and Bailey 2020). Firms must therefore
+decide not simply whether a candidate is likely to win, but whether the expected political
+return to contributing outweighs the financial, relational, and reputational risks of doing so
+before uncertainty is resolved.
+To formalize this decision, consider a firm deciding whether to contribute to a candidate
+with probability of victory p ∈ [0, 1]. Contributing before the outcome is resolved entails a
+cost and yields a benefit if the candidate wins, but it incurs a penalty if the candidate loses.
+The expected payoff to contributing is thus a function of three components: the benefit
+of supporting a winner, the cost of contribution, and the penalty associated with backing
+a loser. Details of the formal model is presented in Appendix A. Crucially, each of these
+components may vary with electoral conditions. The value of early access may be greater in
+competitive races, where support is more valuable to candidates, and weaker in safe races,
+where politicians face less need to cultivate contributors. Similarly, candidates with stronger
+electoral positions may be able to demand greater contributions in exchange for access.
+Finally, the reputational or relational penalty of backing a losing candidate may depend on
+how credible future retaliation is expected to be. These relationships imply that the expected
+payoff to contributing is not mechanically increasing in a candidate’s probability of victory.
+Two general implications follow from this model.
+Proposition 1: Entry Threshold There exists a cutoff probability p∗ ∈ (0, 1) such that firms
+do not contribute to candidates whose probability of victory falls below this threshold.
+Intuitively, contributing to candidates with negligible chances of winning yields negative
+9
+--- PAGE 10 ---
+expected returns, as the cost of investment cannot be offset by potential benefits. Firms
+therefore avoid hopeless candidates and enter only when the probability of victory exceeds
+a positive threshold.
+Proposition 2: Single-Peaked Contribution Incentive Conditional on entry, the expected re-
+turn to contributing is a single-peaked inverse U-shaped function of the probability of victory.
+The single-peaked structure reconciles access-oriented and election-oriented accounts of
+corporate giving. When the peak occurs close to electoral certainty, observed behavior
+resembles access-buying. Firms concentrate resources on candidates who are likely to become
+officeholders. When the peak occurs in the competitive range, observed behavior resembles
+election-buying. Firms target candidates for whom marginal support may be more electorally
+consequential. The difference between these patterns is therefore not whether firms are
+strategic investors, but where their contribution incentive peaks as electoral risk changes.
+Figure 1 illustrates this generalized contribution curve. The curve displays both an entry
+threshold and an interior maximum. When the peak occurs near certainty, contribution
+behavior resembles canonical access-buying accounts, such as Snyder’s (1990) model, in
+which firms give more to safer candidates. When the peak lies in the competitive range,
+behavior resembles election-buying accounts, including McCarty and Rothenberg (2000), in
+which firms target contested races.
+This single-peaked structure has direct empirical implications. At low levels of electoral
+support, increases in a candidate’s probability of victory raise the likelihood of receiving
+contributions, as the risk of backing a loser declines. However, as candidates approach near-
+certain victory, the marginal incentive to contribute diminishes and may reverse. Empirically,
+this implies a nonlinear relationship between electoral probability and contribution behavior.
+The effect of p should be positive at low levels, flatten as p increases, and decline at high
+levels. Linear specifications adopted frequently in existing studies impose monotonicity and
+may obscure the underlying strategic trade-off.
+10
+--- PAGE 11 ---
+Probability of Winning
+Intent to Contribute
+0 1
+Figure 1: Investment Models of Contribution and Electoral Probability
+This framework differs from existing models in two respects. First, rather than treating
+access-buying and election-buying as competing accounts, it nests them within a single con-
+tribution function. Existing access-oriented accounts emphasize the value of relationships
+with likely officeholders, while election-oriented accounts emphasize the value of supporting
+vulnerable candidates. The framework developed here shows that both patterns can arise
+from the same investment logic once electoral probability affects both the expected benefits
+and expected costs of contributing. Second, the framework identifies where firm heterogene-
+ity should matter. Firms need not differ only in their overall propensity to give. They may
+also differ in the level of electoral risk they are willing to accept. This implies that the loca-
+tion of the contribution peak, not only the height of the contribution curve, is theoretically
+meaningful.
+Hypothesis 1: Firms are more likely to contribute to candidates with intermediate-to-high
+probabilities of victory and less likely to contribute to either longshot candidates or near-
+certain winners.
+The same framework also generates predictions about firm heterogeneity. The location
+of the contribution peak depends on how firms value the expected benefits of contributing
+relative to the risks of backing losing candidates. Firms that place greater weight on downside
+11
+--- PAGE 12 ---
+risk should require greater electoral certainty before contributing, shifting their peak toward
+safer candidates. Firms that expect larger policy returns from a candidate’s victory should
+be willing to contribute at lower probabilities of victory, shifting their peak toward more
+competitive races.
+I focus on sectoral partisan alignment as one source of this variation. In sectors where
+policy outcomes are closely tied to partisan control, electoral outcomes have asymmetric
+consequences for firm value. A victory by the sector’s favored party may create a more
+favorable policy environment, while defeat may produce materially worse regulatory, tax,
+procurement, or market conditions. This partisan asymmetry increases the expected return
+to supporting candidates whose victories remain uncertain but consequential. Firms in
+partisan-advantaged sectors should therefore tolerate greater electoral risk and shift their
+contribution activity toward candidates who are viable but not yet safe. By contrast, firms
+in weakly aligned or non-advantaged sectors face weaker partisan policy stakes. These firms
+may still value access to policymakers, but the expected payoff from changing partisan
+control is lower or more ambiguous. They therefore have stronger incentives to avoid failed
+investments, maintain relationships across party lines, and concentrate contributions on
+candidates with higher probabilities of victory. In the language of the model, sectoral partisan
+alignment shifts the location of the contribution peak. Stronger alignment moves the peak
+toward more electorally vulnerable candidates, while weaker alignment moves it toward safer
+candidates.
+This heterogeneity can appear through two observable channels. First, firms in partisan-
+advantaged sectors may differ in candidate-type targeting. Incumbents usually offer greater
+access certainty because they already hold office and are more likely to maintain relation-
+ships with contributors. Access-oriented firms should therefore disproportionately favor in-
+cumbents. Firms more willing to bear electoral risk, by contrast, should be relatively more
+willing to support challengers, who often lack the established access value of incumbents but
+may be more electorally consequential. Second, firms may differ in their response to electoral
+12
+--- PAGE 13 ---
+probability within candidate type. Even among incumbents, challengers, or open-seat candi-
+dates, firms in partisan-advantaged sectors may be more willing to support candidates with
+lower probabilities of victory. Distinguishing these channels is important because both can
+produce lower average contribution peaks, but they imply different mechanisms. Candidate-
+type targeting operates through the kinds of candidates firms select, while within-type risk
+tolerance reflects how firms evaluate electoral uncertainty among otherwise similar candi-
+dates.
+These two channels generate distinct observable implications. If sectoral partisan align-
+ment increases firms’ tolerance for electoral risk, then firms in partisan-advantaged sectors
+should reach their maximum contribution propensity at lower probabilities of victory. If
+this tolerance operates partly through candidate-type targeting, then firms in partisan-
+advantaged sectors should place less weight on incumbency and become relatively more
+willing to support challengers and open-seat candidates.
+Hypothesis 2: As sectoral partisan alignment increases, firms’ contribution peaks shift to-
+ward candidates with lower probabilities of victory.
+Hypothesis 3: As sectoral partisan alignment increases, firms place less weight on incum-
+bency and become more willing to support challengers.
+Taken together, the theory implies that observed differences between access-buying and
+election-buying behavior reflect variation in firm characteristics and electoral conditions
+rather than competing theoretical logics. Firms face a common decision problem under
+electoral uncertainty, but differ in how they resolve the trade-off between expected bene-
+fits and electoral risk. As a result, aggregate patterns of contribution behavior may mask
+systematic heterogeneity in how firms allocate political resources.
+13
+--- PAGE 14 ---
+4 Data and Methods
+The empirical analysis constructs a novel firm–candidate panel linking corporate PAC con-
+tributions to firm characteristics, electoral competitiveness, and sectoral partisan alignment.
+The unit of analysis is the firm–candidate–election cycle. For each firm–candidate–cycle,
+the main dependent variable indicates whether the firm’s corporate PAC contributed to the
+candidate at any point during the election cycle.
+Contribution data come from the Federal Election Commission (FEC), which records all
+PAC donations to federal candidates. I focus my attention on House of Representatives can-
+didates as all members face re-election every two years. I also restrict attention to corporate
+PACs, the primary legal vehicle through which corporations contribute directly to politi-
+cal campaigns. The main analysis uses all contributions recorded between corporate PACs
+and House candidates within each election cycle. However, full-cycle giving may include
+post-election “kiss-and-make-up” contributions to newly elected challengers and open-seat
+candidates or politicians who recently received relevant committee assignments (Herrnson,
+Panagopoulos, and Bailey 2020; Powell and Grimmer 2016). To address this potential con-
+cern, I re-estimate the main models using a pre-election sample, which includes only con-
+tributions made during election years before Election Day. These results are reported as
+robustness checks and show that the main findings are consistent across different sample
+specifications.
+Because the FEC does not provide unique firm identifiers, I hand-matched PACs to
+sponsoring corporations using firm names, addresses, and organizational information from
+LSEG Data & Analytics. This process reconciles mergers, acquisitions, subsidiaries, and
+name changes over time. Automated matching alone produces substantial errors, particularly
+for legacy PACs, and the manual procedure significantly improves the accuracy of linking
+contributions to firm-level characteristics.
+To measure electoral uncertainty, I use candidate ratings from Inside Elections , which
+provides nonpartisan expert assessments and projections of federal races on a nine-point scale
+14
+--- PAGE 15 ---
+ranging from “Solid Republican” to “Solid Democrat.” I convert these ratings into a measure
+of each candidate’s ex ante probability of victory. This measure serves as an empirical
+proxy for p, the candidate’s perceived likelihood of winning in the theoretical framework.
+Unlike realized vote shares, which are observed only after uncertainty resolves, expert ratings
+capture the competitive environment as firms and candidates themselves perceive it at the
+time contributions are made.
+Another central explanatory variable is sectoral partisan alignment, defined as the extent
+to which firms in a sector are expected to benefit more from one party’s control of government
+than from the other’s. The concept is not intended to measure firms’ expressed ideology
+or partisan identity. Instead, it captures market-implied exposure to partisan control, or
+whether investors expect firms in a sector to perform better under one partisan coalition
+than under the other. I measure this concept using stock-market reactions to salient partisan
+political shocks, which provide moments when expectations about partisan control change
+sharply and can be observed independently of firms’ own contribution behavior. Specifically,
+I use an event-study approach to estimate the abnormal returns around presidential elections
+without an incumbent seeking reelection and the unexpected shift in Senate control following
+Senator Jim Jeffords’ decision to caucus with Democrats in May 2001. These shocks are
+useful because they change expectations or resolve uncertainty about partisan control while
+occurring within narrow windows, allowing market reactions to be interpreted as changes in
+expected firm value associated with partisan political outcomes. For each event, I estimate
+abnormal returns using intra-day or overnight windows, consistent with the assumption that
+politically relevant information is rapidly incorporated into stock prices. Abnormal returns
+are first estimated at the firm level and then aggregated to the sector level.
+I aggregate abnormal returns to the sector level for both empirical and substantive rea-
+sons. Empirically, firm-level abnormal returns around political events are noisy and may
+coincide with earnings announcements, firm-specific news, liquidity constraints, or other id-
+iosyncratic shocks unrelated to politics. Given the limited number of major partisan political
+15
+--- PAGE 16 ---
+shocks available for constructing this measure, such noise can disproportionately influence
+firm-level estimates. Aggregation reduces the influence of these idiosyncratic movements and
+recovers the common component of political exposure shared by firms in similar economic
+activities. Sector-level aggregation also mitigates concerns about non-random missingness.
+Abnormal returns can only be estimated for publicly traded firms, and price reactions for
+thinly traded firms, particularly those with low liquidity or over-the-counter trading, may
+be muted or delayed. Because private firms and low-liquidity firms are not randomly dis-
+tributed across sectors, relying exclusively on firm-level estimates could introduce systematic
+measurement error. Aggregating to the sector level allows the measure to capture the com-
+mon political exposure shared by firms within a sector, including firms for which direct
+market-based estimates are unavailable or noisy.
+Substantively, sector-level aggregation corresponds to the theoretical concept of shared
+exposure to partisan policy regimes rather than idiosyncratic firm ideology. Many partisan
+political shocks operate through sector-wide policy domains, including taxation, regulation,
+procurement, energy, health care, labor, and trade. Firms within the same sector are there-
+fore likely to face similar policy risks and opportunities when partisan control changes.
+Aggregating to the sector level is consistent with the notion that partisan alignment reflects
+shared sectoral interests rather than purely firm-specific preferences, a pattern documented
+in prior research on corporate political behavior (Evans 1988; Gimpel, Lee, and Parrott
+2014).
+From these estimates, I construct a market-implied measure of sectoral partisan advan-
+tage. The continuous measure is rescaled to range from −1 to 1, with negative values indicat-
+ing sectors expected to benefit more under Democratic control and positive values indicating
+sectors expected to benefit more under Republican control. The categorical measure clas-
+sifies sectors as Democratic-advantaged, Republican-advantaged, or non-advantaged. The
+continuous measure captures variation in the direction and intensity of partisan exposure,
+while the categorical measure provides a more interpretable comparison across sector types.
+16
+--- PAGE 17 ---
+This measure has two advantages for the present analysis. First, because it is constructed
+from financial-market reactions rather than contribution behavior or other corporate polit-
+ical activities, it avoids mechanically inferring partisan alignment from the outcome it is
+meant to explain. Second, because it is based on expected changes in firm value around
+partisan shocks, it captures policy-relevant partisan exposure even when firms do not pub-
+licly identify with a party. At the same time, the measure should be interpreted as sectoral
+political exposure rather than a direct measure of corporate ideology. A sector classified as
+Republican- or Democratic-advantaged is one whose expected value responds more favorably
+to that party’s control, not necessarily one whose firms are ideologically committed to that
+party.
+The measure also has limitations. Sector-level aggregation may obscure within-sector
+heterogeneity, and sectors classified as non-advantaged may include both genuinely bipartisan
+sectors and sectors with limited exposure to partisan political shocks. I therefore assess the
+robustness of the results using two alternative measurement strategies. First, I reconstruct
+the measure at a more disaggregated industry level, which reduces the risk that broad sector
+categories average over politically distinct industries. Second, I construct a contribution-
+based measure of partisan alignment using historical giving patterns. This latter measure
+is less useful for causal interpretation because it is derived from political behavior, but it
+provides a valuable check on whether the market-based classification corresponds to revealed
+patterns of partisan engagement.
+After merging contribution records, electoral ratings, and firm characteristics, the result-
+ing panel contains approximately seven million firm–candidate observations spanning 2010 to
+2022. The primary dependent variable is a binary indicator of whether a firm contributes to
+a given candidate during the election cycle. In complementary specifications, I model contri-
+bution amounts to assess whether the theoretical predictions extend to the intensive margin.
+All models include firm-level controls that account for political capacity and exposure, in-
+cluding total PAC receipts available in the election cycle (capturing fundraising capacity),
+17
+--- PAGE 18 ---
+public versus private ownership, foreign ownership, and whether the firm is headquartered
+in the same state as the candidate. Candidate- and race-level controls include incumbency
+status, party affiliation, and indicators for special elections. Year and state fixed effects
+account for time-varying national conditions and state-level political environments.
+The empirical strategy tests two central predictions of the theory. First, I estimate base-
+line models in which firms’ contribution decisions are modeled as a function of candidates’ ex
+ante probability of victory, allowing for nonlinear effects to evaluate Hypothesis 1 regarding
+the single-peaked relationship. Second, to assess heterogeneity in contribution strategies, I
+interact sectoral partisan-advantage with electoral probability and incumbency status. The
+theory predicts that partisan alignment shifts the location of the contribution peak: firms
+in aligned sectors should exhibit greater tolerance for electoral risk and are more likely to
+back electoral vulnerable candidates. These models also assess whether this behavior reflects
+differences in candidate-type targeting or broader variation in electoral risk tolerance.
+5 Results
+The empirical analysis proceeds in four steps. I first examine whether corporate PAC con-
+tributions follow the single-peaked pattern predicted by the theory. I then test whether the
+location of this contribution peak varies with sectoral partisan alignment. Next, I examine
+whether this heterogeneity operates through candidate-type targeting, broader differences
+in electoral risk tolerance, or both. Finally, I assess whether the same patterns hold for
+contribution amounts and under alternative specifications.
+5.1 Descriptive and Baseline Results
+The theory first predicts that contribution incentives should be nonmonotonic in candidates’
+probability of victory. Firms should avoid longshot candidates because the expected return to
+contributing is low, but they should also have weaker incentives to contribute to prohibitive
+18
+--- PAGE 19 ---
+Figure 2: Corporate PAC Contribution Probability and House Candidate Probability of
+Victory, 2018
+favorites because additional support has limited marginal value. Figure 2 provides initial
+descriptive evidence on this relationship. The figure plots the unconditional probability
+that a firm–candidate pair results in a contribution during the 2018 election cycle as a
+function of the candidate’s probability of victory.2 The gray bins and solid blue line depicting
+the empirical relationship shows that contribution probabilities are low among candidates
+with very weak electoral prospects, rise as candidates become electorally viable, and do not
+increase monotonically through the safest races. This pattern is broadly consistent with the
+theory’s central expectation that firms do not simply contribute more as candidates become
+more likely to win. 3
+The descriptive relationship is unconditional and therefore aggregates over several sources
+of theoretically relevant heterogeneity. It pools firms with different levels of sectoral partisan
+alignment, candidates with different incumbency statuses, and races from different electoral
+2I plot 2018 because it is the year with the highest total corporate PAC contributions and because its
+competitive midterm environment provides substantial variation in race competitiveness.
+3To map the numeric scale back to Inside Elections categories, values 0 through 4 correspond to “toss-up,”
+“tilt,” “lean,” “likely,” and “solid,” respectively.
+19
+--- PAGE 20 ---
+environments. If firms reach their maximum contribution propensity at different points on
+the electoral-risk scale, aggregation can generate local irregularities in the empirical curve
+while still preserving the broader nonmonotonic pattern. The fitted quadratic line summa-
+rizes this broader pattern, showing that contribution probabilities rise as candidates become
+electorally viable and decline as candidates approach safer electoral positions. This suggests
+that a nonlinear specification provides a useful approximation to the underlying relation-
+ship while retaining interpretability. It also indicates why conventional linear specifications
+may obscure the strategic trade-off between expected benefits and electoral risk by imposing
+monotonicity. The multivariate models below build on this descriptive evidence by estimat-
+ing the nonlinear relationship while accounting for firm characteristics, candidate type, state,
+year, and other covariates.
+Figure 3: Contribution Probability and Chance of Winning by Sectoral Partisan Alignment
+I next examine whether this relationship varies across firms. The second prediction con-
+cerns heterogeneity in the location of the contribution peak. If sectoral partisan alignment
+increases firms’ willingness to tolerate electoral risk, then firms in partisan-advantaged sec-
+tors should reach their maximum contribution propensity at lower probabilities of victory
+than firms in non-advantaged sectors. Figure 3 provides initial descriptive evidence for this
+20
+--- PAGE 21 ---
+prediction by plotting contribution probabilities separately by sectoral partisan-alignment
+category. Across categories, the relationship remains broadly nonmonotonic, indicating that
+the baseline pattern is not only an artifact of pooling all firms together. However, the location
+of the peak differs across levels of sectoral partisan alignment. Firms in partisan-advantaged
+sectors, particularly Republican-advantaged sectors, exhibit peaks at lower probabilities of
+victory, while firms in non-advantaged sectors peak at higher levels of electoral certainty.
+This shift is consistent with the theoretical prediction that sectoral partisan alignment
+increases firms’ willingness to tolerate electoral risk. Firms operating in sectors with clearer
+partisan exposures face asymmetric policy outcomes across parties, which raises the expected
+return to influencing competitive races and reduces the relative weight placed on downside
+risk. Substantively, the difference is not merely a change in the slope of the curves. Firms in
+partisan-advantaged sectors reach their highest contribution propensity among candidates
+who remain electorally vulnerable, closer to toss-up, tilt, or lean races, whereas firms in non-
+advantaged sectors concentrate their giving around candidates closer to likely winners. In
+practical terms, firms in partisan-advantaged sectors treat uncertain but viable candidates
+as attractive political investments, while firms in non-advantaged sectors behave more like
+access-oriented contributors that wait for greater electoral certainty. This descriptive pattern
+previews the multivariate results below, which test whether these differences persist after
+accounting for firm, candidate, race, year, and state characteristics.
+5.2 Interaction Models
+To formally evaluate whether the relationship between electoral probability and contribution
+behavior varies across firms, I estimate multivariate logit models that incorporate interac-
+tions between candidates’ chance of winning and sectoral partisan alignment. These models
+allow the marginal effect of electoral probability on contribution decisions to differ system-
+atically across firm types and provide a direct test of the theoretical prediction that partisan
+alignment shifts firms’ tolerance for electoral risk.
+21
+--- PAGE 22 ---
+Dependent variable:
+Contribute
+Continuous Measure Categorical Measure
+Chance of Winning 0.4234 ∗∗∗ 0.3817∗∗∗
+(0.0248) (0.0209)
+Chance of Winning 2 -0.0938∗∗∗ -0.0925∗∗∗
+(0.0057) (0.0051)
+GOP 0.4054 ∗∗∗ 0.3023∗∗∗
+(0.1102) (0.1349)
+DEM 0.3368 ∗ 0.5798∗∗∗
+(0.1806) (0.1218)
+Chance of Winning × GOP -0.1740 ∗∗∗ -0.0915∗∗∗
+(0.0268) (0.0193)
+Chance of Winning 2 × GOP 0.0014 -0.0039
+(0.0069) (0.0055)
+Chance of Winning × DEM -0.1584 ∗∗∗ -0.0339∗
+(0.0436) (0.0174)
+Chance of Winning 2 × DEM -0.0006 -0.0032
+(0.0116) (0.0049)
+Observations 6,751,537 6,751,537
+Controls ✓ ✓
+Year FE ✓ ✓
+State FE ✓ ✓
+Clustered SE ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 1: Logit Models of Corporate PAC Contributions by Sectoral Partisan Alignment
+Table 1 reports the regression results. Across all specifications, the coefficient on the
+squared term in candidates’ probability of victory is negative and highly statistically sig-
+nificant, confirming the general inverse U-shaped relationship documented in the baseline
+analysis. More importantly, the interaction terms between electoral probability and sectoral
+partisan alignment are consistently negative, indicating that firms in partisan-advantaged
+sectors exhibit a weaker positive response to increases in electoral probability. Substantively,
+this implies that these firms place relatively greater weight on candidates with lower proba-
+bilities of victory compared to firms in non-advantaged sectors. The negative relationship is
+more apparent and more statistically significant in the continuous measure model, indicat-
+ing that the degree of partisan alignment matters in how firms evaluate electoral risk and
+allocate contributions.
+22
+--- PAGE 23 ---
+While the sign and statistical significance of these interaction terms establish the presence
+of heterogeneity, their substantive meaning is best understood through predicted probabil-
+ities. To facilitate interpretation, I plot predicted contribution probabilities across the full
+range of electoral probabilities for different firm types, along with the implied peak location
+of each curve. Figure 4 presents the results using the continuous measure of sectoral partisan
+alignment. All three types of firms exhibit a clear inverse U-shaped pattern, consistent with
+the baseline findings. Contribution propensity rises as candidates move from longshot sta-
+tus into electorally viable races, but flattens and eventually declines as candidates approach
+safe-seat status. This pattern is substantively important because it shows that firms are
+not simply more likely to give as candidates become safer; rather, they concentrate their
+giving on candidates who are viable but not electorally certain. The location of this peak
+differs across levels of sectoral partisan alignment. Firms at the extremes of sectoral parti-
+san advantage (−1 and 1) exhibit peaks at lower probabilities of victory relative to firms in
+non-advantaged sectors. Notably, strongly Democratic- and Republican-advantaged sectors
+display similar behavior, both concentrating contributions in more competitive races. This
+shift is consistent with the theory’s central mechanism: when partisan control has larger
+expected consequences for a sector, firms have greater incentives to invest in candidates
+whose victories are politically consequential even when they remain electorally uncertain.
+The lower peak location among firms in partisan-advantaged sectors therefore indicates a
+different tolerance for electoral risk, not merely a different baseline propensity to contribute.
+The magnitude of these differences is also meaningful. The shift in peak location between
+firms in non-advantaged sectors and firms in partisan-advantaged sectors corresponds to a
+movement from candidates in the “lean” and “likely” categories toward those in more com-
+petitive “tilt” races. In practical terms, this implies that firms in partisan-advantaged sectors
+reorient their contribution strategy toward earlier stages of electoral viability, treating more
+vulnerable but still viable candidates as attractive political investments.
+These results show that firms in partisan-advantaged sectors concentrate contributions at
+23
+--- PAGE 24 ---
+(a) Predicted Contribution Probability
+ (b) Peak Location
+Figure 4: Predicted Contribution Probability and Peak by Sectoral Par-
+tisan Alignment
+lower levels of electoral certainty. They do not, however, fully identify why this shift occurs.
+As discussed in the theory section, two distinct but related mechanisms may generate the
+observed pattern. First, firms in partisan-advantaged sectors may differ in candidate-type
+targeting. Because challengers are, on average, more electorally vulnerable than incumbents,
+disproportionate support for these candidates would shift contribution activity toward lower
+probabilities of victory. If this mechanism dominates, firms in partisan-advantaged sectors
+should be relatively more willing to support challengers, and the interaction between sectoral
+partisan alignment and electoral probability should diminish once candidate type is taken
+into account. Second, firms in partisan-advantaged sectors may exhibit a broader willing-
+ness to tolerate electoral risk, contributing to candidates with lower probabilities of victory
+regardless of candidate type. If this mechanism operates independently of candidate-type
+targeting, these firms should continue to favor more electorally vulnerable candidates even
+when comparing candidates with similar institutional positions. Both mechanisms are con-
+sistent with more election-oriented giving, but they imply different routes through which
+sectoral partisan alignment shapes contribution strategy. I examine these possibilities by
+24
+--- PAGE 25 ---
+incorporating interactions between sectoral partisan alignment and incumbency status.
+Dependent variable:
+Contribute
+Continuous Measure Categorical Measure
+Chance of Winning 0.4943 ∗∗∗ 0.4699∗∗∗
+(0.0288) (0.0255)
+Chance of Winning 2 -0.1393∗∗∗ -0.1386∗∗∗
+(0.0100) (0.0095)
+GOP 0.8677 ∗∗∗ 0.3008∗∗
+(0.1729) (0.1347)
+DEM 1.165 ∗∗∗ 0.5824∗∗∗
+(0.2968) (0.1215)
+Incumbent 2.584 ∗∗∗ 2.296∗∗∗
+(0.1651) (0.1447)
+Open Seat 0.1666 0.0739
+(0.1702) (0.1517)
+Chance of Winning × GOP -0.0951 ∗∗∗ -0.0427∗∗
+(0.0277) (0.0203)
+Chance of Winning 2 × GOP 0.0009 -0.0034
+(0.0073) (0.0057)
+Chance of Winning × DEM -0.0488 0.0057
+(0.0485) (0.0180)
+Chance of Winning 2 × DEM -0.0077 -0.0066
+(0.0131) (0.0051)
+Incumbent × GOP -1.306 ∗∗∗ -0.8558∗∗∗
+(0.1724) (0.1235)
+Open Seat × GOP -0.4252 ∗∗∗ -0.2336∗∗
+(0.1578) (0.1120)
+Incumbent × DEM -1.38 ∗∗∗ -0.4541∗∗∗
+(0.3049) (0.1318)
+Open Seat × DEM -0.4208 ∗ -0.1910∗∗
+(0.2415) (0.0920)
+Observations 6,751,537 6,751,537
+Controls ✓ ✓
+Year FE ✓ ✓
+State FE ✓ ✓
+Clustered SE ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 2: Logit Models of Corporate PAC Contributions with Incumbency Interactions
+To empirically distinguish between these mechanisms, I extend the baseline interaction
+model by incorporating interactions between sectoral partisan alignment and incumbency
+status. Table 2 reports the results. Consistent with the candidate-targeting mechanism, firms
+in partisan-advantaged sectors are significantly less likely to prioritize incumbents relative to
+25
+--- PAGE 26 ---
+challengers. Substantively, the incumbency interactions indicate a sizable moderation effect.
+For sectors at the extremes of partisan advantage on both sides of the political spectrum,
+the estimated incumbency coefficient is roughly half as large on the logit scale as it is for
+firms in non-advantaged sectors. Using the categorical measure, the incumbency coefficient is
+reduced by approximately 30% for Republican-advantaged sectors and 20% for Democratic-
+advantaged sectors. These comparisons describe changes in logit-scale estimates rather than
+proportional changes in predicted probabilities, but they indicate that incumbency is sub-
+stantially less dominant in the contribution strategies of firms in partisan-advantaged sectors.
+This suggests that a substantial portion of the shift toward more vulnerable candidates can
+be attributed to differences in candidate-type targeting. The substantive implication is not
+that firms in partisan-advantaged sectors ignore incumbents. Incumbents remain attrac-
+tive contribution targets across all firm types, consistent with the access-oriented incentives
+emphasized in prior work. Rather, the results indicate that firms in partisan-advantaged
+sectors place less overwhelming weight on incumbency when allocating contributions. Com-
+pared with firms in non-advantaged sectors, they are relatively more willing to support chal-
+lengers, who often offer lower access certainty but greater potential electoral consequences.
+The pattern therefore suggests that sectoral partisan alignment changes how firms evaluate
+candidate type, not merely how they respond to candidates’ overall probability of victory.
+After accounting for interactions with incumbency status, the interaction between sec-
+toral partisan alignment and electoral probability remains negative and statistically signif-
+icant for Republican-advantaged sectors. The effect is negative for Democratic-advantaged
+sectors using the continuous measure but loses statistical significance. This finding provides
+some evidence for the second mechanism: firms in partisan-advantaged sectors, especially
+Republican-advantaged sectors, exhibit a broader willingness to tolerate electoral risk that
+extends beyond candidate-type targeting. In other words, even when comparing candidates
+with similar institutional positions, firms in Republican-advantaged sectors continue to favor
+candidates with lower probabilities of victory. The persistence of this effect suggests that
+26
+--- PAGE 27 ---
+heterogeneity in contribution behavior reflects not only differences in candidate selection but
+also differences in how firms evaluate electoral uncertainty itself.
+Figure 5 illustrates these results using predicted probabilities from the fully interacted
+model for an incumbent candidate. For firms in weakly aligned or non-advantaged sectors,
+the peak in contribution propensity remains concentrated among candidates with relatively
+high probabilities of victory, corresponding to “likely” races. In contrast, firms in strongly
+partisan-advantaged sectors exhibit peaks at substantially lower levels of electoral probabil-
+ity, closer to “toss-up” contests. Because this comparison holds candidate type fixed, it shows
+that the risk-tolerance mechanism is not reducible to differential support for challengers and
+open-seat candidates. Firms in partisan-advantaged sectors are not only more willing to
+support different kinds of candidates; they are also more willing to support candidates with
+lower probabilities of victory within the same candidate type.
+(a) Predicted Contribution Probability
+ (b) Peak Location
+Figure 5: Predicted Contribution Probability and Peak by Sectoral Par-
+tisan Alignment
+Taken together, the fully interacted models suggest that both mechanisms operate simul-
+taneously. Firms in partisan-advantaged sectors are more willing to support candidate types
+associated with greater electoral uncertainty, and, especially among Republican-advantaged
+27
+--- PAGE 28 ---
+sectors, they also favor more electorally vulnerable candidates within candidate type. Sec-
+toral partisan alignment therefore shapes both candidate selection and the evaluation of
+electoral risk itself.
+5.3 Contribution Amounts
+The preceding analyses examine whether a firm contributes to a candidate. I next exam-
+ine the level of financial support allocated to each firm–candidate pair. While the baseline
+analysis focuses on the extensive margin or whether a firm contributes to a candidate, the
+theoretical framework can also be applied to the level of contributions. Modeling contribu-
+tion amounts requires accounting for the structure of campaign finance data. Contribution
+amounts are bounded below at zero because firms cannot make negative contributions, and
+non-contributions are common. Federal law also imposes an upper bound on the amount
+a corporate PAC may contribute to a candidate. Corporate PACs may contribute at most
+$5,000 per candidate per election, implying a maximum of $10,000 over the primary and
+general elections within a two-year cycle. As a result, the observed contribution amounts
+are censored both from below at zero and from above at $10,000. I use a Tobit specification
+that accounts for both forms of censoring.
+28
+--- PAGE 29 ---
+Dependent variable:
+Contribution Amount
+Continuous Measure Categorical Measure
+Chance of Winning 1,207.291 ∗∗∗ 1,225.561∗∗∗ 1,048.831∗∗∗ 1,143.982∗∗∗
+(75.023) (79.933) (58.288) (70.044)
+Chance of Winning 2 −266.675∗∗∗ −363.441∗∗∗ −261.683∗∗∗ −361.850∗∗∗
+(18.266) (29.400) (15.547) (27.863)
+GOP 1,528.866 ∗∗∗ 2,744.910∗∗∗ 994.512∗∗∗ 892.136∗∗
+(365.744) (520.689) (313.665) (395.410)
+DEM 1,151.435 ∗∗ 3,865.306∗∗∗ 1,033.541∗∗∗ 1,844.974∗∗∗
+(554.704) (855.696) (244.450) (351.188)
+Incumbent 6,846.015 ∗∗∗ 7,772.138∗∗∗ 6,859.954∗∗∗ 6,793.009∗∗∗
+(344.488) (527.872) (346.319) (443.120)
+Open Seat 1,394.247 ∗∗∗ 155.480 1,400.288 ∗∗∗ −41.597
+(271.185) (474.136) (272.252) (418.095)
+Chance of Winning × GOP −600.358∗∗∗ −272.270∗∗∗ −292.125∗∗∗ −96.369∗
+(93.556) (77.965) (61.895) (57.297)
+Chance of Winning 2 × GOP 0.097 −8.074 −22.074 −25.290
+(25.772) (24.574) (20.876) (20.069)
+Chance of Winning × DEM −646.419∗∗∗ −223.991 −150.151∗∗ −9.274
+(162.838) (138.935) (65.755) (56.601)
+Chance of Winning 2 × DEM 9.805 −13.269 −9.176 −17.890
+(41.089) (40.860) (18.256) (17.667)
+Incumbent × GOP −3,934.423∗∗∗ −2,344.119∗∗∗
+(530.747) (358.520)
+Open Seat × GOP −852.532∗∗ −433.316
+(427.455) (302.478)
+Incumbent × DEM −4,636.714∗∗∗ −1,456.358∗∗∗
+(909.947) (369.837)
+Open Seat × DEM −864.436 −431.184∗
+(654.860) (255.793)
+Observations 6,727,832 6,727,832 6,727,832 6,727,832
+Controls ✓ ✓ ✓ ✓
+Year FE ✓ ✓ ✓ ✓
+State FE ✓ ✓ ✓ ✓
+Clustered SE ✓ ✓ ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 3: Tobit Models of Corporate PAC Contribution Amounts
+Table 3 reports the results of the Tobit models using the same core interaction structure as
+the contribution-propensity models. The findings closely mirror the binary-outcome results.
+The positive coefficient on candidates’ probability of victory and the negative coefficient
+on its squared term indicate that contribution amounts also follow an inverse-U pattern.
+Expected contribution levels increase as candidates become electorally viable but decline as
+29
+--- PAGE 30 ---
+candidates approach electoral certainty. This suggests that electoral probability shapes not
+only whether firms contribute, but also the overall level of support allocated to candidates in
+the firm–candidate panel. The Tobit models also reinforce the evidence of firm heterogeneity.
+Interaction terms between electoral probability and sectoral partisan alignment are generally
+negative, indicating that firms in partisan-advantaged sectors allocate larger contributions
+at lower levels of electoral certainty than firms in non-advantaged sectors. The incumbency
+interactions point in the same direction as the contribution-propensity models. Firms in
+partisan-advantaged sectors contribute significantly less to incumbents relative to challengers
+than firms in non-advantaged sectors do. On the Tobit scale, the estimated incumbent–
+challenger gap is over $7,800 among firms in non-advantaged sectors. This gap falls by
+more than half among firms in partisan-advantaged sectors, to roughly $4,000 for firms
+in Republican-advantaged sectors and $3,000 for firms in Democratic-advantaged sectors.
+These differences should not be interpreted as direct predicted-dollar differences in observed
+contributions, but they indicate that the incumbency premium is substantially smaller among
+firms in partisan-advantaged sectors. The pattern reinforces the interpretation that these
+firms remain responsive to access incentives, but their allocation of financial support is
+less dominated by incumbency and candidate safety. The same theoretical trade-off between
+expected benefits and electoral risk therefore appears in both the binary contribution decision
+and the overall amount of support allocated across candidates.
+Overall, the Tobit results provide additional support for the theoretical framework. Elec-
+toral uncertainty shapes not only whether firms contribute, but also the level of financial
+support they allocate across firm–candidate pairs. Moreover, sectoral partisan alignment
+shifts contribution strategy in the same direction observed in the binary models. Firms
+in partisan-advantaged sectors are more willing to allocate resources to candidates who
+remain electorally uncertain but politically consequential. By showing that the same nonlin-
+ear structure appears in contribution amounts, these findings strengthen the interpretation
+of corporate PAC contributions as strategic investments under electoral uncertainty and
+30
+--- PAGE 31 ---
+demonstrate that the predicted trade-off between expected benefits and electoral risk oper-
+ates across multiple dimensions of firm behavior.
+5.4 Robustness Checks
+I assess the robustness of the main findings across several alternative empirical choices, in-
+cluding the timing of contributions, the functional form of electoral probability, the level of
+partisan-alignment measurement, and the construction of the partisan-alignment measure.
+The goal is to assess whether the hypothesized contribution pattern and cross-sectoral het-
+erogeneity are sensitive to data selection, functional form choices, or the construction of key
+variables.
+First, I examine whether the results are sensitive to the timing of contributions. The
+main analysis uses all contribution records within each election cycle, which captures the
+full allocation of corporate PAC resources across House candidates. This design reflects
+the fact that firms allocate political resources throughout the electoral cycle and avoids
+selecting only a subset of observed giving. However, some contributions occur after electoral
+uncertainty has been resolved. These post-election contributions may include “kiss-and-
+make-up” giving to newly elected candidates or contributions following important committee
+assignments (Herrnson, Panagopoulos, and Bailey 2020; Powell and Grimmer 2016). Such
+contributions are not inconsistent with access-seeking behavior, but they are less directly tied
+to the theory’s emphasis on contribution decisions under uncertainty. I therefore re-estimate
+the main models using only contributions made during election years before Election Day.
+This restricted sample isolates contributions made before electoral outcomes are known and
+provides a closer test of the timing logic emphasized by the theory. The results, reported in
+Appendix B.1, are substantively similar and in some specifications stronger, indicating that
+the main patterns are not driven by contributions made after electoral uncertainty has been
+resolved.
+Second, I examine whether the inverse-U pattern is an artifact of the quadratic specifica-
+31
+--- PAGE 32 ---
+tion. The baseline models use a quadratic term in candidates’ probability of victory because
+the theoretical framework predicts a single-peaked relationship and because the peak lo-
+cation provides an interpretable quantity for comparing contribution strategies across firm
+types. Nevertheless, imposing a quadratic functional form may mechanically induce curva-
+ture. To address this concern, I re-estimate the models using a nonparametric cubic spline
+specification with three knots. This approach allows the relationship between electoral prob-
+ability and contribution behavior to be more flexibly determined by the data. The resulting
+predicted relationships, shown in Appendix B.2, closely replicate the baseline findings, ex-
+hibiting a broadly inverse-U pattern and similar differences in peak location across firm
+types. This suggests that the core results are not driven by the imposed quadratic structure.
+Third, I examine whether the findings are robust to measuring partisan alignment at a
+more disaggregated level. The main analysis uses sector-level aggregation because the theo-
+retical concept concerns shared exposure to partisan policy regimes and because aggregation
+reduces idiosyncratic firm-level noise in abnormal returns. However, sectors may vary in
+internal diversity. Some sectors are relatively homogeneous, while others contain industries
+with distinct policy exposures and potentially different partisan sensitivities. Industry-level
+aggregation provides a useful robustness check as it preserves the logic of aggregation while
+reducing the possibility that broad sector categories average over politically distinct in-
+dustries. I therefore reconstruct the partisan-alignment measure at the industry level and
+re-estimate the main specifications. The results, reported in Appendix B.3, remain qualita-
+tively unchanged. Firms in partisan-advantaged industries continue to exhibit contribution
+peaks at lower probabilities of victory relative to firms in non-advantaged industries. This
+indicates that the main findings are not driven by the particular level of aggregation used in
+the baseline measure.
+Finally, I examine whether the results are robust to an alternative contribution-based
+measure of partisan alignment. The market-implied measure has the advantage of being
+constructed independently of contribution behavior, but it cannot fully distinguish between
+32
+--- PAGE 33 ---
+two conceptually distinct cases. Some non-advantaged sectors may be genuinely bipartisan,
+maintaining relationships with policymakers from both parties, while others may appear
+non-advantaged because they are simply less exposed to partisan political shocks. While
+these cases are observationally similar in a market-based measure—both producing weak
+or near-zero abnormal return responses, they may imply different underlying incentives for
+political engagement. To address this limitation, I construct an alternative measure based
+on historical contribution patterns, similar to the party proximity index developed by Amy
+D. Meli, “Party People? Measuring Interest Groups’ Proximity to Political Parties,” In-
+terest Groups & Advocacy 12 (2023). This measure captures revealed patterns of partisan
+engagement in firms’ political giving. Because it is derived from contribution behavior, it
+introduces potential endogeneity concerns and cannot be interpreted as exogenous to firms’
+strategic decisions. Nevertheless, it provides a useful validation check. Re-estimating the
+main models using the contribution-based measure yields results consistent with the baseline
+findings, as shown in Appendix B.4. Republican-aligned firms exhibit a greater propensity to
+target electorally vulnerable candidates, whereas bipartisan firms concentrate more heavily
+on candidates with higher probabilities of victory.
+6 Conclusion
+This paper develops and tests a framework for understanding corporate PAC contributions as
+political investments under electoral uncertainty. The central claim is that access-oriented
+and election-oriented giving are not competing explanations, but distinct strategies that
+emerge from a common decision problem. Firms weigh the expected benefits of supporting
+candidates before outcomes are resolved against the financial, relational, and reputational
+risks of backing losing candidates. This trade-off produces a nonmonotonic relationship
+between candidates’ probability of victory and corporate PAC giving.
+The empirical results support this framework. Using a novel firm–candidate panel of
+33
+--- PAGE 34 ---
+corporate PAC contributions in U.S. House elections from 2010 to 2022, I show that firms
+concentrate contributions on candidates who are electorally viable but not certain to win.
+This pattern varies systematically across firms. Firms in partisan-advantaged sectors reach
+their maximum contribution propensity at lower probabilities of victory, place less weight on
+incumbency, and are relatively more willing to support challengers. The amount models and
+robustness checks show that these patterns extend to the level of support as well and are not
+driven by a particular timing window, functional form, aggregation level, or measurement
+strategy.
+These findings speak directly to longstanding debates about why firms give. Access-
+oriented accounts emphasize contributions to likely winners, incumbents, and institutionally
+powerful legislators as investments in long-term relationships with future policymakers (Sny-
+der 1990; Snyder 1993; Jacobson 2013; Fouirnaies and Hall 2014; Powell and Grimmer 2016).
+Election-oriented accounts emphasize short-term electoral conditions and predicts more con-
+tributions to competitive races and vulnerable candidates, where marginal support may be
+more electorally consequential (McCarty and Rothenberg 2000; Box-Steffensmeier, Radcliffe,
+and Bartels 2005). The results here suggest that these perspectives capture different parts
+of a broader strategic logic. Firms in weakly aligned or non-advantaged sectors behave more
+like access-oriented contributors, concentrating support on safer candidates and incumbents.
+Firms in partisan-advantaged sectors behave more like election-oriented actors, allocating
+more support toward candidates whose victories remain uncertain but politically consequen-
+tial. Access-buying and election-buying therefore correspond to different ways firms resolve
+the same investment problem under electoral uncertainty.
+The paper also contributes to research on heterogeneity among business interests. Prior
+work shows that corporate PACs’ partisan preferences vary substantially across industries
+(Gimpel, Lee, and Parrott 2014), and that PACs within particular sectors can adopt distinc-
+tive contribution strategies (Evans 1988; Hersch and McDougall 2000; Taylor 2003). I build
+on these insights by linking sectoral variation to a generalizable mechanism. Firms facing
+34
+--- PAGE 35 ---
+stronger partisan policy stakes are willing to accept greater electoral risk when allocating
+campaign contributions. Sectoral partisan alignment therefore does not merely capture which
+party a sector is expected to favor; it also shapes how firms distribute resources across the
+electoral-risk spectrum.
+These findings also qualify the conventional view of corporate PACs as primarily access-
+seeking actors. In aggregate, corporate PAC giving often appears risk-averse. Firms dispro-
+portionately support incumbents, electorally viable candidates, and politicians likely to hold
+office. The results here show that this characterization is incomplete. Firms in partisan-
+advantaged sectors systematically behave more like election-oriented actors, directing rel-
+atively more support toward challengers and competitive races. In other words, there is
+money from both sides of the aisle that behave similar to party organizations or ideological
+interest groups
+This has important normative implications for congressional politics. If business contri-
+butions are understood only as access-seeking investments in likely officeholders, corporate
+PACs appear primarily as actors seeking influence after political power is established. The ev-
+idence here suggests that, for some firms, corporate PAC giving also operates before political
+power is resolved, in ways that resemble the strategic allocation patterns of party-affiliated
+or ideological organizations. This does not imply that all corporate PACs are election-buying
+actors, nor that campaign contributions are the only or most important channel of corpo-
+rate political activity. But it does suggest that business participation in electoral politics
+is more politically differentiated than standard access-oriented accounts imply. As policy
+conflict increasingly maps onto partisan control, firms with strong partisan policy stakes
+may have greater incentives to intervene in competitive congressional elections rather than
+merely cultivate relationships with likely winners.
+Future research can extend this framework by examining additional dimensions of firm
+heterogeneity. This paper focuses on sectoral partisan alignment because partisan policy
+stakes shape firms’ willingness to tolerate electoral risk. But firms may also differ in other
+35
+--- PAGE 36 ---
+ways that affect the same trade-off between access and electoral influence. Geographic ex-
+posure may shape whether firms prioritize local relationships or national partisan control.
+Regulatory dependence may affect the value of maintaining access to incumbents and com-
+mittee members. Consumer-facing firms may face greater reputational constraints than
+firms that operate primarily in business-to-business markets. Firms with different ownership
+structures, organizational capacities, or executive political networks may also vary in how
+aggressively they participate in electoral politics. Examining these dimensions would clarify
+both the incentives and constraints that shape PAC managers’ contribution decisions.
+36
+--- PAGE 37 ---
+Bibliography
+Aggarwal, Vinod K. “Campaign Spending Now Open for Business.” Harvard Business Re-
+view, 2010.
+Ansolabehere, Stephen, John M. de Figueiredo, and James M. Snyder. “Why Is There so
+Little Money in U.S. Politics?” The Journal of Economic Perspectives 17, no. 1 (2003):
+105–130.
+Barber, Michael. “Donation Motivations: Testing Theories of Access and Ideology.” Political
+Research Quarterly 69, no. 1 (2016).
+Barber, Michael, and Mandi Eatough. “Industry Politicization and Interest Group Campaign
+Contribution Strategies.” The Journal of Politics 82, no. 3 (2020): 1008–1025.
+Baron, David P. “Service-Induced Campaign Contributions and the Electoral Equilibrium.”
+The Quarterly Journal of Economics 104, no. 1 (1989): 45–72.
+Bernanke, Ben S. “Irreversibility, Uncertainty, and Cyclical Investment.” The Quarterly
+Journal of Economics 98, no. 1 (1983): 85–106.
+Bertrand, Marianne, Matilde Bombardini, Fisman Raymond, and Francesco Trebbi. “Tax-
+Exempt Lobbying: Corporate Philanthropy as a Tool for Political Influence.” American
+Economic Review 110, no. 7 (2020): 2065–2102.
+Box-Steffensmeier, Janet M., Peter M. Radcliffe, and Brandon L. Bartels. “The Incidence and
+Timing of PAC Contributions to Incumbent U.S. House Members, 1993–94.” Legislative
+Studies Quarterly 30, no. 4 (2005): 549–579.
+Cooper, Michael J., Huseyin Gulen, and Alexei V. Ovtchinnikov. “Corporate Political Con-
+tributions and Stock Returns.” The Journal of Finance 65, no. 2 (2010): 687–724.
+Eismeier, Theodore J., and Philip H. Pollock III. “Politics and Markets: Corporate Money
+in American National Elections.” British Journal of Political Science 16, no. 3 (1986):
+287–309.
+. “Strategy and Choice in Congressional Elections: The Role of Political Action Com-
+mittees.” American Journal of Political Science 30, no. 1 (1986): 197–213.
+Evans, Diana. “Oil PACs and Aggressive Contribution Strategies.” The Journal of Politics
+50, no. 4 (1988): 1047–1056.
+Evertsson, Nubia. Handbook of Political Party Funding . Chap. Corporate Contributions to
+Electoral Campaigns – the Current State of Affairs in. Edward Edgar Publishing, 2018.
+Figueiredo, Rui J. P. de, Jr., and Geoff Edwards. “Does Private Money Buy Public Policy?
+Campaign Contributions and Regulatory Outcomes in Telecommunications.” Journal of
+Economics & Management Strategy 16, no. 3 (2007): 547–576.
+Fouirnaies, Alexander, and Anthony Fowler. “Do campaign contributions buy favorable poli-
+cies? Evidence from the insurance industry.” Political Science Research and Methods 10,
+no. 1 (2022): 18–32.
+Fouirnaies, Alexander, and Andrew Hall. “The Financial Incumbency Advantage: Causes
+and Consequences.” The Journal of Politics 76, no. 3 (2014): 711–724.
+37
+--- PAGE 38 ---
+Fowler, Anthony, Haritz Garro, and J¨ org L. Spenkuch. “Quid Pro Quo? Corporate Returns
+to Campaign Contributions.” The Journal of Politics 82, no. 3 (2020): 844–858.
+Gimpel, James G., Frances E. Lee, and Michael Parrott. “Business Interests and the Party
+Coalitions: Industry Sector Contributions to U.S. Congressional Campaigns.” American
+Politics Research 42, no. 6 (2014): 1034–1076.
+Gopoian, J. David. “What Makes PACs Tick? An Analysis of the Allocation Patterns of
+Economic Interest Groups.” American Journal of Political Science 28, no. 2 (1984): 259–
+281.
+Grier, Kevin B., and Michael C. Munger. “Comparing Interest Group PAC Contributions
+to House and Senate Incumbents, 1980-1986.” The Journal of Politics 55, no. 3 (1993):
+615–643.
+Hadani, Michael, and Douglas A. Schuler. “In search of El Dorado: The elusive financial
+returns on corporate political investments.” Strategic Management Journal 34, no. 2
+(2013): 165–181.
+Hall, Richard L., and Alan V. Deardorff. “Lobbying as Legislative Subsidy.” American Po-
+litical Science Review 100, no. 1 (2006): 69–84.
+Hall, Richard L., and Frank W. Wayman. “Buying Time: Moneyed Interests and the Mobi-
+lization of Bias in Congressional Committees.” The American Political Science Review
+84, no. 3 (1990): 797–820.
+Hayes, Michael. Lobbyists and Legislators. Rutgers University Press, 1981.
+Herndon, James F. “Access, Record, and Competition as Influences on Interest Group Con-
+tributions to Congressional Campaigns.” The Journal of Politics 44, no. 4 (1982): 996–
+1019.
+Herrnson, Paul S. “National Party Decision Making, Strategies, and Resource Distribution
+in Congressional Elections.” The Western Political Quarterly 42, no. 3 (1989): 301–323.
+. “The Roles of Party Organizations, Party-Connected Committees, and Party Allies
+in Elections.” The Journal of Politics 71, no. 4 (2009): 1207–1224.
+Herrnson, Paul S., Costas Panagopoulos, and Kendall L. Bailey. Congressional Elections:
+Campaigning at Home and in Washington . 8th ed. Washington, DC: CQ Press, 2020.
+Hersch, Philip L., and Gerald S. McDougall. “Determinants of Automobile PAC Contribu-
+tions to House Incumbents: Own Versus Rival Effects.” Public Choice 104 (2000): 329–
+343.
+Hillman, Amy J., and Michael A. Hitt. “Corporate Political Strategy Formulation: A Model
+of Approach, Participation, and Strategy Decisions.” Academy of Management Review
+24, no. 4 (1999): 825–842.
+Huber, J¨ urgen, and Michael Kirchler. “Corporate campaign contributions and abnormal
+stock returns after presidential elections.” Public Choice 156, no. 1 (2013): 285–307.
+Jacobson, Gary C. “Party Organization and Distribution of Campaign Resources: Republi-
+cans and Democrats in 1982.” Political Science Quarterly 100, no. 4 (1985): 603–625.
+38
+--- PAGE 39 ---
+Jacobson, Gary C. The Politics of Congressional Elections . Pearson, 2013.
+Kalla, Joshua L., and David E. Broockman. “Campaign Contributions Facilitate Access to
+Congressional Officials: A Randomized Field Experiment.” American Journal of Political
+Science 60, no. 3 (2016): 545–558.
+Langbein, Laura I. “Money and Access: Some Empirical Evidence.” The Journal of Politics
+48, no. 4 (1986): 1052–1062.
+Lohmann, Susanne. “Information, Access, and Contributions: A Signaling Model of Lobby-
+ing.” Public Choice 85, no. 3 (1995): 267–284.
+McCarty, Nolan, and Lawrence S. Rothenberg. “The Time to Give: PAC Motivations and
+Electoral Timing.” Political Analysis 8, no. 3 (2000): 239–259.
+Meli, Amy D. “Party People? Measuring Interest Groups’ Proximity to Political Parties.”
+Interest Groups & Advocacy 12 (2023): 364–387.
+Powell, Eleanor Neff, and Justin Grimmer. “Money in Exile: Campaign Contributions and
+Committee Access.” The Journal of Politics 78, no. 4 (2016): 974–988.
+Richter, Brian Kelleher, and Timothy Werner. “Campaign Contributions from Corporate
+Executives in Lieu of Political Action Committees.” The Journal of Law, Economics,
+and Organization 33, no. 3 (2017): 443–474.
+Schnakenberg, Keith E., and Ian R. Turner. “Helping Friends or Influencing Foes: Electoral
+and Policy Effects of Campaign Finance Contributions.” American Journal of Political
+Science 65, no. 1 (2021): 88–100.
+Schroedel, Jean R. “Campaign Contributions and Legislative Outcomes.” The Journal of
+Politics 39, no. 3 (1986): 371–389.
+Snyder, James M. “Campaign Contributions as Investments: The U.S. House of Represen-
+tatives, 1980-1986.” Journal of Political Economy 98, no. 6 (1990): 1195–1227.
+. “On Buying Legislatures.” Economics & Politics 3, no. 2 (1991): 93–109.
+. “The Market for Campaign Contributions: Evidence for the U.S. Senate, 1980-1986.”
+Economics & Politics 5, no. 3 (1993): 219–240.
+Taylor, Andrew J. “Conditional Party Government and Campaign Contributions: Insights
+from the Tobacco and Alcoholic Beverage Industries.” American Journal of Political
+Science 47, no. 2 (2003): 293–304.
+Teso, Edoardo. “Influence-Seeking in U.S. Corporate Elites’ Campaign Contribution Behav-
+ior.” The Review of Economics and Statistics 107, no. 3 (2025): 685–696.
+Weight, John. “Contributions, Lobbying, and Committee Voting in the U.S. House of Rep-
+resentatives.” American Political Science Review 84 (1990): 417–438.
+Welch, W. P. “The Allocation of Political Monies: Economic Interest Groups.”Public Choice
+35, no. 1 (1980): 97–120.
+Witko, Christopher. “Campaign Contributions, Access, and Government Contracting.”Jour-
+nal of Public Administration Research and Theory 21, no. 4 (2011): 761–778.
+39
+--- PAGE 40 ---
+A Appendix: Access-Buying Model
+I begin with the simplest case: a firm faces a single election with two candidates, D and R.
+Before the election, the firm observes that candidate D is expected to win with probability
+p ∈ [0, 1] and decides whether to contribute to D. Contributing requires a non-negative
+cost c(p) ≥ 0. If D wins, the firm receives a non-negative political benefit B(p) ≥ 0, which
+may include access, goodwill, policy influence, or the value of supporting an electorally
+consequential ally. If D loses, the firm receives no benefit from D’s victory and may incur
+a non-negative penalty λ(p) ≥ 0, reflecting reputational costs, relational costs, or reduced
+access to the opposing candidate or party. 4
+Normalizing the utility of not contributing to zero, the expected utility of contributing
+to D is
+E[U (p)] = p · U (B(p) − c(p)) + (1 − p) · U
+ 
+− c(p) − λ(p)
+
+. (1)
+The costs, benefits, and penalties associated with contributing need not remain con-
+stant across electoral conditions. I impose four assumptions that capture how the value of
+contributing changes with candidate D’s probability of victory.
+Assumption 1: The benefit of contributing conditional on D’s victory is weakly decreasing
+and concave in p: B′(p) ≤ 0 and B′′(p) ≤ 0.
+This assumption captures the idea that early support is more valuable when the can-
+didate is viable but electorally uncertain. In an election-oriented interpretation, marginal
+support is more valuable when the candidate faces a competitive race. In an access-oriented
+interpretation, support offered when victory is uncertain can generate more goodwill than
+support offered after victory is nearly assured. This assumption follows from the logic that
+the cost of waiting is positive for investments under uncertainty (Bernanke 1983).
+Assumption 2: The cost or price of contributing is weakly increasing and convex in p:
+c′(p) ≥ 0 and c′′(p) ≥ 0.
+This assumption reflects the idea that candidates with stronger electoral prospects can
+command greater support from contributors. Candidates who are more likely to win are
+more attractive to access-seeking contributors and therefore face less need to offer access or
+goodwill cheaply. This follows from the candidate-centered models of campaign contributions
+(for example, see Snyder 1991).
+4Where partisan identity is strong, this penalty may be imposed not only by candidate R, but also by
+copartisans or party networks.
+40
+--- PAGE 41 ---
+Assumption 3: The penalty associated with backing a losing candidate is weakly decreasing
+and convex in p: λ′(p) ≤ 0 and λ′′(p) ≥ 0.
+Because p is the probability that D wins, an increase in p lowers the probability that
+the firm will face the losing-candidate penalty. This assumption also captures the idea
+that the expected credibility of punishment by the opposing side varies with the electoral
+environment. As D’s probability of victory rises, its ability to enforce penalties becomes
+more credible. A strong candidate with a secure electoral position is also more likely to have
+strong connections within the party, making it easier to punish contributors who later seek
+access to copartisans.
+Assumption 4: The payoff from contributing is positive if D wins: B(p) − c(p) > 0 for all
+p ∈ [0, 1].
+This assumption states that, conditional on the supported candidate winning, the polit-
+ical benefits of contributing outweigh the direct cost of the contribution. This is a natural
+assumption because the cost of waiting to contribute is positive, and even post-election
+contributions can yield positive benefits. Therefore, we should expect that the benefit of
+contributing before the election is strictly positive.
+Implication 1: Entry Threshold
+Consider the endpoints. If p = 0, contributing yields
+E[U (0)] = U
+ 
+− c(0) − λ(0)
+
+< 0.
+If p = 1, contributing yields
+E[U (1)] = U
+ 
+B(1) − c(1)
+
+> 0.
+By continuity, there exists at least one cutoff p∗ ∈ (0, 1) at which the firm is indifferent
+between contributing and not contributing. Define
+p∗ = inf{p ∈ [0, 1] : E[U (p)] ≥ 0}.
+The firm does not contribute when the candidate’s probability of victory is below this
+threshold and begins contributing once the expected value of support becomes non-negative.
+This entry-threshold logic follows directly from the basic setup: firms avoid candidates whose
+prospects are too weak to justify the cost and risk of contributing.
+Implication 2: Single-Peaked Contribution Incentive
+41
+--- PAGE 42 ---
+To derive the shape of the contribution incentive above the entry threshold, first consider
+the risk-neutral case, U (x) = x. Expected utility can then be written as
+V (p) = p
+ 
+B(p) − c(p)
+
++ (1 − p)
+ 
+− c(p) − λ(p)
+
+= pB(p) − c(p) − (1 − p)λ(p).
+Differentiating twice gives
+V ′′(p) = 2B′(p) + pB′′(p) − c′′(p) + (1 − p)λ′′(p) + 2λ′(p).
+Under Assumptions 1–3, each term on the right-hand side is non-positive:
+B′(p) ≤ 0, B ′′(p) ≤ 0, c ′′(p) ≥ 0, λ ′(p) ≤ 0, λ ′′(p) ≥ 0.
+Therefore,
+V ′′(p) ≤ 0.
+Unless the benefit, cost, and penalty functions are all locally constant in ways that
+eliminate curvature, V (p) is strictly concave over the relevant range. The contribution
+incentive is therefore single-peaked. The interior maximum, when it exists, satisfies the
+first-order condition
+V ′(p) = B(p) + pB′(p) − c′(p) + λ(p) − (1 − p)λ′(p) = 0.
+This condition characterizes the electoral probability at which the firm has the strongest
+incentive to contribute. At low values of p, the candidate is too unlikely to win for the
+contribution to generate sufficient expected political returns. At high values of p, the can-
+didate is already likely to win, and the marginal value of additional support declines while
+the effective price of access may rise. The strongest contribution incentive therefore occurs
+at an intermediate level of electoral viability.
+This single-peaked structure provides the formal logic behind the access-buying and
+election-buying distinction in the main text. If the maximum occurs close to p = 1, contribu-
+tion behavior will resemble access-buying: firms concentrate support on candidates who are
+likely to hold office. If the maximum occurs in the competitive range, contribution behavior
+will resemble election-buying: firms target candidates for whom marginal support may be
+more electorally consequential. The difference between these patterns is therefore captured
+by the location of the contribution peak.
+42
+--- PAGE 43 ---
+Risk Aversion and Peak Location.
+The risk-neutral case establishes the basic single-peaked structure. Risk aversion affects
+the location of the peak by making firms more reluctant to contribute when the proba-
+bility of electoral loss remains substantial. To illustrate, consider a standard second-order
+approximation to expected utility around the expected payoff. Let
+XW (p) = B(p) − c(p)
+denote the payoff if D wins and
+XL(p) = −c(p) − λ(p)
+denote the payoff if D loses. The expected payoff is V (p), and the payoff spread between
+winning and losing states is
+XW (p) − XL(p) = B(p) + λ(p).
+For a risk-averse firm, the certainty equivalent can be approximated as
+CE (p) ≈ V (p) − 1
+2 A p(1 − p)
+
+B(p) + λ(p)
+2
+,
+where A >0 is the coefficient of absolute risk aversion. The second term is a risk penalty.
+It is larger when the electoral outcome is more uncertain and when the payoff difference
+between winning and losing states is larger. Because p(1 − p) is maximized at p = 1
+2 , risk
+aversion reduces the attractiveness of contributions most in competitive races. All else equal,
+this shifts the contribution peak toward safer candidates.
+A similar implication follows under constant relative risk aversion. If W denotes firm
+wealth and γ >0 is the coefficient of relative risk aversion, the certainty equivalent can be
+approximated as
+CE (p) ≈ V (p) − 1
+2
+γ
+W p(1 − p)
+
+B(p) + λ(p)
+2
+.
+The substantive implication is the same: more risk-averse firms require greater electoral
+certainty before contributing. Mild risk aversion shifts the contribution peak to the right,
+toward safer candidates. Strong risk aversion can push the peak close to p = 1, generating
+behavior that appears strongly access-oriented.
+Firm Heterogeneity and Sectoral Partisan Alignment.
+The location of the contribution peak also depends on the firm’s expected benefits, costs,
+and penalties. Let Bi(p), ci(p), and λi(p) denote these functions for firm i. Firms that expect
+43
+--- PAGE 44 ---
+larger political returns from a candidate’s victory have higher Bi(p), making contribution
+more attractive at lower probabilities of victory. Firms that face greater reputational, re-
+lational, or political costs from backing losing candidates have higher λi(p), making them
+more conservative and shifting their contribution peak toward safer candidates.
+Sectoral partisan alignment can be represented as a shift in these functions. In sectors
+where partisan control has larger expected consequences for firm value, the benefit of sup-
+porting candidates associated with the favorable partisan coalition is higher. Formally, for a
+firm in a partisan-advantaged sector, Bi(p) is larger over the range of electorally viable but
+uncertain candidates. This increases the expected return to contributing before the outcome
+is resolved and shifts the contribution peak toward lower values of p. By contrast, firms in
+weakly aligned or non-advantaged sectors derive less additional value from changing parti-
+san control and place greater weight on preserving access across parties. Their contribution
+peaks should therefore occur at higher probabilities of victory.
+This comparative static links the formal model to the empirical hypotheses. The baseline
+model predicts a nonmonotonic relationship between candidates’ probability of victory and
+contribution behavior. Heterogeneity in risk tolerance and partisan policy stakes shifts the
+location of the peak. Firms in partisan-advantaged sectors should reach their maximum
+contribution propensity at lower probabilities of victory, while firms in weakly aligned or
+non-advantaged sectors should concentrate giving on safer candidates.
+44
+--- PAGE 45 ---
+B Appendix: Robustness Results
+B.1 Pre-Election Sample
+The main analysis uses all corporate PAC contributions to House candidates within each
+election cycle. This specification captures the full allocation of corporate PAC resources
+across candidates and avoids selecting only a subset of observed giving. However, some
+contributions occur after electoral uncertainty has been resolved. These post-election contri-
+butions may include “kiss-and-make-up” giving to newly elected challengers and open-seat
+candidates (Herrnson, Panagopoulos, and Bailey 2020), as well as contributions made after
+new committee assignments or other institutional developments (Powell and Grimmer 2016).
+Such contributions are less directly tied to the theory’s emphasis on contribution decisions
+under unresolved electoral uncertainty.
+To address this, I re-estimate the main models using a restricted pre-election sample.
+This sample includes contributions made during election years before Election Day 5. Ta-
+ble 4 reports the logit results for the restricted sample. The estimates closely mirror the main
+specifications. The coefficients on candidates’ probability of victory and its square continue
+to imply a nonmonotonic relationship between electoral probability and contribution be-
+havior. The interaction terms between electoral probability and sectoral partisan alignment
+also remain negative, indicating that firms in partisan-advantaged sectors continue to place
+relatively greater weight on candidates with lower probabilities of victory.
+Figure 6 presents the corresponding predicted probabilities and peak locations using the
+continuous measure of sectoral partisan alignment. The figure shows that the substantive
+pattern from the main analysis persists in the pre-election sample. Firms in non-advantaged
+sectors reach their highest contribution propensity at higher levels of electoral certainty, while
+firms at the Democratic- and Republican-advantaged extremes peak at lower probabilities of
+victory. This pattern is consistent with the theory’s claim that sectoral partisan alignment
+shifts firms’ willingness to tolerate electoral risk.
+I also re-estimate the fully interacted specification that incorporates incumbency status.
+The results continue to support the candidate-targeting mechanism. Firms in partisan-
+advantaged sectors exhibit a weaker incumbency premium than firms in non-advantaged
+sectors, indicating a stronger relative propensity to support challengers. Figure 7 presents
+the corresponding predicted probabilities and peak locations from the fully interacted model
+5I did not use this as the main analysis because defining an arbitrary pre-election sample can create
+non-random missingness. Moreover, many incumbents establish special programs to incentivize early and
+frequent contributions, and major PAC managers allocate financial resources periodically throughout the
+two year cycles. Both factors make distinguishing pre- and post-election periods difficult.
+45
+--- PAGE 46 ---
+Dependent variable:
+Contribute
+Continuous Measure Categorical Measure
+Chance of Winning 0.4556 ∗∗∗ 0.5003∗∗∗ 0.4103∗∗∗ 0.4740∗∗∗
+(0.0240) (0.0280) (0.0199) (0.0247)
+Chance of Winning 2 −0.0997∗∗∗ −0.1357∗∗∗ −0.0996∗∗∗ −0.1361∗∗∗
+(0.0055) (0.0096) (0.0047) (0.0091)
+GOP 0.5082 ∗∗∗ 0.8998∗∗∗ 0.3432∗∗∗ 0.3607∗∗∗
+(0.1158) (0.1727) (0.0931) (0.1345)
+DEM 0.4299 ∗∗ 1.231∗∗∗ 0.3657∗∗∗ 0.6305∗∗∗
+(0.1894) (0.3073) (0.0802) (0.1241)
+Incumbent 1.973 ∗∗∗ 2.352∗∗∗ 1.973∗∗∗ 2.064∗∗∗
+(0.1098) (0.1587) (0.1099) (0.1388)
+Open Seat 0.5800 ∗∗∗ 0.2174 0.5811 ∗∗∗ 0.1288
+(0.0976) (0.1645) (0.0976) (0.1464)
+Chance of Winning × GOP −0.1955∗∗∗ −0.1104∗∗∗ −0.1088∗∗∗ −0.0563∗∗∗
+(0.0276) (0.0270) (0.0199) (0.0196)
+Chance of Winning 2 × GOP −0.0015 −0.0018 −0.0045 −0.0039
+(0.0069) (0.0072) (0.0054) (0.0055)
+Chance of Winning × DEM −0.1827∗∗∗ −0.0656 −0.0461∗∗ −0.0040
+(0.0452) (0.0478) (0.0187) (0.0189)
+Chance of Winning 2 × DEM −0.0070 −0.0130 −0.0052 −0.0079
+(0.0119) (0.0132) (0.0052) (0.0054)
+Incumbent × GOP −1.287∗∗∗ −0.8398∗∗∗
+(0.1703) (0.1227)
+Open Seat × GOP −0.4096∗∗∗ −0.2275∗∗
+(0.1541) (0.1084)
+Incumbent × DEM −1.423∗∗∗ −0.4791∗∗∗
+(0.3110) (0.1359)
+Open Seat × DEM −0.4127∗ −0.1873∗∗
+(0.2393) (0.0898)
+Observations 6,751,537 6,751,537 6,751,537 6,751,537
+Controls ✓ ✓ ✓ ✓
+Year FE ✓ ✓ ✓ ✓
+State FE ✓ ✓ ✓ ✓
+Clustered SE ✓ ✓ ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 4: Logit Models of Corporate PAC Contribution (Pre-Election Subsample)
+46
+--- PAGE 47 ---
+(a) Predicted Contribution Probability
+ (b) Peak Location
+Figure 6: Predicted Contribution Probability and Peak by Sectoral Par-
+tisan Alignment (Pre-Election Subsample)
+for incumbents. The peak differences remain visible after accounting for incumbency status.
+Firms in partisan-advantaged sectors continue to reach their highest contribution propensity
+at lower probabilities of victory than firms in non-advantaged sectors. This suggests that the
+pre-election results are not driven solely by differences in candidate-type targeting. Even
+within comparable candidate types, sectoral partisan alignment continues to shape firms’
+tolerance for electoral risk.
+Finally, I examine whether the same pre-election robustness pattern appears in con-
+tribution amounts. Table 5 reports Tobit models for the restricted pre-election sample.
+The amount models produce results consistent with both the main Tobit specifications and
+the pre-election logit models. Contribution amounts follow a nonmonotonic relationship
+with candidates’ probability of victory, and firms in partisan-advantaged sectors allocate
+relatively greater support at lower levels of electoral certainty. The incumbency interac-
+tions again indicate that the estimated incumbent–challenger gap is smaller among firms in
+partisan-advantaged sectors than among firms in non-advantaged sectors.
+Overall, the pre-election sample reinforces the main findings. Restricting attention to
+contributions made before Election Day does not weaken the evidence for the nonmono-
+tonic contribution pattern or for heterogeneity by sectoral partisan alignment. If anything,
+the differences across firm types become more pronounced in this restricted sample: both
+Democratic- and Republican-advantaged sectors exhibit significantly lower peak locations
+than non-advantaged sectors, and firms in partisan-advantaged sectors continue to display
+47
+--- PAGE 48 ---
+Dependent variable:
+Contribution Amount
+Continuous Measure Categorical Measure
+Chance of Winning 953.348 ∗∗∗ 923.244∗∗∗ 823.654∗∗∗ 853.467∗∗∗
+(53.180) (59.532) (41.944) (52.432)
+Chance of Winning 2 −211.394∗∗∗ −284.132∗∗∗ −207.554∗∗∗ −282.833∗∗∗
+(12.514) (22.426) (10.951) (21.567)
+GOP 1,279.740 ∗∗∗ 2,081.259∗∗∗ 888.794∗∗∗ 770.383∗∗
+(292.017) (389.502) (245.550) (292.188)
+DEM 1,080.922 ∗∗ 2,966.835∗∗∗ 891.226∗∗∗ 1,483.134∗∗∗
+(439.478) (661.155) (197.000) (266.712)
+Incumbent 4,588.207 ∗∗∗ 5,388.990∗∗∗ 4,597.593∗∗∗ 4,670.241∗∗∗
+(239.419) (369.352) (240.260) (311.240)
+Open Seat 1,252.201 ∗∗∗ 351.808 1,256.909 ∗∗∗ 185.071
+(197.390) (355.481) (198.118) (313.344)
+Chance of Winning × GOP −491.236∗∗∗ −229.221∗∗∗ −253.569∗∗∗ −91.062∗∗
+(66.698) (58.533) (44.486) (42.110)
+Chance of Winning 2 × GOP 0.031 −3.511 −13.869 −13.438
+(18.951) (18.051) (15.288) (14.371)
+Chance of Winning × DEM −556.279∗∗∗ −235.675∗∗ −137.984∗∗ −30.594
+(119.442) (104.769) (50.060) (43.956)
+Chance of Winning 2 × DEM 2.896 −11.348 −10.126 −15.055
+(30.413) (30.620) (14.263) (13.793)
+Incumbent × GOP −2,993.359∗∗∗ −1,841.740∗∗∗
+(398.207) (278.190)
+Open Seat × GOP −761.988∗∗ −400.160∗
+(329.996) (229.670)
+Incumbent × DEM −3,433.765∗∗∗ −1,109.080∗∗∗
+(684.844) (283.828)
+Open Seat × DEM −724.314 −344.644∗
+(511.363) (195.343)
+Observations 6,727,832 6,727,832 6,727,832 6,727,832
+Controls ✓ ✓ ✓ ✓
+Year FE ✓ ✓ ✓ ✓
+State FE ✓ ✓ ✓ ✓
+Clustered SE ✓ ✓ ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 5: Tobit Models of Corporate PAC Contribution Amounts (Pre-Election Subsample)
+48
+--- PAGE 49 ---
+(a) Predicted Contribution Probability
+ (b) Peak Location
+Figure 7: Predicted Contribution Probability and Peak by Sectoral Par-
+tisan Alignment (Pre-Election Subsample)
+a stronger relative propensity to support challengers. These results are consistent with the
+theory’s emphasis on contribution decisions made while electoral uncertainty remains unre-
+solved.
+B.2 Relaxing Functional Form
+The main models use a quadratic specification for candidates’ probability of victory. This
+choice follows directly from the theoretical framework, which predicts a single-peaked rela-
+tionship between electoral probability and contribution behavior. It also provides an inter-
+pretable quantity, the location of the contribution peak, that can be compared across firm
+types. Nevertheless, one concern is that the inverse-U pattern could be partly induced by
+imposing a quadratic functional form.
+To assess this possibility, I estimate an alternative specification using cubic splines. The
+spline model relaxes the parametric restriction imposed by the quadratic specification and
+allows the relationship between electoral probability and contribution propensity to be deter-
+mined more flexibly by the data. Because the spline coefficients are not directly interpretable,
+I focus on the predicted contribution curves rather than the coefficient estimates.
+Figure 8 compares the predicted probabilities from the quadratic and spline specifica-
+tions using the full sample. The two curves are visually similar and exhibit the same broad
+nonmonotonic pattern: predicted contribution probability rises as candidates become elec-
+49
+--- PAGE 50 ---
+torally viable and declines as candidates approach safer electoral positions. Although the
+spline curve allows for more local flexibility, it does not produce a substantively different rela-
+tionship from the quadratic specification. This suggests that the quadratic model provides a
+reasonable and parsimonious approximation to the underlying relationship while preserving
+interpretability.
+Figure 8: Predicted Probability of Contribution and Candidate Chance of Winning for
+Quadratic and Spline Models (Full Sample)
+Figure 9 repeats the comparison using the restricted pre-election sample. The same
+conclusion holds. The spline and quadratic predictions remain visually similar, and both
+specifications recover the broader inverse-U relationship. The consistency across the full-
+cycle and pre-election samples indicates that the main findings are not an artifact of the
+quadratic functional form.
+B.3 Industry Level Analysis
+The main analysis measures partisan alignment at the sector level, grouping firms into 18
+broad sectors. This level of aggregation is theoretically and empirically useful. Sectors cap-
+ture shared exposure to broad policy regimes and reduce idiosyncratic noise in firm-level
+abnormal returns. These broad categories are also easy to interpret and are frequently used
+in financial discussions of how macroeconomic and political events affect different parts of
+the economy. At the same time, sectors differ in size and internal diversity. Some sectors,
+such as renewable energy and automobiles, are relatively narrow and homogeneous, while
+50
+--- PAGE 51 ---
+Figure 9: Predicted Probability of Contribution and Candidate Chance of Winning for
+Quadratic and Spline Models (Pre-Election Subsample)
+others, such as health care and technology, encompass firms with more varied business activ-
+ities and policy exposures. If broad sectors aggregate over industries with distinct partisan
+sensitivities, the sector-level measure may average across meaningful within-sector variation.
+To assess whether this level of aggregation affects the results, I reconstruct the partisan-
+alignment measure at the industry level. The industry-level measure provides an intermedi-
+ate aggregation strategy: it avoids the noise, missingness, and liquidity concerns associated
+with firm-level event-study estimates, while imposing less aggregation than the baseline
+sector-level measure. I continue to use the sector-level measure as the main specification be-
+cause it better captures the broad policy exposure emphasized by the theory, produces more
+stable estimates from a limited number of partisan political shocks, and is easier to interpret
+substantively. The industry-level analysis is therefore best understood as a robustness check
+that evaluates whether the main findings persist when partisan alignment is measured at a
+more fine-grained level. I classify firms into 51 industries, which represent more specific eco-
+nomic activities than the 18-sector classification. One complication is that firms are more
+likely to have multiple industry classification codes than multiple sector codes. 6 I there-
+fore use each firm’s first and primary industry classification. I then re-estimate the main
+interaction models using a continuous measure of industry-level partisan advantage.
+6This reflects the Refinitiv Business Classification (TRBC) scheme and the fact that corporate business
+activities are often not neatly contained within a single fine-grained category. I use TRBC because it has
+the lowest missingness among matched firms relative to alternative classification systems.
+51
+--- PAGE 52 ---
+Dependent variable:
+Contribute Contribution Amount
+Logit Tobit
+Chance of Winning 0.3896 ∗∗∗ 1,083.141∗∗∗
+(0.0232) (66.272)
+Chance of Winning 2 -0.0960∗∗∗ −273.360∗∗∗
+(0.0056) (17.158)
+GOP 0.3073 ∗∗ 666.854∗
+(0.1489) (378.648)
+DEM −0.0322 −44.909
+(0.1513) (396.874)
+Chance of Winning × GOP −0.0697∗ −237.341∗∗
+(0.0373) (0.0402)
+Chance of Winning 2 × GOP 0.0067 11.102
+(0.0076) (25.842)
+Chance of Winning × DEM −0.0646∗∗ −293.969∗∗∗
+(0.0301) (97.515)
+Chance of Winning 2 × DEM 0.0058 30.614
+(0.0077) (25.701)
+Observations 6,801,181
+Controls ✓ ✓
+Year FE ✓ ✓
+State FE ✓ ✓
+Clustered SE ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 6: Logit Models of Corporate PAC Contributions Using Market-Based Partisan-
+Alignment Measures
+52
+--- PAGE 53 ---
+Table 6 reports the results. The industry-level specifications produce patterns consis-
+tent with the main sector-level analysis. In both the logit and Tobit models, the coefficient
+on candidates’ probability of victory is positive and the coefficient on its square is nega-
+tive, indicating a nonmonotonic relationship between electoral probability and contribution
+behavior. The interaction terms between electoral probability and industry-level partisan
+advantage are generally negative, suggesting that firms in partisan-advantaged industries
+place relatively greater weight on candidates with lower probabilities of victory. These re-
+sults indicate that the main findings are not driven by the particular level of aggregation
+used in the baseline measure.
+B.4 Distinguishing Non-Partisan Firms
+Finally, I examine an alternative way to distinguish sectors that appear weakly aligned
+in the market-based measure. One limitation of the market-implied measure is that sec-
+tors with abnormal returns close to zero may be substantively different from one another.
+Some sectors may have low exposure to partisan political shocks and therefore exhibit little
+market response when partisan control changes. Other sectors may be politically exposed
+but bipartisan or hedged: firms in these sectors may need to maintain relationships with
+both parties, may benefit from different parties across different policy domains, or may face
+cross-pressures that prevent them from aligning strongly with either side. Both types of
+sectors can appear close to zero in an event-study measure, even though they imply different
+contribution strategies.
+To distinguish these cases, I construct an alternative measure based on past contribution
+behavior. Using sectoral giving patterns from the previous three cycles, I classify sectors into
+four groups: Republican-aligned, Democratic-aligned, bipartisan, and non-exposed. Sectors
+in which a majority of firms give disproportionately to Republican candidates are classified
+as Republican-aligned, and sectors in which a majority of firms give disproportionately to
+Democratic candidates are classified as Democratic-aligned. Sectors in which a majority
+of firms split their donations relatively evenly between the two parties, with between 40%
+and 60% of contributions going to each party, are classified as bipartisan. The remaining
+sectors are classified as non-exposed and serve as the comparison group. Unlike the market-
+based measure, this prior-giving measure is constructed from political behavior and should
+therefore be interpreted as a robustness and validation exercise rather than as the preferred
+measure of sectoral partisan alignment.
+Table 7 reports the results using this alternative classification. The results are consis-
+tent with the main heterogeneity argument, but they also clarify the distinction between
+53
+--- PAGE 54 ---
+Dependent variable:
+Contribute Contribution Amount
+Logit Tobit
+Chance of Winning 0.3556 ∗∗∗ 957.278∗∗∗
+(0.0189) (65.698)
+Chance of Winning 2 −0.0932∗∗∗ −263.164∗∗∗
+(0.0048) (14.859)
+GOP 0.1439 612.273 ∗
+(0.0997) (347.270)
+DEM 0.4513 ∗∗ 1,428.307∗∗∗
+(0.1856) (506.668)
+Hedged -0.3157 ∗∗∗ −1,036.434∗∗∗
+(0.1003) (323.546)
+Chance of Winning × GOP −0.0589∗∗∗ −175.967∗∗∗
+(0.0189) (61.602)
+Chance of Winning 2 × GOP −0.0039 −22.916
+(0.0056) (21.934)
+Chance of Winning × DEM −0.0020 −265.287∗
+(0.0668) (148.890)
+Chance of Winning 2 × DEM −0.0368∗ −38.055
+(0.0210) (72.558)
+Chance of Winning × Hedged 0.1229 ∗∗∗ 393.269∗∗∗
+(0.0198) (79.348)
+Chance of Winning 2 × Hedged 0.0031 6.991
+(0.0057) (22.440)
+Observations 7,114,137
+Controls ✓ ✓
+Year FE ✓ ✓
+State FE ✓ ✓
+Clustered SE ✓ ✓
+Note: ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01
+Table 7: Logit Model of Corporate PAC Contributions Using Prior-Giving Partisan-
+Alignment Measure
+54
+--- PAGE 55 ---
+bipartisan and non-exposed sectors. Compared with the non-exposed baseline group, bi-
+partisan sectors display a more conservative contribution pattern, placing greater weight
+on candidates with higher probabilities of victory. This is consistent with the interpreta-
+tion that bipartisan sectors seek to maintain relationships across party lines and therefore
+behave the most like access-oriented contributors. Republican-aligned sectors, by contrast,
+continue to exhibit the most election-oriented pattern, allocating relatively more support
+toward candidates with lower probabilities of victory. The pattern is especially clear in the
+contribution-amount model, where Democratic-aligned sectors also show stronger evidence
+of election-oriented giving. Taken together, these results suggest that the weakly aligned
+category in the market-based measure contains substantively distinct types of sectors. Some
+are relatively non-exposed to partisan shocks, while others are politically engaged but strate-
+gically hedged across parties.
+55

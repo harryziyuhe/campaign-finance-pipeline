@@ -92,7 +92,10 @@ For old-to-new path mappings and rollback notes, see [`migration-log.md`](migrat
 | --- | --- |
 | `scripts/data_collection/README.md` | Entry point for active data collection and processing scripts. |
 | `scripts/data_collection/fec/` | Active FEC data collection and processing scripts. |
-| `scripts/data_collection/fec/FECscraper.py` | FEC API scraper. Writes to `data/raw/fec_api/`. |
+| `scripts/data_collection/fec/fec_client.py` | Shared `FECClient` base class (HTTP retry, list-endpoint pagination, upsert-by-key CSV merge). Not a standalone script; every script below imports it. |
+| `scripts/data_collection/fec/candidates/` | FEC API candidate scripts, one standalone script per datapoint. `candidates_list.py` (current-state list, no history), `candidate_history.py` and `candidate_committees.py` (per-cycle history, upsert by natural key; `--refresh all` re-checks every known candidate, not just new ones -- for catch-up runs or rare retroactive corrections). Write to `data/raw/fec_api/candidates/`. |
+| `scripts/data_collection/fec/committees/` | FEC API committee scripts. `leadership_pacs.py`, `joint_committees.py`, `hybrid_pacs.py`, `super_pacs.py`, `corporate_pacs.py` (one script per committee type/designation, full list refresh each run -- current-state-only endpoints, so this is cheap; `corporate_pacs.py` replaces `FECtidy.py`'s bulk committee-master dependency). `leadership_history.py` (per-cycle history, same upsert/`--refresh` pattern as candidate_history.py). `committee_active_period.py` (fills active_start_year/active_end_year onto a committee list file). Write to `data/raw/fec_api/committees/`. |
+| `scripts/data_collection/fec/contributions/` | FEC API contribution/expenditure scripts. `{hybrid_pac,super_pac,leadership_pac,corporate_pac}_contributions.py` (Schedule A donor-side receipts, sharing `schedule_a_core.py`) and `{hybrid_pac,super_pac}_expenditures.py` (Schedule E independent expenditures, sharing `schedule_e_core.py`). **Known gap:** both still skip a committee entirely once it has any records on file -- not yet converted to a real incremental (min_date-checkpoint) refresh. Write to `data/raw/fec_api/contributions/` and `data/raw/fec_api/expenditures/`. |
 | `scripts/data_collection/fec/FECprocessor.py` | Builds processed FEC contribution, PAC, committee, and contributor files. Reads `data/raw/fec_bulk/`, `data/raw/fec_api/`, and `data/raw/lseg/`; writes `data/processed/fec/`. |
 | `scripts/data_collection/fec/FECtidy.py` | Tidies FEC bulk files and corporate PAC extracts under `data/raw/fec_bulk/`. |
 | `scripts/data_collection/fec/reformat.py` | Utility to convert pipe-delimited FEC text files to parquet under `data/raw/fec_bulk/`. |
@@ -126,7 +129,7 @@ For old-to-new path mappings and rollback notes, see [`migration-log.md`](migrat
 
 The current canonical data pipeline is:
 
-1. Pull or refresh FEC API data with `scripts/data_collection/fec/FECscraper.py`.
+1. Pull or refresh FEC API data with the scripts under `scripts/data_collection/fec/candidates/`, `fec/committees/`, and `fec/contributions/`.
 2. Reformat/tidy FEC bulk data with `scripts/data_collection/fec/FECtidy.py` and `scripts/data_collection/fec/reformat.py`.
 3. Build processed FEC tables with selected functions in `scripts/data_collection/fec/FECprocessor.py`.
 4. Optionally build individual-to-firm-PAC contribution data with `scripts/data_collection/fec/FECindividualToFirmPACs.py`.

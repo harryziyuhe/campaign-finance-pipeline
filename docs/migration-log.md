@@ -106,3 +106,26 @@ Windows blocked whole-directory renames for a few old container folders, so thei
 To restore an old path, move the new path back to the old path listed above. For example, if a legacy notebook expects `data/FEC/processed`, use the mapping `data/processed/fec/ -> data/FEC/processed/`.
 
 Do not delete new directories during rollback until you confirm that no updated active script depends on them.
+
+## 2026-08 FEC API Scraper Restructuring
+
+`scripts/data_collection/fec/FECscraper.py` (one monolithic `FECScraper` class covering
+candidates, committees, and contributions) was split into one standalone script per
+specific datapoint, sharing a `FECClient` base class for HTTP retry/pagination/upsert.
+The old file was moved to `scripts/_archive/data_collection_fec/FECscraper.py` -- see
+`scripts/_archive/README.md` for the full old-to-new mapping. No data paths changed;
+every new script writes to the same `data/raw/fec_api/` locations the old methods did.
+
+This restructuring also fixed a real gap: `fetch_candidate_history`,
+`fetch_candidate_committees`, and `fetch_leadership_history` used to skip a
+candidate/committee entirely once its ID had ever been seen, so a known entity's
+history was frozen after its first pull (a new cycle filed against a long-tracked
+candidate would never be picked up). The new `candidate_history.py`,
+`candidate_committees.py`, and `leadership_history.py` upsert by natural key instead,
+and support `--refresh all` to re-check every known entity, not just newly-appeared
+ones -- use that for a one-time catch-up run and to catch rare retroactive corrections.
+
+Schedule A (`contributions/*_contributions.py`) and Schedule E
+(`contributions/*_expenditures.py`) still have the old "skip a committee entirely once
+it has any records on file" limitation -- not fixed in this pass, called out in
+`scripts/data_collection/README.md` as a known gap.

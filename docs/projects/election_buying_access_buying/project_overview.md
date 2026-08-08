@@ -35,7 +35,7 @@ The unit of analysis is a firm-PAC by House candidate or race-year observation b
 
 | Script | Role in this project |
 | --- | --- |
-| `scripts/data_collection/fec/FECscraper.py` | Refreshes FEC API candidate and committee inputs used by downstream House aggregation. |
+| `scripts/data_collection/fec/candidates/` and `fec/committees/` | Refresh FEC API candidate and committee inputs used by downstream House aggregation (one standalone script per datapoint; see `scripts/data_collection/README.md`). |
 | `scripts/data_collection/fec/FECtidy.py` and `scripts/data_collection/fec/reformat.py` | Prepare raw FEC bulk files and parquet conversions used by the processed FEC pipeline. |
 | `scripts/data_collection/fec/FECprocessor.py` | Builds processed firm-PAC contribution tables, including firm PAC to candidate/principal-committee contributions. |
 | `scripts/data_collection/lseg/LSEGfirms.py` | Maintains the firm universe and metadata used to classify and join PAC sponsors. |

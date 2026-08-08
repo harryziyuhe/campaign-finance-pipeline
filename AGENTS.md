@@ -24,7 +24,7 @@ There is no central build system. Run scripts directly from the repository root 
 
 - One-time environment setup: `pip install -r requirements.txt` (Python deps) and `Rscript scripts/setup_r_packages.R` (R deps).
 - `python -m py_compile scripts/data_collection/fec/FECindividualToFirmPACs.py`: syntax-check a Python script before running it.
-- `python scripts/data_collection/fec/FECscraper.py`: refresh FEC API inputs when credentials and API assumptions are configured.
+- `python scripts/data_collection/fec/committees/corporate_pacs.py`: example of the one-script-per-datapoint FEC API scrapers under `fec/{candidates,committees,contributions}/` (see `scripts/data_collection/README.md` for the full list); all need `FEC_API_KEY` set.
 - `python scripts/aggregate/HouseData.py`: rebuild House-level processed panels.
 - `Rscript scripts/aggregate/HouseCandData.R`: rebuild R model-input datasets.
 - `Rscript scripts/analysis/logit/partisan_model2.R`: run the current candidate-level model code after inputs are current (`scripts/analysis/archive/cand_model.R` is the superseded predecessor, kept for history only).

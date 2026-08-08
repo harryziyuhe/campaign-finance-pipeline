@@ -22,8 +22,9 @@ $env:CAMPAIGNFINANCE_DATA_ROOT = "C:\Users\<you>\Dropbox\campaign-finance-data"
 The `.venv/` Python environment and `config/` (LSEG credentials) still live with the scripts, not
 the data -- see the `SCRIPT_ROOT`/`DATA_ROOT` split described below.
 
-FEC API scripts (`scripts/data_collection/fec/FECscraper.py`) also require a `FEC_API_KEY`
-environment variable (get one at https://api.data.gov/signup/) -- no hardcoded key is checked in.
+FEC API scripts (`scripts/data_collection/fec/{candidates,committees,contributions}/`) also require
+a `FEC_API_KEY` environment variable (get one at https://api.data.gov/signup/) -- no hardcoded key
+is checked in.
 ```powershell
 $env:FEC_API_KEY = "<your-key>"
 ```
@@ -33,7 +34,7 @@ $env:FEC_API_KEY = "<your-key>"
 There is no central build system or test suite. Run scripts directly from the repository root so relative/root-derived paths resolve correctly, and make sure `CAMPAIGNFINANCE_DATA_ROOT` is set first (see above).
 
 - One-time environment setup: `.venv\Scripts\python.exe -m pip install -r requirements.txt` (Python deps) and `Rscript scripts/setup_r_packages.R` (R deps).
-- Python interpreter: `.venv\Scripts\python.exe` (Python 3.12, uses `polars`, `pandas`, `tqdm`, etc.). Example: `.\.venv\Scripts\python.exe scripts\data_collection\fec\FECscraper.py`.
+- Python interpreter: `.venv\Scripts\python.exe` (Python 3.12, uses `polars`, `pandas`, `tqdm`, etc.). Example: `.\.venv\Scripts\python.exe scripts\data_collection\fec\committees\corporate_pacs.py`.
 - Syntax-check a Python script before running it: `python -m py_compile scripts/data_collection/fec/FECindividualToFirmPACs.py`.
 - Rebuild House-level processed panels: `python scripts/aggregate/HouseData.py`.
 - Rebuild R model-input datasets: `Rscript scripts/aggregate/HouseCandData.R`.
@@ -67,7 +68,7 @@ still hard-code `~/campaigncontributions/` -- don't use them as a template; they
 
 ## Scripts Layout
 
-- `scripts/data_collection/fec/` — FEC API scraping and bulk processing (active). Key scripts: `FECscraper.py` (API pulls), `FECprocessor.py` (builds processed contribution/PAC/committee tables), `FECtidy.py`/`reformat.py` (bulk file tidying/parquet conversion), `FECindividualToFirmPACs.py` (individual→firm-PAC filtering), `FECsuperOrganizationFirmMatcher.py` (super-PAC org→firm matching, staged with LSEG lookups), `FECfirmPacDonorProfiles.py` (staged donor-identity pipeline, see below), `FECBonica*.py` (DIME/Bonica crosswalk track).
+- `scripts/data_collection/fec/` — FEC API scraping and bulk processing (active). API scraping lives under `candidates/`, `committees/`, and `contributions/` — one standalone script per datapoint, sharing the `FECClient` base class in `fec_client.py` (see `scripts/data_collection/README.md` for the full script list). Other key scripts: `FECprocessor.py` (builds processed contribution/PAC/committee tables), `FECtidy.py`/`reformat.py` (bulk file tidying/parquet conversion), `FECindividualToFirmPACs.py` (individual→firm-PAC filtering), `FECsuperOrganizationFirmMatcher.py` (super-PAC org→firm matching, staged with LSEG lookups), `FECfirmPacDonorProfiles.py` (staged donor-identity pipeline, see below), `FECBonica*.py` (DIME/Bonica crosswalk track).
 - `scripts/data_collection/lseg/` — LSEG firm metadata and market data (active): `LSEGfirms.py`, `Stockscraper.py`, `EventStudy.py` (main event study), `ExposureStudy.py`/`BetaOneExposure.py` (alternates).
 - `scripts/data_collection/electionratings/inside_elections/` — Inside Elections XML parsers (`directory.py`, `house_records.py`).
 - `scripts/aggregate/` — Builds analysis panels: `HouseData.py` (House candidate/race panels, Python), `HouseCandData.R` (R model-input datasets from those panels).
@@ -100,7 +101,7 @@ When updating documentation, follow the repo's own documentation conventions (`.
 ## Coding Conventions
 
 - Python: 4-space indentation, `snake_case` functions/variables, `PascalCase` classes, descriptive script names. Prefer `pathlib`/`SCRIPT_ROOT`+`DATA_ROOT`-relative paths (see pattern above) over hard-coded drive paths.
-- Prefer object-oriented structure when a script has reusable state/config/staged processing or a clear domain object (scraper, processor, matcher, parser, model runner) — see `FECScraper` in `FECscraper.py`. Use plain functions for stateless transforms or glue code; don't add classes to wrap trivial helpers.
+- Prefer object-oriented structure when a script has reusable state/config/staged processing or a clear domain object (scraper, processor, matcher, parser, model runner) — see `FECClient` in `scripts/data_collection/fec/fec_client.py`. Use plain functions for stateless transforms or glue code; don't add classes to wrap trivial helpers.
 - R: clear object names, steps grouped by purpose; keep generated `.RDS` under `data/processed/modeling/` or `outputs/models/` (both resolved via `CAMPAIGNFINANCE_DATA_ROOT`, see `HouseCandData.R`).
 - Comment at the module level when a file has one main purpose (what it reads/writes); comment before each major section when a file has multiple purposes (scraping, matching, aggregation, modeling, output). Skip comments on self-explanatory helpers — explain intent/data assumptions, not mechanics.
 - Name generated data by source, unit, and cycle (e.g. `firm_pac_to_candidate_contributions.parquet`, `house_contribution_2024.csv`); see `docs/reorganization-plan.md`'s naming table for the fuller convention.

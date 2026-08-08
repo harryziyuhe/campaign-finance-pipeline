@@ -30,7 +30,7 @@ data. `git` is not yet initialized in this folder — that's a deliberate later 
 
 ### Scripts (this repository)
 
-- `scripts/data_collection/fec/` — FEC API scraping and bulk processing. Key scripts: `FECscraper.py` (API pulls), `FECprocessor.py` (processed contribution/PAC/committee tables), `FECtidy.py`/`reformat.py` (bulk file tidying), `FECindividualToFirmPACs.py`, `FECsuperOrganizationFirmMatcher.py`, `FECfirmPacDonorProfiles.py`, `FECBonica*.py` (DIME/Bonica crosswalk track), plus `PartisanHedgingIndex.py`, `HouseRaceCompetitiveness.py`, `ContributionSpikeDetection.py` (extracted from legacy notebooks in 2026-08).
+- `scripts/data_collection/fec/` — FEC API scraping and bulk processing. API scraping lives under `candidates/`, `committees/`, and `contributions/` (one standalone script per datapoint, sharing the `FECClient` base class in `fec_client.py`). Other key scripts: `FECprocessor.py` (processed contribution/PAC/committee tables), `FECtidy.py`/`reformat.py` (bulk file tidying), `FECindividualToFirmPACs.py`, `FECsuperOrganizationFirmMatcher.py`, `FECfirmPacDonorProfiles.py`, `FECBonica*.py` (DIME/Bonica crosswalk track), plus `PartisanHedgingIndex.py`, `HouseRaceCompetitiveness.py`, `ContributionSpikeDetection.py` (extracted from legacy notebooks in 2026-08).
 - `scripts/data_collection/lseg/` — LSEG firm metadata and market data: `LSEGfirms.py`, `Stockscraper.py`, `EventStudy.py`, `ExposureStudy.py`/`BetaOneExposure.py`.
 - `scripts/data_collection/electionratings/inside_elections/` — Inside Elections ratings parsers.
 - `scripts/aggregate/` — builds analysis panels: `HouseData.py` (Python, House candidate/race panels), `HouseCandData.R` (R model-input datasets from those panels), `TaintedAccessPanels.py`.

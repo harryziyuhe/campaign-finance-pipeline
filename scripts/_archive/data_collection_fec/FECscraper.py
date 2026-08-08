@@ -456,7 +456,77 @@ class FECScraper:
             superpacs = self.scrape_committee_type(type = "O")
             singlecand = self.scrape_committee_type(type = "U")
             pd.concat([superpacs, singlecand]).to_csv(f"{self.committees_path}super_pacs.csv", index=False)
-        
+
+    def scrape_committee_organization_type(self, organization_type: str) -> pd.DataFrame:
+        """
+        Scrape all committees by organization type (e.g. "C" = corporation).
+        Use committees/ endpoint. `affiliated_committee_name` is the API-native
+        equivalent of the bulk committee master file's CONNECTED_ORG_NM field.
+        """
+        page = 1
+        committee_url = f"{self.base_url}committees/"
+        vars_list = ["committee_id", "name", "organization_type", "organization_type_full",
+                     "affiliated_committee_name", "committee_type", "committee_type_full",
+                     "designation", "designation_full", "state"]
+
+        all_pages = []
+
+        params = {
+            "page": page,
+            "per_page": 100,
+            "organization_type": organization_type,
+            "api_key": self.apikey
+        }
+        response = requests.get(committee_url, params=params)
+        response.raise_for_status()
+        data = response.json()
+        total_pages = data.get("pagination", {}).get("pages", 1)
+
+        with tqdm(total=total_pages, desc=f"Scraping organization_type={organization_type} committees") as pbar:
+            while True:
+                params["page"] = page
+                response = requests.get(committee_url, params=params)
+                if response.status_code != 200:
+                    time.sleep(5)
+                    continue
+                data = response.json()
+                time.sleep(0.5)
+
+                page_df = pd.json_normalize(data.get("results", []))
+                if len(page_df) == 0:
+                    break
+                page_df = page_df[vars_list]
+                all_pages.append(page_df)
+
+                pbar.update(1)
+
+                if page >= total_pages:
+                    break
+                page += 1
+
+        if len(all_pages) == 0:
+            return pd.DataFrame(columns=vars_list)
+        return pd.concat(all_pages, ignore_index=True)
+
+    def fetch_corporate_pacs(self) -> None:
+        """
+        Discover the current corporate-PAC committee universe via the API
+        (organization_type=C), replacing FECtidy.get_corporate_pacs()'s bulk
+        committee-master dependency. Writes to committees_path so it lands in
+        the same location fetch_contributions(type="corporate") reads from
+        (previously a dead code path: FECtidy wrote its bulk-derived
+        corporate_pacs.csv under fec_bulk/committees/, not here).
+
+        This captures each committee's current organization_type/affiliated
+        name only, not the per-cycle history bulk data provided (used by
+        FECtidy.agg_corporate_pacs()'s exact-match merge against the
+        hand-curated corporate_pacs_2004_2024.csv). That per-cycle backfill
+        would use committee/{id}/history/ per committee and is a separate,
+        heavier follow-up, not done here.
+        """
+        corporate_pacs = self.scrape_committee_organization_type(organization_type="C")
+        corporate_pacs.to_csv(f"{self.committees_path}corporate_pacs.csv", index=False)
+
     def scrape_leadership_history(self, committee_id: str) -> pd.DataFrame:
         """
         Scrape committee's characteristics over time. Information aggregated by committee_id

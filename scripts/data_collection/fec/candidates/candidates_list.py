@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from fec_client import FECClient
 
 CAND_FIELDS = ["candidate_id", "name", "party", "party_full"]
+KEY_COLS = ["candidate_id", "election_year"]
 
 
 def expand_candidate(candidate: dict) -> list:
@@ -42,7 +43,6 @@ def expand_candidate(candidate: dict) -> list:
                     "committee_designation": c.get("designation"),
                     "committee_designation_full": c.get("designation_full"),
                     "committee_treasurer": c.get("treasurer_name"),
-                    "committee_affiliate": c.get("affiliated_committee_name"),
                 }
             rows.append(row)
         else:
@@ -56,7 +56,6 @@ def expand_candidate(candidate: dict) -> list:
                 "committee_designation": None,
                 "committee_designation_full": None,
                 "committee_treasurer": None,
-                "committee_affiliate": None,
             })
     return rows
 
@@ -85,7 +84,14 @@ def scrape_candidates(client: FECClient, office: str = "H") -> None:
 
 
 def parse_candidates(client: FECClient, office: str = "H") -> pd.DataFrame:
-    """Parse all scraped JSON pages for `office` into a candidate-committee pair CSV."""
+    """
+    Parse all scraped JSON pages for `office` into a candidate-committee pair CSV, merging
+    into the existing file by (candidate_id, election_year): only new pairs are inserted.
+    An existing row is never overwritten -- the candidate-search endpoint reports each
+    candidate's *current* name/party/committee for every election_year it lists, not what was
+    true as of that year, so a fresh value is never more trustworthy than what's on file, even
+    for a pair we've already seen.
+    """
     data_dir = f"{client.candidates_path}{office}"
 
     all_cands = []
@@ -97,8 +103,11 @@ def parse_candidates(client: FECClient, office: str = "H") -> pd.DataFrame:
                     all_cands.extend(expand_candidate(candidate))
 
     df_cands = pd.DataFrame(all_cands)
-    df_cands.to_csv(f"{client.candidates_path}candidates_{office}.csv", index=False)
-    return df_cands
+    return client.insert_only_csv(
+        df_cands,
+        f"{client.candidates_path}candidates_{office}.csv",
+        KEY_COLS,
+    )
 
 
 if __name__ == "__main__":
@@ -111,3 +120,4 @@ if __name__ == "__main__":
     client = FECClient()
     scrape_candidates(client, office=args.office)
     parse_candidates(client, office=args.office)
+    client.log_run("candidates_list", office=args.office)

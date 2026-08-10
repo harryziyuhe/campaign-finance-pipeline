@@ -7,7 +7,7 @@ import pandas as pd
 from tqdm import tqdm
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from fec_client import FECClient
+from fec_client import FECClient, current_cycle_threshold
 
 COMMITTEE_FIELDS = [
     "committee_id", "committee_type", "committee_type_full",
@@ -68,27 +68,37 @@ def scrape_candidate_committees(client: FECClient, candidate_id: str) -> pd.Data
     return pd.concat(all_pages, ignore_index=True)
 
 
-def fetch_candidate_committees(client: FECClient, office: str = "H", start_year=None, refresh: str = "new") -> None:
+def fetch_candidate_committees(client: FECClient, office: str = "H", start_year=None) -> None:
     """
-    refresh="new": only fetch committees for candidate_ids never seen in the output file.
-    refresh="all": re-fetch every known candidate_id and upsert -- catch-up runs, or to
-    catch a candidate gaining a new affiliated committee / joint committee.
+    Fetch per-candidate affiliated-committee history and merge it in by
+    (candidate_id, committee_id, cycle, joint_committee_id, candidate_ids), only calling the
+    API for candidates that actually need it: a candidate_id is skipped if every
+    (candidate_id, election_year) pair it has in the candidate list already appears (as a
+    (candidate_id, cycle) pair) in the output file and outside the current (mutable) cycle.
+    The committees endpoint returns a candidate's entire history in one call, so once a
+    candidate is fetched, merge_cyclical still protects any already-settled past cycles from
+    being overwritten.
     """
     candidate_file = f"{client.candidates_path}candidates_{office}.csv"
     output_path = f"{client.candidates_path}candidate_committees_{office}.csv"
+    review_path = f"{client.candidates_path}candidate_committees_{office}_discrepancies.csv"
 
     candidates_df = pd.read_csv(candidate_file)
     if start_year:
         candidates_df = candidates_df[candidates_df["election_year"] >= start_year]
-    candidate_ids = candidates_df["candidate_id"].unique()
 
-    if refresh == "new":
-        try:
-            existing = pd.read_csv(output_path)
-            known_ids = set(existing["candidate_id"].unique())
-        except FileNotFoundError:
-            known_ids = set()
-        candidate_ids = [c for c in candidate_ids if c not in known_ids]
+    threshold = current_cycle_threshold()
+    try:
+        known_keys = pd.read_csv(output_path)[["candidate_id", "cycle"]] \
+            .rename(columns={"cycle": "election_year"}).drop_duplicates()
+    except FileNotFoundError:
+        known_keys = pd.DataFrame(columns=["candidate_id", "election_year"])
+
+    is_known = candidates_df.merge(
+        known_keys, on=["candidate_id", "election_year"], how="left", indicator=True
+    )["_merge"].to_numpy() == "both"
+    needs_fetch = ~is_known | (candidates_df["election_year"].to_numpy() >= threshold)
+    candidate_ids = candidates_df[needs_fetch]["candidate_id"].unique()
 
     fresh_rows = []
     for i, candidate_id in enumerate(tqdm(candidate_ids)):
@@ -97,22 +107,28 @@ def fetch_candidate_committees(client: FECClient, office: str = "H", start_year=
             fresh_rows.append(committees)
 
         if fresh_rows and (i + 1) % 50 == 0:
-            client.upsert_csv(pd.concat(fresh_rows, ignore_index=True), output_path, KEY_COLS)
+            client.merge_cyclical(
+                pd.concat(fresh_rows, ignore_index=True), output_path, KEY_COLS,
+                cycle_col="cycle", review_path=review_path, mutable_min_cycle=threshold,
+            )
             fresh_rows = []
 
     if fresh_rows:
-        client.upsert_csv(pd.concat(fresh_rows, ignore_index=True), output_path, KEY_COLS)
+        client.merge_cyclical(
+            pd.concat(fresh_rows, ignore_index=True), output_path, KEY_COLS,
+            cycle_col="cycle", review_path=review_path, mutable_min_cycle=threshold,
+        )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Fetch candidate-affiliated committee history, upserting by "
+        description="Fetch candidate-affiliated committee history, merging by "
                      "(candidate_id, committee_id, cycle, joint_committee_id, candidate_ids)."
     )
     parser.add_argument("--office", default="H", choices=["H", "S", "P"])
     parser.add_argument("--start-year", type=int, default=None)
-    parser.add_argument("--refresh", default="new", choices=["new", "all"])
     args = parser.parse_args()
 
     client = FECClient()
-    fetch_candidate_committees(client, office=args.office, start_year=args.start_year, refresh=args.refresh)
+    fetch_candidate_committees(client, office=args.office, start_year=args.start_year)
+    client.log_run("candidate_committees", office=args.office, start_year=args.start_year)

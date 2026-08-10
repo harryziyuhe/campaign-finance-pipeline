@@ -4,14 +4,15 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from fec_client import FECClient
 
-FIELDS = ["committee_id", "committee_type", "committee_type_full",
-          "designation", "designation_full", "name", "state"]
-
 
 def fetch_leadership_pacs(client: FECClient) -> None:
-    """Fetch all committees designated D (leadership PAC)."""
-    committees = client.scrape_committees({"designation": "D"}, FIELDS)
-    committees.to_csv(f"{client.committees_path}leadership_pacs.csv", index=False)
+    """
+    Fetch committee_id + active_start/active_end (derived from each committee's `cycles`
+    field) for committees designated D (leadership PAC). Merged into the existing file: a
+    never-seen committee_id is inserted, and for a known one only active_end can grow.
+    """
+    active_period = client.scrape_committee_active_periods({"designation": "D"})
+    client.merge_active_period(active_period, f"{client.committees_path}leadership_pacs.csv")
 
 
 if __name__ == "__main__":

@@ -28,3 +28,6 @@ _migration_logs/
 
 # Loose reference documents (not code/data pipeline outputs)
 *.pdf
+
+# Per-run success logs written by fec/candidates scripts (FECClient.log_run)
+log/

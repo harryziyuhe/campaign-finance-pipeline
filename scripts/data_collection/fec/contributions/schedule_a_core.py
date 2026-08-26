@@ -13,13 +13,25 @@ from tqdm import tqdm
 # individual/donor-identity track, distinct from a PAC's outbound giving to
 # candidates (Schedule B), which has no scraper here yet.
 #
-# KNOWN GAP (not fixed in this pass): fetch_schedule_a_for_committees skips a
-# committee entirely once it has any contributions on file, so a committee's
-# contributions received AFTER the first pull are never picked up. A real fix
-# needs a stored per-committee "last contribution_receipt_date fetched"
-# checkpoint passed back in as min_date on the next run, not a skip-if-seen
-# check. Left as-is here -- this was called out as an easier, still-open
-# follow-up, not the candidate/committee-history case-1/case-2 work.
+# fetch_schedule_a_for_committees scrapes incrementally: a committee already on
+# file resumes from its own latest known contribution_receipt_date (min_date)
+# instead of being skipped or re-pulled from scratch. Re-querying from min_date
+# (inclusive) re-returns that boundary day's rows alongside genuinely new ones.
+#
+# Rows are deduped by NATURAL_KEY_COLS, not FEC's own sub_id: data scraped before
+# sub_id was added to VAR_LIST has no sub_id at all, and every existing committee's
+# history predates it, so a sub_id-based dedup would either treat every old,
+# sub_id-less row as a duplicate of every other (collapsing almost all existing
+# history the first time this runs -- both pandas' and polars' duplicate-detection
+# treat matching nulls as equal) or fail to recognize an old row and its freshly
+# refetched twin as the same transaction at all. NATURAL_KEY_COLS is verified
+# (against live schedule_a data) to uniquely identify a row without relying on any
+# field introduced after existing data was collected -- image_number/line_number
+# alone collide often (one filed image/line can list many itemized contributions),
+# but combined with contributor identity/amount/date they don't.
+NATURAL_KEY_COLS = ["committee_id", "contributor_id", "contributor_name", "donor_committee_name",
+                     "contribution_receipt_amount", "contribution_receipt_date", "image_number",
+                     "line_number"]
 
 VAR_LIST = ["committee_id", "amendment_indicator", "amendment_indicator_desc",
             "contribution_receipt_amount", "contribution_receipt_date", "contributor_id",
@@ -28,15 +40,21 @@ VAR_LIST = ["committee_id", "amendment_indicator", "amendment_indicator_desc",
             "contributor_occupation", "contributor_state", "contributor_zip", "donor_committee_name",
             "election_type", "entity_type", "entity_type_desc", "fec_election_type_desc",
             "is_individual", "line_number", "line_number_label", "receipt_type", "receipt_type_desc",
-            "receipt_type_full", "image_number", "pdf_url"]
+            "receipt_type_full", "image_number", "pdf_url", "sub_id"]
 
 
-def scrape_schedule_a(client, committee_id: str, pbar, year=None):
+def scrape_schedule_a(client, committee_id: str, pbar, year=None, min_date=None):
     """
     Scrape individual contributions to a committee. Use schedules/schedule_a/ endpoint.
     Returns (status_code, polars.DataFrame). A 504 on the first attempt for a
     committee signals the caller to retry year-by-year instead (schedule_a can
     time out on committees with a very long contribution history).
+
+    `min_date` (a "YYYY-MM-DD" string) restricts to contribution_receipt_date >= min_date,
+    for an incremental pull that only fetches what's newer than a committee's last known
+    date. Combined with `year` (the post-504 chunked-retry path), the chunk's own min_date
+    (`{year}-01-01`) is raised to `min_date` when that's later, so a still-504ing incremental
+    pull doesn't re-walk years it already has.
     """
     contrib_url = f"{client.base_url}schedules/schedule_a/"
     all_pages = []
@@ -45,8 +63,13 @@ def scrape_schedule_a(client, committee_id: str, pbar, year=None):
     params = {"committee_id": committee_id, "per_page": 100,
               "sort": "-contribution_receipt_date", "api_key": client.api_key}
     if year is not None:
-        params["min_date"] = f"{year}-01-01"
+        chunk_min_date = f"{year}-01-01"
+        if min_date is not None and min_date > chunk_min_date:
+            chunk_min_date = min_date
+        params["min_date"] = chunk_min_date
         params["max_date"] = f"{year}-12-31"
+    elif min_date is not None:
+        params["min_date"] = min_date
 
     status_code = None
     error_page = None
@@ -97,19 +120,44 @@ def scrape_schedule_a(client, committee_id: str, pbar, year=None):
     return 200, pl.concat(all_pages, how="vertical_relaxed")
 
 
+def _last_date_by_committee(all_history: pl.DataFrame) -> dict:
+    if all_history.height == 0:
+        return {}
+    return dict(
+        all_history.group_by("committee_id")
+        .agg(pl.col("contribution_receipt_date").max())
+        .iter_rows()
+    )
+
+
+def _merge_dedup(all_history: pl.DataFrame, fresh_batches: list) -> pl.DataFrame:
+    fresh = pl.concat(fresh_batches, how="vertical_relaxed")
+    # diagonal_relaxed (not vertical_relaxed): all_history may predate a VAR_LIST column
+    # (e.g. sub_id) and be missing it entirely -- vertical_relaxed only reconciles dtypes
+    # for columns both sides already share, it errors on a differing column set; diagonal
+    # fills a genuinely missing column with nulls instead.
+    combined = fresh if all_history.height == 0 else pl.concat([all_history, fresh], how="diagonal_relaxed")
+    return combined.unique(subset=NATURAL_KEY_COLS, keep="last")
+
+
 def fetch_schedule_a_for_committees(client, committee_file: str, output_file: str,
                                      skip: int = 0, save_every: int = 100) -> None:
-    """Fetch schedule_a contributions for every committee_id listed in committee_file."""
+    """
+    Fetch schedule_a contributions for every committee_id in committee_file, incrementally: a
+    committee already on file resumes from its own latest known contribution_receipt_date
+    instead of being skipped or re-pulled from scratch.
+    """
     if os.path.exists(output_file):
         all_history = pl.read_parquet(output_file)
-        existing_committees = set(all_history["committee_id"].drop_nulls().to_list())
-        print(f"Existing contribution history found for {len(existing_committees)} committees.")
+        last_date_by_committee = _last_date_by_committee(all_history)
+        print(f"Existing contribution history found for {len(last_date_by_committee)} committees.")
     else:
         all_history = pl.DataFrame()
-        existing_committees = set()
+        last_date_by_committee = {}
 
     committees_df = pl.read_csv(committee_file)
     counter = 0
+    fresh_batches = []
 
     with tqdm(range(len(committees_df))) as pbar:
         for i in pbar:
@@ -121,31 +169,42 @@ def fetch_schedule_a_for_committees(client, committee_file: str, output_file: st
 
             if counter < skip:
                 continue
-            if committee in existing_committees:
-                continue
 
-            status_code, contributions = scrape_schedule_a(client, committee, pbar)
+            min_date = last_date_by_committee.get(committee)
+            status_code, contributions = scrape_schedule_a(client, committee, pbar, min_date=min_date)
 
             if status_code == 504:
-                start_year = row["active_start_year"]
-                end_year = row["active_end_year"]
-                chunk_results = []
-                for year in range(start_year, end_year + 1):
-                    pbar.set_description(f"Committee {committee} - Year {year}")
-                    status_code_chunk, contributions_chunk = scrape_schedule_a(client, committee, pbar, year)
-                    if status_code_chunk == 504:
-                        print(f"Committee {committee} continues to return 504 error for year {year}")
-                    if contributions_chunk is not None and contributions_chunk.height > 0:
-                        chunk_results.append(contributions_chunk)
-                contributions = pl.concat(chunk_results, how="vertical_relaxed") if chunk_results else pl.DataFrame()
+                start_year = row["active_start"]
+                end_year = row["active_end"]
+                if start_year is None or end_year is None:
+                    print(f"Committee {committee} has no active_start/active_end -- can't chunk by year, skipping 504 fallback.")
+                    contributions = pl.DataFrame()
+                else:
+                    if min_date is not None:
+                        start_year = max(start_year, int(min_date[:4]))
+                    chunk_results = []
+                    for year in range(start_year, end_year + 1):
+                        pbar.set_description(f"Committee {committee} - Year {year}")
+                        year_min_date = min_date if year == start_year else None
+                        status_code_chunk, contributions_chunk = scrape_schedule_a(
+                            client, committee, pbar, year=year, min_date=year_min_date
+                        )
+                        if status_code_chunk == 504:
+                            print(f"Committee {committee} continues to return 504 error for year {year}")
+                        if contributions_chunk is not None and contributions_chunk.height > 0:
+                            chunk_results.append(contributions_chunk)
+                    contributions = pl.concat(chunk_results, how="vertical_relaxed") if chunk_results else pl.DataFrame()
 
             if contributions is not None and contributions.height > 0:
-                all_history = contributions if all_history.height == 0 else pl.concat([all_history, contributions], how="vertical_relaxed")
-                existing_committees.add(committee)
+                fresh_batches.append(contributions)
 
-            if counter % save_every == 0 and all_history.height > 0:
+            if counter % save_every == 0 and fresh_batches:
                 print(f"Processed {counter} committees. Saving progress to {output_file}...")
-                all_history.write_parquet(output_file)
+                all_history = _merge_dedup(all_history, fresh_batches)
+                fresh_batches = []
+                client.atomic_write(output_file, lambda p: all_history.write_parquet(p))
 
+    if fresh_batches:
+        all_history = _merge_dedup(all_history, fresh_batches)
     if all_history.height > 0:
-        all_history.write_parquet(output_file)
+        client.atomic_write(output_file, lambda p: all_history.write_parquet(p))

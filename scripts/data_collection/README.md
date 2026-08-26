@@ -7,6 +7,7 @@ This folder contains the scripts that maintain data inputs and processed dataset
 | `fec/` | FEC API scraping, FEC bulk tidying, and processed contribution table construction. |
 | `lseg/` | LSEG firm metadata, return scraping, and market/event-study processing. |
 | `electionratings/inside_elections/` | Inside Elections directory and House ratings parsers. |
+| `electionratings/cook_political/` | Cook Political Report race-ratings API client + one script per office. Written but not yet run -- see `docs/repo-map.md` for required env vars and open assumptions. |
 
 Important FEC scripts:
 
@@ -18,8 +19,8 @@ Important FEC scripts:
 | `fec/candidates/candidate_committees.py` | Pull candidate-affiliated committee history (including joint committees), same skip/merge/freeze pattern as candidate_history.py. |
 | `fec/committees/{leadership_pacs,joint_committees,hybrid_pacs,super_pacs,corporate_pacs}.py` | One standalone script per committee type/designation. Each fetches just committee_id + active_start/active_end (derived from the committee's `cycles` field, no extra per-committee calls) and merges via `merge_active_period`: a new committee_id is inserted, and for a known one only active_end can grow -- active_start and everything else is never overwritten. `corporate_pacs.py` replaces `FECtidy.py`'s bulk committee-master dependency for discovering the corporate-PAC universe. |
 | `fec/committees/leadership_history.py` | Per-cycle leadership PAC history, same skip/merge/freeze pattern as candidate_history.py. |
-| `fec/contributions/{hybrid_pac,super_pac,leadership_pac,corporate_pac}_contributions.py` | Schedule A (donor-side) contributions per PAC type, sharing `schedule_a_core.py`. **Known gap:** still skips a committee entirely once it has any contributions on file -- not yet converted to a real incremental checkpoint. |
-| `fec/contributions/{hybrid_pac,super_pac}_expenditures.py` | Schedule E independent expenditures per PAC type, sharing `schedule_e_core.py`. Same known gap as above. |
+| `fec/contributions/{hybrid_pac,super_pac,leadership_pac,corporate_pac}_contributions.py` | Schedule A (donor-side) contributions per PAC type, sharing `schedule_a_core.py`. Incremental: a committee already on file resumes from its own latest known `contribution_receipt_date` instead of being skipped or re-pulled from scratch; rows are deduped by `sub_id`. |
+| `fec/contributions/{hybrid_pac,super_pac}_expenditures.py` | Schedule E independent expenditures per PAC type, sharing `schedule_e_core.py`. Same incremental/dedup pattern as schedule_a_core.py. |
 | `fec/FECprocessor.py` | Build processed committee/firm-PAC contribution tables. |
 | `fec/FECtidy.py` | Tidy FEC bulk files and corporate PAC match inputs. |
 | `fec/reformat.py` | Convert pipe-delimited FEC bulk text files to parquet. |

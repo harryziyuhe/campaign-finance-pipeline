@@ -9,26 +9,45 @@ from tqdm import tqdm
 # (hybrid_pac_expenditures.py, super_pac_expenditures.py) -- not a standalone
 # script itself, has no CLI/__main__.
 #
-# KNOWN GAP (not fixed in this pass): fetch_schedule_e_for_committees skips a
-# committee entirely once it has any expenditures on file -- same "skip if
-# seen" limitation as schedule_a_core.py, not yet converted to a real
-# last-timestamp checkpoint.
+# fetch_schedule_e_for_committees scrapes incrementally: a committee already on
+# file resumes from its own latest known expenditure_date (min_date) instead of
+# being skipped or re-pulled from scratch. Re-querying from min_date (inclusive)
+# re-returns that boundary day's rows alongside genuinely new ones.
+#
+# Rows are deduped by NATURAL_KEY_COLS, not FEC's own sub_id: data scraped before
+# sub_id was added to VAR_LIST has no sub_id at all, and every existing committee's
+# history predates it, so a sub_id-based dedup would treat every old, sub_id-less
+# row as a duplicate of every other (pandas' duplicate-detection treats matching
+# nulls as equal), collapsing almost all existing history the first time this
+# runs. NATURAL_KEY_COLS is verified (against live schedule_e data) to uniquely
+# identify a row without relying on any field introduced after existing data was
+# collected -- image_number/category_code alone collide often (one filed image can
+# list several expenditures), but combined with candidate/amount/date/description
+# they don't.
+NATURAL_KEY_COLS = ["committee_id", "candidate_id", "expenditure_amount", "expenditure_date",
+                     "expenditure_description", "image_number"]
 
 VAR_LIST = ["committee_id", "candidate_id", "support_oppose_indicator",
             "action_code", "amendment_indicator", "candidate_last_name", "candidate_first_name",
             "candidate_party", "category_code", "category_code_full", "disbursement_dt",
             "election_type", "expenditure_amount", "expenditure_date", "expenditure_description",
-            "image_number", "pdf_url"]
+            "image_number", "pdf_url", "sub_id"]
 
 
-def scrape_schedule_e(client, committee_id: str) -> pd.DataFrame:
-    """Scrape a committee's independent expenditures. Use schedules/schedule_e/ endpoint."""
+def scrape_schedule_e(client, committee_id: str, min_date=None) -> pd.DataFrame:
+    """
+    Scrape a committee's independent expenditures. Use schedules/schedule_e/ endpoint.
+    `min_date` (a "YYYY-MM-DD" string) restricts to expenditure_date >= min_date, for an
+    incremental pull that only fetches what's newer than a committee's last known date.
+    """
     ie_url = f"{client.base_url}schedules/schedule_e/"
     all_pages = []
     page = 1
 
     params = {"committee_id": committee_id, "per_page": 100,
               "sort": "-expenditure_date", "api_key": client.api_key}
+    if min_date is not None:
+        params["min_date"] = min_date
 
     while True:
         response = requests.get(ie_url, params=params)
@@ -62,13 +81,17 @@ def scrape_schedule_e(client, committee_id: str) -> pd.DataFrame:
 
 
 def fetch_schedule_e_for_committees(client, committee_file: str, output_file: str, skip: int = 0) -> None:
-    """Fetch schedule_e independent expenditures for every committee_id listed in committee_file."""
+    """
+    Fetch schedule_e independent expenditures for every committee_id in committee_file,
+    incrementally: a committee already on file resumes from its own latest known
+    expenditure_date instead of being skipped or re-pulled from scratch.
+    """
     if os.path.exists(output_file):
         all_history = pd.read_csv(output_file)
-        existing_committees = all_history["committee_id"].values
+        last_date_by_committee = all_history.groupby("committee_id")["expenditure_date"].max().to_dict()
     else:
         all_history = pd.DataFrame()
-        existing_committees = []
+        last_date_by_committee = {}
 
     committees = pd.read_csv(committee_file)["committee_id"].unique()
     counter = 0
@@ -77,9 +100,9 @@ def fetch_schedule_e_for_committees(client, committee_file: str, output_file: st
         counter += 1
         if counter < skip:
             continue
-        if committee in existing_committees:
-            continue
-        expenditures = scrape_schedule_e(client, committee)
+        min_date = last_date_by_committee.get(committee)
+        expenditures = scrape_schedule_e(client, committee, min_date=min_date)
         if len(expenditures) > 0:
-            all_history = pd.concat([all_history, expenditures])
-            all_history.to_csv(output_file, index=False)
+            all_history = pd.concat([all_history, expenditures], ignore_index=True)
+            all_history = all_history.drop_duplicates(subset=NATURAL_KEY_COLS, keep="last")
+            client.atomic_write(output_file, lambda p: all_history.to_csv(p, index=False))

@@ -116,12 +116,11 @@ cand_data <- cand_data %>%
 consumer$activity_id <- as.character(consumer$activity_id)
 partisan_giving <- partisan_giving %>%
     select(year, subsector, give_partisan)
-partisan_market <- partisan_market %>% 
-    select(industry, category, 
+partisan_market <- partisan_market %>%
+    select(industry, category,
            etf_partisan, singlename_partisan_pre, singlename_partisan_all,
            etf_score_pre, etf_score_all, singlename_score_pre, singlename_score_all,
-           subsec_partisan_score, ind_partisan, ind_partisan_score,
-           ind_partisan_allfirm_score, ind_partisan_allfirm_avg_score)
+           subsec_partisan_score, subsec_partisan, ind_partisan, ind_partisan_score)
 
 
 cand_data <- cand_data %>%
@@ -139,8 +138,7 @@ cand_data <- cand_data %>%
         same_party, party, firm_amount, firm_candidates, firm_cash, give_partisan,
         etf_partisan, singlename_partisan_pre, singlename_partisan_all,
         etf_score_pre, etf_score_all, singlename_score_pre, singlename_score_all,
-        subsec_partisan_score, ind_partisan, ind_partisan_score,
-        ind_partisan_allfirm_score, ind_partisan_allfirm_avg_score,
+        subsec_partisan_score, subsec_partisan, ind_partisan, ind_partisan_score,
         contribute, total_amount, total_count, upper_limit
     ))
 
@@ -166,8 +164,6 @@ cand_data <- cand_data %>%
     rename(subindustry = subindustry_tmp) %>%
     rename(
         incumbency = incumbent_challenge,
-        ind_partisan_median_score = ind_partisan_allfirm_score,
-        ind_partisan_avg_score = ind_partisan_allfirm_avg_score,
         contribute_amount = total_amount,
         contribute_count = total_count,
         contribute_limit = upper_limit,

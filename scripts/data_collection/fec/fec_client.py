@@ -1,5 +1,6 @@
 import json
 import os
+import tempfile
 import time
 from datetime import date, datetime
 from pathlib import Path
@@ -60,11 +61,60 @@ class FECClient:
         self.base_url = BASE_URL
         self.api_key = _require_api_key()
         data_root = _require_data_root()
+        self.data_root = data_root
         fec_api_path = data_root / "data" / "raw" / "fec_api"
         self.candidates_path = str(fec_api_path / "candidates") + "/"
         self.committees_path = str(fec_api_path / "committees") + "/"
         self.expenditures_path = str(fec_api_path / "expenditures") + "/"
         self.contributions_path = str(fec_api_path / "contributions") + "/"
+        self.processed_fec_path = str(data_root / "data" / "processed" / "fec") + "/"
+
+    @staticmethod
+    def atomic_write(path: str, write_fn) -> None:
+        """
+        Call write_fn(tmp_path) to write to a temp file in the same directory as `path`, then
+        atomically replace `path` with it via os.replace(). Every write in this pipeline writes
+        directly onto a file that IS the accumulated history, with no separate backup -- os.replace
+        is atomic at the OS level, so a crash or power loss mid-write leaves the old file fully
+        intact instead of truncated/corrupted. This matters especially for parquet, which stores
+        its schema footer at the *end* of the file: an interrupted write there makes the entire
+        file unreadable, not just the newest rows.
+        """
+        directory = os.path.dirname(str(path)) or "."
+        fd, tmp_path = tempfile.mkstemp(dir=directory, prefix=".tmp_", suffix=os.path.splitext(str(path))[1])
+        os.close(fd)
+        try:
+            write_fn(tmp_path)
+            # A cloud-synced data folder (Dropbox, OneDrive, ...) can transiently hold the
+            # destination open on Windows while it reads the file to sync it -- retry a few
+            # times with backoff before giving up, rather than failing the whole run over what
+            # is usually a one-off race, not a real conflict.
+            for attempt in range(5):
+                try:
+                    os.replace(tmp_path, path)
+                    break
+                except PermissionError:
+                    if attempt == 4:
+                        raise
+                    time.sleep(0.5 * (2 ** attempt))
+        except BaseException:
+            if os.path.exists(tmp_path):
+                os.remove(tmp_path)
+            raise
+
+    @staticmethod
+    def read_csv_safe(path: str, **kwargs) -> pd.DataFrame:
+        """
+        pd.read_csv with pandas' default NA-value sniffing turned off, keeping only a truly
+        empty field as missing. pandas' default na_values list includes common real-world
+        placeholder strings -- "N/A", "NA", "null", "None", "NaN", etc. -- so a genuine raw data
+        value like a contributor_city of "N/A" silently becomes an actual NaN every time the
+        file round-trips, changing that row's identity for key-matching purposes on each re-read
+        even though nothing about the underlying data changed. Any of this module's merge
+        helpers that key on columns which might legitimately contain such text must read through
+        this instead of a bare pd.read_csv.
+        """
+        return pd.read_csv(path, keep_default_na=False, na_values=[""], **kwargs)
 
     def get_json(self, url: str, params: dict, retry_sleep: float = 5.0) -> dict:
         """GET with indefinite retry on non-200 (matches prior FECscraper.py behavior)."""
@@ -140,7 +190,7 @@ class FECClient:
         pull no longer returns it. Writes the merged result back and returns it.
         """
         if os.path.exists(path):
-            existing_df = pd.read_csv(path)
+            existing_df = FECClient.read_csv_safe(path)
             combined = pd.concat([existing_df, fresh_df], ignore_index=True)
         else:
             combined = fresh_df
@@ -150,7 +200,7 @@ class FECClient:
             .sort_values(by=key_cols)
             .reset_index(drop=True)
         )
-        combined.to_csv(path, index=False)
+        FECClient.atomic_write(path, lambda p: combined.to_csv(p, index=False))
         return combined
 
     @staticmethod
@@ -170,10 +220,10 @@ class FECClient:
                 .sort_values(by=key_cols)
                 .reset_index(drop=True)
             )
-            merged.to_csv(path, index=False)
+            FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
             return merged
 
-        existing_df = pd.read_csv(path)
+        existing_df = FECClient.read_csv_safe(path)
         fresh_df = fresh_df.drop_duplicates(subset=key_cols, keep="last")
         FECClient._harmonize_key_dtypes(fresh_df, existing_df, key_cols, cycle_col=None)
 
@@ -189,7 +239,65 @@ class FECClient:
             .sort_values(by=key_cols)
             .reset_index(drop=True)
         )
-        merged.to_csv(path, index=False)
+        FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
+        return merged
+
+    @staticmethod
+    def _composite_key(df: pd.DataFrame, cols: list) -> pd.Series:
+        """
+        Build a single unambiguous string key from `cols`, with true-null values mapped to a
+        sentinel that can't collide with any real value (including an empty string, which stays
+        distinguishable from null). Used instead of a raw pandas multi-column Index/MultiIndex
+        for matching: MultiIndex set/intersection operations built from separately-constructed
+        DataFrames don't reliably treat null-vs-null (or null-vs-empty-string) the same way
+        across calls, which made an all-null-ish key row's identity ambiguous and non-
+        deterministic between runs.
+        """
+        null_sentinel = "\x00__NULL__\x00"
+        key = None
+        for col in cols:
+            values = df[col]
+            as_str = values.astype(str).where(values.notna(), null_sentinel)
+            key = as_str if key is None else key + "\x01" + as_str
+        return key
+
+    @staticmethod
+    def append_only_csv(fresh_df: pd.DataFrame, path: str, key_cols: list) -> pd.DataFrame:
+        """
+        Merge fresh_df into the CSV at `path` by key_cols, preserving row POSITION: an existing
+        key's row is refreshed in place (values updated from fresh_df, but the row never moves)
+        and a brand-new key is appended at the end. Never re-sorts and never reorders existing
+        rows. Use this instead of insert_only_csv whenever something downstream depends on a
+        row's *position* in the file (e.g. a positional row index used as a join key elsewhere,
+        as FECsuperOrganizationFirmMatcher.py's contributor_row_index is) -- unlike
+        insert_only_csv, values (e.g. a running total) DO get refreshed here, just never at the
+        cost of moving a row, since resorting or reordering would silently misalign that
+        external reference even when no data was lost.
+        """
+        fresh_df = fresh_df.copy()
+        fresh_df["_dedup_key"] = FECClient._composite_key(fresh_df, key_cols)
+        fresh_df = fresh_df.drop_duplicates(subset="_dedup_key", keep="last")
+
+        if not os.path.exists(path):
+            merged = fresh_df.drop(columns="_dedup_key").reset_index(drop=True)
+            FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
+            return merged
+
+        existing_df = FECClient.read_csv_safe(path)
+        existing_df["_dedup_key"] = FECClient._composite_key(existing_df, key_cols)
+
+        fresh_indexed = fresh_df.set_index("_dedup_key")
+        existing_indexed = existing_df.set_index("_dedup_key")
+
+        common_keys = existing_indexed.index.intersection(fresh_indexed.index)
+        update_cols = [c for c in fresh_indexed.columns if c in existing_indexed.columns]
+        existing_indexed.loc[common_keys, update_cols] = fresh_indexed.loc[common_keys, update_cols]
+
+        new_keys = fresh_indexed.index.difference(existing_indexed.index)
+        new_rows = fresh_indexed.loc[new_keys]
+
+        merged = pd.concat([existing_indexed, new_rows]).reset_index(drop=True)
+        FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
         return merged
 
     @staticmethod
@@ -209,10 +317,19 @@ class FECClient:
                 .sort_values(by=id_col)
                 .reset_index(drop=True)
             )
-            merged.to_csv(path, index=False)
+            FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
             return merged
 
-        existing_df = pd.read_csv(path)
+        existing_df = FECClient.read_csv_safe(path)
+        # A file written before this schema existed (e.g. still has name/committee_type/...
+        # columns from the old full-list-refresh scripts) won't have active_start/active_end
+        # yet -- add them as missing so the merge below naturally backfills from fresh_df
+        # instead of erroring on a suffix that never gets applied (no name collision to suffix).
+        for col in ("active_start", "active_end"):
+            if col not in existing_df.columns:
+                existing_df[col] = np.nan
+        existing_df = existing_df[[id_col, "active_start", "active_end"]]
+
         merged = existing_df.merge(fresh_df, on=id_col, how="outer", suffixes=("", "_fresh"))
         merged["active_start"] = merged["active_start"].combine_first(merged["active_start_fresh"])
         merged["active_end"] = merged[["active_end", "active_end_fresh"]].max(axis=1, skipna=True)
@@ -222,7 +339,65 @@ class FECClient:
             .sort_values(by=id_col)
             .reset_index(drop=True)
         )
-        merged.to_csv(path, index=False)
+        FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
+        return merged
+
+    @staticmethod
+    def refresh_unlabeled(
+        fresh_df: pd.DataFrame, path: str, key_cols: list, protect_if_set_cols: list
+    ) -> pd.DataFrame:
+        """
+        Merge fresh_df into the CSV at `path` by key_cols, protecting hand-entered labels:
+          - a key not yet in the existing file is inserted as-is (gap-fill);
+          - a key that exists where every one of `protect_if_set_cols` is still blank/null has
+            its ENTIRE row replaced by the fresh version (nothing hand-entered to lose, so it's
+            safe to refresh e.g. auto-match suggestions with the latest re-run);
+          - a key that exists where any of `protect_if_set_cols` is already set is left
+            completely untouched, no matter what the fresh row now says.
+        Use this for review files where some columns are machine-suggested (safe to refresh)
+        and others are hand-entered (must never be silently overwritten once set). Writes and
+        returns the merged frame.
+        """
+        fresh_df = fresh_df.drop_duplicates(subset=key_cols, keep="last")
+
+        if not os.path.exists(path):
+            merged = fresh_df.reset_index(drop=True)
+            FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
+            return merged
+
+        # dtype=str: a review file's columns (e.g. a PI value like "21730173349") are opaque
+        # hand-entered/suggested text, not numeric data -- without this, a numeric-looking
+        # column gets inferred as float64 and every value picks up a spurious ".0" suffix on
+        # each write-read round-trip.
+        existing_df = FECClient.read_csv_safe(path, dtype=str)
+        FECClient._harmonize_key_dtypes(fresh_df, existing_df, key_cols, cycle_col=None)
+
+        def _is_blank(df: pd.DataFrame) -> np.ndarray:
+            blank = np.ones(len(df), dtype=bool)
+            for col in protect_if_set_cols:
+                if col not in df.columns:
+                    continue
+                values = df[col]
+                col_blank = values.isna() | (values.astype(str).str.strip() == "")
+                blank &= np.asarray(col_blank)
+            return blank
+
+        existing_labeled = existing_df[np.logical_not(_is_blank(existing_df))]
+
+        merged_keys = fresh_df.merge(existing_df[key_cols], on=key_cols, how="left", indicator=True)
+        is_known = np.asarray(merged_keys["_merge"] == "both")
+        new_rows = fresh_df[np.logical_not(is_known)]
+
+        # Fresh rows for already-labeled keys are dropped entirely -- existing_labeled (below)
+        # supplies the untouched version of those rows instead.
+        labeled_keys = existing_labeled[key_cols]
+        fresh_is_labeled = np.asarray(
+            fresh_df.merge(labeled_keys, on=key_cols, how="left", indicator=True)["_merge"] == "both"
+        )
+        refreshed_rows = fresh_df[is_known & np.logical_not(fresh_is_labeled)]
+
+        merged = pd.concat([existing_labeled, refreshed_rows, new_rows], ignore_index=True)
+        FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
         return merged
 
     @staticmethod
@@ -243,8 +418,11 @@ class FECClient:
             records = []
         records.append(record)
 
-        with open(log_path, "w") as f:
-            json.dump(records, f, indent=2)
+        def _write(tmp_path):
+            with open(tmp_path, "w") as f:
+                json.dump(records, f, indent=2)
+
+        FECClient.atomic_write(str(log_path), _write)
 
     @staticmethod
     def merge_cyclical(
@@ -277,10 +455,10 @@ class FECClient:
                 .sort_values(by=key_cols)
                 .reset_index(drop=True)
             )
-            merged.to_csv(path, index=False)
+            FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
             return merged
 
-        existing_df = pd.read_csv(path)
+        existing_df = FECClient.read_csv_safe(path)
         fresh_df = fresh_df.drop_duplicates(subset=key_cols, keep="last")
         FECClient._harmonize_key_dtypes(fresh_df, existing_df, key_cols, cycle_col)
 
@@ -331,7 +509,7 @@ class FECClient:
             .sort_values(by=key_cols)
             .reset_index(drop=True)
         )
-        merged.to_csv(path, index=False)
+        FECClient.atomic_write(path, lambda p: merged.to_csv(p, index=False))
         return merged
 
     @staticmethod
@@ -369,7 +547,7 @@ class FECClient:
         new_review["manual_status"] = ""
 
         if os.path.exists(review_path):
-            prior_review = pd.read_csv(review_path)
+            prior_review = FECClient.read_csv_safe(review_path)
             combined = pd.concat([prior_review, new_review], ignore_index=True)
             combined["_has_status"] = combined["manual_status"].fillna("").astype(str).str.len() > 0
             combined = combined.sort_values(by=["_has_status"], ascending=True)
@@ -378,4 +556,4 @@ class FECClient:
             combined = new_review
 
         combined = combined.sort_values(by=key_cols).reset_index(drop=True)
-        combined.to_csv(review_path, index=False)
+        FECClient.atomic_write(review_path, lambda p: combined.to_csv(p, index=False))

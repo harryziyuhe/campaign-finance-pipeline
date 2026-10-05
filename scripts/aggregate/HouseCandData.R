@@ -74,7 +74,9 @@ cand_data <- read_parquet(file.path(HOUSE_PROCESSED_PATH, source_file))
 validate_frame(
     cand_data,
     c("cmte_id", "cycle", "candidate_id", "party", "TRBC_Econ_Sector", "TRBC_ID",
-      "hq_state", "hq", "ric", "incumbent_party", "total_amount", "contribute"),
+      "hq_state", "hq", "ric", "incumbent_party", "total_amount", "contribute",
+      "total_amount_leadership", "contribute_leadership",
+      "total_amount_combined", "contribute_combined"),
     name = source_file
 )
 
@@ -118,8 +120,11 @@ partisan_giving <- partisan_giving %>%
     select(year, subsector, give_partisan)
 partisan_market <- partisan_market %>%
     select(industry, category,
+partisan_market <- partisan_market %>%
+    select(industry, category,
            etf_partisan, singlename_partisan_pre, singlename_partisan_all,
            etf_score_pre, etf_score_all, singlename_score_pre, singlename_score_all,
+           subsec_partisan_score, subsec_partisan, ind_partisan, ind_partisan_score)
            subsec_partisan_score, subsec_partisan, ind_partisan, ind_partisan_score)
 
 
@@ -139,7 +144,9 @@ cand_data <- cand_data %>%
         etf_partisan, singlename_partisan_pre, singlename_partisan_all,
         etf_score_pre, etf_score_all, singlename_score_pre, singlename_score_all,
         subsec_partisan_score, subsec_partisan, ind_partisan, ind_partisan_score,
-        contribute, total_amount, total_count, upper_limit
+        contribute, total_amount, total_count, upper_limit,
+        contribute_leadership, total_amount_leadership, total_count_leadership,
+        contribute_combined, total_amount_combined, total_count_combined
     ))
 
 cand_data <- cand_data %>%
@@ -167,6 +174,15 @@ cand_data <- cand_data %>%
         contribute_amount = total_amount,
         contribute_count = total_count,
         contribute_limit = upper_limit,
+        # Leadership-PAC and combined (principal + leadership) measures are
+        # intentionally left uncensored here: the $10,000 cap/upper_limit
+        # logic above encodes the per-election FEC limit on contributions to
+        # a candidate's principal campaign committee, which does not apply
+        # to PAC-to-PAC leadership PAC contributions.
+        contribute_amount_leadership = total_amount_leadership,
+        contribute_count_leadership = total_count_leadership,
+        contribute_amount_combined = total_amount_combined,
+        contribute_count_combined = total_count_combined,
         favorability_cb = favorability_cu,
         spline1 = spline_1, spline2 = spline_2, spline3 = spline_3, spline4 = spline_4
     )
@@ -175,7 +191,9 @@ output_name <- paste0("cand_model_data", election, ".RDS")
 validate_frame(
     cand_data,
     c("cmte_id", "year", "candidate_id", "party", "democrat", "favorability",
-      "contribute", "contribute_amount", "contribute_count", "contribute_limit"),
+      "contribute", "contribute_amount", "contribute_count", "contribute_limit",
+      "contribute_leadership", "contribute_amount_leadership", "contribute_count_leadership",
+      "contribute_combined", "contribute_amount_combined", "contribute_count_combined"),
     name = output_name
 )
 saveRDS(cand_data, file.path(MODELING_PROCESSED_PATH, output_name))

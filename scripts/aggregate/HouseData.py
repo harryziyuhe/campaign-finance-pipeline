@@ -36,6 +36,12 @@ def load_data():
         ["cmte_id", "cand_id", "amount", "cycle", "year", "month"],
         name="firm_pac_to_principal_committee_contributions.parquet",
     )
+    leadership_contributions = pl.read_parquet(FEC_PROCESSED_PATH / "firm_pac_to_leadership_pac_contributions.parquet")
+    validate_frame(
+        leadership_contributions,
+        ["cmte_id", "cand_id", "amount", "cycle", "year", "month"],
+        name="firm_pac_to_leadership_pac_contributions.parquet",
+    )
     candidates = pl.read_csv(FEC_API_PATH / "candidates" / "candidate_history_H.csv",
                          schema_overrides={"address_zip": pl.Utf8})
     validate_frame(
@@ -57,7 +63,7 @@ def load_data():
         ["cycle", "state_po", "district", "candidate", "party", "candidatevotes", "totalvotes", "writein"],
         name="house_general_cands.csv",
     )
-    return contributions, candidates, elections, general_cands
+    return contributions, leadership_contributions, candidates, elections, general_cands
 
 def process_elections(elections: pl.DataFrame) -> pl.DataFrame:
     # Process elections
@@ -250,12 +256,28 @@ def get_race_data(merged_data: pl.DataFrame,
     return race_data
     
 
-def get_cand_data(merged_data: pl.DataFrame, 
-                  corporate_pacs: pl.DataFrame, 
+def get_leadership_outcome(merged_data: pl.DataFrame) -> pl.DataFrame:
+    # Mirrors the "products" aggregation in get_cand_data, but for contributions
+    # to a candidate's leadership PAC (FEC designation "D") rather than their
+    # principal campaign committee.
+    return (
+        merged_data
+        .group_by(["cmte_id", "cycle", "cand_id"])
+        .agg([
+            pl.col("amount").sum().alias("total_amount_leadership"),
+            pl.col("amount").count().alias("total_count_leadership"),
+        ])
+        .rename({"cand_id": "candidate_id"})
+        .with_columns(pl.lit(1).alias("contribute_leadership"))
+    )
+
+def get_cand_data(merged_data: pl.DataFrame,
+                  corporate_pacs: pl.DataFrame,
                   general_cands: pl.DataFrame,
                   elections: pl.DataFrame,
                   candidates: pl.DataFrame,
-                  previous_contributions: pl.DataFrame):
+                  previous_contributions: pl.DataFrame,
+                  leadership_products: pl.DataFrame):
     general_cands = (
         general_cands
         .filter(pl.col("cycle") >= 2010)
@@ -317,15 +339,24 @@ def get_cand_data(merged_data: pl.DataFrame,
         .join(filter_cands, on = "cycle", how = "inner")
         .join(products, on = ["cmte_id", "cycle", "candidate_id"], how = "left")
         .join(previous_contributions, on = ["cmte_id", "cycle", "candidate_id"], how = "left")
+        .join(leadership_products, on = ["cmte_id", "cycle", "candidate_id"], how = "left")
         .with_columns([
             pl.col("total_amount").fill_null(0),
             pl.col("total_count").fill_null(0),
             pl.col("nparty").fill_null(0),
             pl.col("contribute").fill_null(0),
-            pl.col("prior_amount").fill_null(0)
+            pl.col("prior_amount").fill_null(0),
+            pl.col("total_amount_leadership").fill_null(0),
+            pl.col("total_count_leadership").fill_null(0),
+            pl.col("contribute_leadership").fill_null(0)
+        ])
+        .with_columns([
+            (pl.col("total_amount") + pl.col("total_amount_leadership")).alias("total_amount_combined"),
+            (pl.col("total_count") + pl.col("total_count_leadership")).alias("total_count_combined"),
+            pl.max_horizontal(["contribute", "contribute_leadership"]).alias("contribute_combined")
         ])
     )
-    
+
     return cand_data
 
 def parse_args():
@@ -347,10 +378,11 @@ def parse_args():
 def main():
     args = parse_args()
 
-    contributions, candidates, elections, general_cands = load_data()
+    contributions, leadership_contributions, candidates, elections, general_cands = load_data()
     elections = process_elections(elections)
     candidates = process_candidates(candidates)
     contributions = process_contributions(contributions)
+    leadership_contributions = process_contributions(leadership_contributions)
     contributions.write_parquet(HOUSE_PROCESSED_PATH / "house_firm_contributions.parquet")
     firm_pacs_path = FEC_PROCESSED_PATH / "firm_pac_cycle_panel.parquet"
     if os.path.exists(firm_pacs_path):
@@ -367,15 +399,20 @@ def main():
     merged_data, previous_contributions = aggregate_candidate_contribution(contributions, candidates, elections, election_year=election_year)
     previous_contributions.write_csv(HOUSE_PROCESSED_PATH / "house_previous_contributions.csv")
 
+    merged_data_leadership, _ = aggregate_candidate_contribution(leadership_contributions, candidates, elections, election_year=election_year)
+    leadership_products = get_leadership_outcome(merged_data_leadership)
+
     #race_data = get_race_data(merged_data, corporate_pacs, elections)
-    cand_data = get_cand_data(merged_data, corporate_pacs, general_cands, elections, candidates, previous_contributions)
+    cand_data = get_cand_data(merged_data, corporate_pacs, general_cands, elections, candidates, previous_contributions, leadership_products)
 
     output_name = "house_firm_cand_election_year.parquet" if election_year else "house_firm_cand.parquet"
     # HouseCandData.R reads this file next and joins on cmte_id/candidate_id/party;
     # catch an empty or malformed result here rather than as a downstream R join failure.
     validate_frame(
         cand_data,
-        ["cmte_id", "cycle", "candidate_id", "party", "total_amount", "contribute"],
+        ["cmte_id", "cycle", "candidate_id", "party", "total_amount", "contribute",
+         "total_amount_leadership", "contribute_leadership",
+         "total_amount_combined", "contribute_combined"],
         name=output_name,
     )
 
